@@ -14,8 +14,12 @@ const app = express();
 app.set("view engine", "ejs");
 app.set("views", "views");
 
+// Admin and shop routes
 const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
+
+// 404 Page controller
+const page404Controller = require("./controllers/page404");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
@@ -23,8 +27,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
-app.use((req, res, next) => {
-  res.status(404).render("404", { pageTitle: "Page Not Found" });
-});
+app.use(page404Controller.get404Page);
 
 app.listen(3000);
