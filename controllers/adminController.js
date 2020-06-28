@@ -1,18 +1,11 @@
-/**
- * This controller class handles all of the product logics
- */
-
 // Imports
 const Product = require("../models/product");
 
 // Getting add product page
 exports.getAddProductPage = (req, res, next) => {
-  res.render("add-product", {
+  res.render("admin/add-product", {
     pageTitle: "Add Product",
     path: "/admin/add-product",
-    formsCSS: true,
-    productCSS: true,
-    activeAddProduct: true,
   });
 };
 
@@ -23,16 +16,14 @@ exports.postProductAndRedirect = (req, res, next) => {
   res.redirect("/");
 };
 
-// Display the product page with all the products added
+// Display the product page for admins
 exports.getDisplayProductPage = (req, res, next) => {
   Product.fetchAll((products) => {
-    res.render("shop", {
+    res.render("admin/admin-product", {
       prods: products,
-      pageTitle: "Shop",
-      path: "/",
+      pageTitle: "Admin-products",
+      path: "/admin-products",
       hasProducts: products.length > 0,
-      activeShop: true,
-      productCSS: true,
     });
   });
 };

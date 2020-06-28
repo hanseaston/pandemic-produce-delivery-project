@@ -14,12 +14,12 @@ const app = express();
 app.set("view engine", "ejs");
 app.set("views", "views");
 
+// 404 Page controller
+const page404Controller = require("./controllers/page404Controller");
+
 // Admin and shop routes
 const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
-
-// 404 Page controller
-const page404Controller = require("./controllers/page404Controller");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));

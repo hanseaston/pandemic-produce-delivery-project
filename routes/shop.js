@@ -5,12 +5,13 @@
 // Imports
 const express = require("express");
 const router = express.Router();
-const productController = require("../controllers/productsController");
+const shopController = require("../controllers/shopController");
 
-// getting the shop main page
-// use the HTML template to dynamically render HTML pages
-// and add products
-router.get("/", productController.getDisplayProductPage);
+// handling routes for the shop main page
+router.get("/", shopController.getDisplayIndexPage);
+router.get("/products", shopController.getDisplayProductPage);
+router.get("/cart", shopController.getDisplayCartPage);
+router.get("/checkout", shopController.getDisplayCheckoutPage);
 
 // Exports
 module.exports = router;
