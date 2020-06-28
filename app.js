@@ -19,7 +19,7 @@ const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
 
 // 404 Page controller
-const page404Controller = require("./controllers/page404");
+const page404Controller = require("./controllers/page404Controller");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));

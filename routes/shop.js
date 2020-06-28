@@ -5,7 +5,7 @@
 // Imports
 const express = require("express");
 const router = express.Router();
-const productController = require("../controllers/products");
+const productController = require("../controllers/productsController");
 
 // getting the shop main page
 // use the HTML template to dynamically render HTML pages

@@ -2,10 +2,8 @@
  * This controller class handles all of the product logics
  */
 
-// An array of products to be stored
-// Right now, it is just a variable, will use files or databases
-// To store them later
-const products = [];
+// Imports
+const Product = require("../models/product");
 
 exports.getAddProductPage = (req, res, next) => {
   res.render("add-product", {
@@ -18,11 +16,13 @@ exports.getAddProductPage = (req, res, next) => {
 };
 
 exports.postProductAndRedirect = (req, res, next) => {
-  products.push({ title: req.body.title });
+  const newProduct = new Product(req.body.title);
+  newProduct.saveProduct(this);
   res.redirect("/");
 };
 
 exports.getDisplayProductPage = (req, res, next) => {
+  const products = Product.fetchAll();
   res.render("shop", {
     prods: products,
     pageTitle: "Shop",
