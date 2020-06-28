@@ -5,6 +5,7 @@
 // Imports
 const Product = require("../models/product");
 
+// Getting add product page
 exports.getAddProductPage = (req, res, next) => {
   res.render("add-product", {
     pageTitle: "Add Product",
@@ -15,20 +16,23 @@ exports.getAddProductPage = (req, res, next) => {
   });
 };
 
+// Handling the post request and redirecting to the main shop page
 exports.postProductAndRedirect = (req, res, next) => {
   const newProduct = new Product(req.body.title);
   newProduct.saveProduct(this);
   res.redirect("/");
 };
 
+// Display the product page with all the products added
 exports.getDisplayProductPage = (req, res, next) => {
-  const products = Product.fetchAll();
-  res.render("shop", {
-    prods: products,
-    pageTitle: "Shop",
-    path: "/",
-    hasProducts: products.length > 0,
-    activeShop: true,
-    productCSS: true,
+  Product.fetchAll((products) => {
+    res.render("shop", {
+      prods: products,
+      pageTitle: "Shop",
+      path: "/",
+      hasProducts: products.length > 0,
+      activeShop: true,
+      productCSS: true,
+    });
   });
 };
