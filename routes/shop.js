@@ -11,6 +11,7 @@ const shopController = require("../controllers/shopController");
 router.get("/", shopController.getDisplayIndexPage);
 router.get("/products", shopController.getDisplayProductPage);
 router.get("/cart", shopController.getDisplayCartPage);
+router.get("/orders", shopController.getDisplayOrdersPage);
 router.get("/checkout", shopController.getDisplayCheckoutPage);
 
 // Exports

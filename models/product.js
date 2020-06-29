@@ -9,8 +9,11 @@ const fs = require("fs");
 
 module.exports = class Product {
   // Constructor, passing in the title
-  constructor(title) {
+  constructor(title, imageUrl, description, price) {
     this.title = title;
+    this.imageUrl = imageUrl;
+    this.description = description;
+    this.price = price;
   }
 
   // Saving the product
@@ -35,6 +38,7 @@ module.exports = class Product {
     fs.readFile(p, (err, content) => {
       if (!err) {
         callback(JSON.parse(content));
+        return;
       }
       callback([]);
     });

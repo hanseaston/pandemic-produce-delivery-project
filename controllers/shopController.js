@@ -39,6 +39,18 @@ exports.getDisplayCartPage = (req, res, next) => {
   });
 };
 
+// Display the orders page
+exports.getDisplayOrdersPage = (req, res, next) => {
+  console.log("display prders page");
+  Product.fetchAll((products) => {
+    res.render("shop/orders", {
+      prods: products,
+      pageTitle: "Orders",
+      path: "/orders",
+    });
+  });
+};
+
 // Display the checkout page
 exports.getDisplayCheckoutPage = (req, res, next) => {
   console.log("display checkout page");
