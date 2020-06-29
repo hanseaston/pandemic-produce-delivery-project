@@ -10,6 +10,7 @@ const shopController = require("../controllers/shopController");
 // handling routes for the shop main page
 router.get("/", shopController.getDisplayIndexPage);
 router.get("/products", shopController.getDisplayProductPage);
+router.get("/products/:productId", shopController.getDisplayProductDetail);
 router.get("/cart", shopController.getDisplayCartPage);
 router.get("/orders", shopController.getDisplayOrdersPage);
 router.get("/checkout", shopController.getDisplayCheckoutPage);

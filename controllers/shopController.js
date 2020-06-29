@@ -18,6 +18,18 @@ exports.getDisplayProductPage = (req, res, next) => {
   });
 };
 
+exports.getDisplayProductDetail = (req, res, next) => {
+  const id = req.params.productId;
+  Product.findProductById(id, (product) => {
+    console.log(product);
+    res.render("shop/product-detail", {
+      product: product,
+      pageTitle: product.title,
+      path: "/products",
+    });
+  });
+};
+
 // Display the original index page
 exports.getDisplayIndexPage = (req, res, next) => {
   console.log("display index page");
