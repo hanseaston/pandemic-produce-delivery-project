@@ -3,30 +3,34 @@
  * Handles the main logic of the files
  */
 
+// General imports
 const path = require("path");
-
 const express = require("express");
 const bodyParser = require("body-parser");
 
+// Importing routes and controller
+const adminRoutes = require("./routes/admin");
+const shopRoutes = require("./routes/shop");
+const page404Controller = require("./controllers/page404Controller");
+
+// Initializing my app
 const app = express();
+
+// Parsing the requests
+app.use(bodyParser.urlencoded({ extended: false }));
+// Static because we want to load all of the styling files
+app.use(express.static(path.join(__dirname, "public")));
 
 // Setting HTML template engines to be of ejs
 app.set("view engine", "ejs");
 app.set("views", "views");
 
-// 404 Page controller
-const page404Controller = require("./controllers/page404Controller");
-
 // Admin and shop routes
-const adminRoutes = require("./routes/admin");
-const shopRoutes = require("./routes/shop");
-
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, "public")));
-
 app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
+// 404 Page controller
 app.use(page404Controller.get404Page);
 
+// Listening on port 3000 as default
 app.listen(3000);

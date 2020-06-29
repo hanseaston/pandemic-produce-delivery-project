@@ -6,8 +6,6 @@
 const rootPath = require("../util/path");
 const path = require("path");
 const fs = require("fs");
-const { charAt } = require("../util/path");
-const { createBrotliCompress } = require("zlib");
 
 // Helper method to fetch products data
 const fetchFileDataHelper = (callback) => {

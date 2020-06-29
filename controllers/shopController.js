@@ -4,6 +4,19 @@
 
 // Imports
 const Product = require("../models/product");
+const Cart = require("../models/Cart");
+
+// Display the original index page
+exports.getDisplayIndexPage = (req, res, next) => {
+  console.log("display index page");
+  Product.fetchAll((products) => {
+    res.render("shop/index", {
+      prods: products,
+      pageTitle: "Shop",
+      path: "/",
+    });
+  });
+};
 
 // Display the product page with all the products added
 exports.getDisplayProductPage = (req, res, next) => {
@@ -18,6 +31,7 @@ exports.getDisplayProductPage = (req, res, next) => {
   });
 };
 
+// Display a product's detail
 exports.getDisplayProductDetail = (req, res, next) => {
   const id = req.params.productId;
   Product.findProductById(id, (product) => {
@@ -30,18 +44,6 @@ exports.getDisplayProductDetail = (req, res, next) => {
   });
 };
 
-// Display the original index page
-exports.getDisplayIndexPage = (req, res, next) => {
-  console.log("display index page");
-  Product.fetchAll((products) => {
-    res.render("shop/index", {
-      prods: products,
-      pageTitle: "Shop",
-      path: "/",
-    });
-  });
-};
-
 // Display the cart page
 exports.getDisplayCartPage = (req, res, next) => {
   console.log("display cart page");
@@ -49,6 +51,14 @@ exports.getDisplayCartPage = (req, res, next) => {
     pageTitle: "Cart",
     path: "/cart",
   });
+};
+
+exports.postCardPage = (req, res, next) => {
+  const prodId = req.body.productId;
+  Product.findProductById(prodId, (product) => {
+    Cart.addProduct(prodId, product.price);
+  });
+  res.redirect("/cart");
 };
 
 // Display the orders page
