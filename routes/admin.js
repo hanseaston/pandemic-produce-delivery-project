@@ -17,5 +17,11 @@ router.post("/add-product", adminController.postProductAndRedirect);
 // Fetching product lists in the admin page
 router.get("/admin-products", adminController.getDisplayProductPage);
 
+// Fetching product information for editing (updating)
+router.get("/edit-product/:productId", adminController.getEditProductPage);
+
+// Updating the admin product through the POST request
+router.post("/edit-product", adminController.updateAdmindProduct);
+
 // Exporting the routes
 module.exports = router;
