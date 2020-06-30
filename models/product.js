@@ -6,6 +6,7 @@
 const rootPath = require("../util/path");
 const path = require("path");
 const fs = require("fs");
+const Cart = require("./cart");
 
 // Helper method to fetch products data
 const fetchFileDataHelper = (callback) => {
@@ -21,20 +22,45 @@ const fetchFileDataHelper = (callback) => {
 
 module.exports = class Product {
   // Constructor, passing in the title
-  constructor(title, imageUrl, description, price) {
+  constructor(id, title, imageUrl, description, price) {
     this.title = title;
     this.imageUrl = imageUrl;
     this.description = description;
     this.price = price;
-    this.id = Math.random().toString();
   }
 
   // Saving the product
   saveProduct() {
-    fetchFileDataHelper((products) => {
-      products.push(this);
-      fs.writeFile(p, JSON.stringify(products), (err) => {
-        console.log("encountering error when writing file");
+    getProductsFromFile((products) => {
+      // If id already exists, then we are replacing a certain product
+      if (this.id) {
+        const existingProductIndex = products.findIndex(
+          (prod) => prod.id === this.id
+        );
+        const updatedProducts = [...products];
+        updatedProducts[existingProductIndex] = this;
+        fs.writeFile(p, JSON.stringify(updatedProducts), (err) => {
+          console.log(err);
+        });
+      } else {
+        this.id = Math.random().toString();
+        products.push(this);
+        fs.writeFile(p, JSON.stringify(products), (err) => {
+          console.log(err);
+        });
+      }
+    });
+  }
+
+  // Deleting a certain product from the cart
+  static deleteProduct(id) {
+    getProductsFromFile((products) => {
+      const product = products.find((prod) => prod.id === id);
+      const updatedProducts = products.filter((prod) => prod.id !== id);
+      fs.writeFile(p, JSON.stringify(updatedProducts), (err) => {
+        if (!err) {
+          Cart.deleteProduct(id, product.price);
+        }
       });
     });
   }
