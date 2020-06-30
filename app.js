@@ -7,6 +7,7 @@
 const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
+const db = require("./util/db");
 
 // Importing routes and controller
 const adminRoutes = require("./routes/admin");
@@ -15,6 +16,12 @@ const page404Controller = require("./controllers/page404Controller");
 
 // Initializing my app
 const app = express();
+
+db.execute("SELECT * FROM Products")
+  .then((content) => {
+    console.log(content);
+  })
+  .catch((err) => console.log(err));
 
 // Parsing the requests
 app.use(bodyParser.urlencoded({ extended: false }));

@@ -23,5 +23,8 @@ router.get("/edit-product/:productId", adminController.getEditProductPage);
 // Updating the admin product through the POST request
 router.post("/edit-product", adminController.updateAdmindProduct);
 
+// Updating the deleted product thrpugh the POST request
+router.post("/delete-product", adminController.postDeleteProduct);
+
 // Exporting the routes
 module.exports = router;

@@ -47,18 +47,42 @@ exports.getDisplayProductDetail = (req, res, next) => {
 // Display the cart page
 exports.getDisplayCartPage = (req, res, next) => {
   console.log("display cart page");
-  res.render("shop/cart", {
-    pageTitle: "Cart",
-    path: "/cart",
+  Cart.getCart((cart) => {
+    Product.fetchAll((products) => {
+      const cartProducts = [];
+      for (product of products) {
+        const cartProductData = cart.products.find(
+          (prod) => prod.id === product.id
+        );
+        if (cartProductData) {
+          cartProducts.push({ productData: product, qty: cartProductData.qty });
+        }
+      }
+      res.render("shop/cart", {
+        path: "/cart",
+        pageTitle: "Your Cart",
+        products: cartProducts,
+      });
+    });
   });
 };
 
+// Adding a product to the cart
 exports.postCardPage = (req, res, next) => {
   const prodId = req.body.productId;
   Product.findProductById(prodId, (product) => {
     Cart.addProduct(prodId, product.price);
   });
   res.redirect("/cart");
+};
+
+// Deleting a product from the cart page
+exports.postCartDeleteProduct = (req, res, next) => {
+  const prodId = req.body.productId;
+  Product.findProductById(prodId, (product) => {
+    Cart.deleteProduct(prodId, product.price);
+    res.redirect("/cart");
+  });
 };
 
 // Display the orders page
