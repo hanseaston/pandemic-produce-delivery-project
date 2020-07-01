@@ -7,7 +7,7 @@
 const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
-const db = require("./util/db");
+const mongoDb = require("./util/db");
 
 // Importing routes and controller
 const adminRoutes = require("./routes/admin");
@@ -16,12 +16,6 @@ const page404Controller = require("./controllers/page404Controller");
 
 // Initializing my app
 const app = express();
-
-db.execute("SELECT * FROM Products")
-  .then((content) => {
-    console.log(content);
-  })
-  .catch((err) => console.log(err));
 
 // Parsing the requests
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -39,5 +33,8 @@ app.use(shopRoutes);
 // 404 Page controller
 app.use(page404Controller.get404Page);
 
-// Listening on port 3000 as default
-app.listen(3000);
+// Connecting to mongoDb
+mongoDb.mongoConnect(() => {
+  // Listening on port 3000 as default
+  app.listen(3000);
+});
