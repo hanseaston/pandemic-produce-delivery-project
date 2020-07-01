@@ -63,17 +63,19 @@ exports.postProductAndRedirect = (req, res, next) => {
 //   });
 // };
 
-// // Display the product page for admins
-// exports.getDisplayProductPage = (req, res, next) => {
-//   Product.fetchAll((products) => {
-//     res.render("admin/admin-products", {
-//       prods: products,
-//       pageTitle: "Admin products",
-//       path: "/admin/admin-products",
-//       hasProducts: products.length > 0,
-//     });
-//   });
-// };
+// Display the product page for admins
+exports.getDisplayProductPage = (req, res, next) => {
+  Product.fetchAll()
+    .then((products) => {
+      res.render("admin/admin-products", {
+        prods: products,
+        pageTitle: "Admin products",
+        path: "/admin/admin-products",
+        hasProducts: products.length > 0,
+      });
+    })
+    .catch((err) => console.log(err));
+};
 
 // // Deleting the certain product from the admin page
 // exports.postDeleteProduct = (req, res, next) => {

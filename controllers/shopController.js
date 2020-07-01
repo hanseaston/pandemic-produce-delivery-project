@@ -8,10 +8,8 @@ const Cart = require("../models/Cart");
 
 // Display the original index page
 exports.getDisplayIndexPage = (req, res, next) => {
-  console.log("display index page");
   Product.fetchAll()
     .then((products) => {
-      console.log("products in fetchall is ", products);
       res.render("shop/index", {
         prods: products,
         pageTitle: "Shop",
@@ -23,7 +21,6 @@ exports.getDisplayIndexPage = (req, res, next) => {
 
 // Display the product page with all the products added
 exports.getDisplayProductPage = (req, res, next) => {
-  console.log("display product page");
   Product.fetchAll()
     .then((products) => {
       res.render("shop/product-list", {
@@ -36,18 +33,20 @@ exports.getDisplayProductPage = (req, res, next) => {
     .catch((err) => console.log(err));
 };
 
-// // Display a product's detail
-// exports.getDisplayProductDetail = (req, res, next) => {
-//   const id = req.params.productId;
-//   Product.findProductById(id, (product) => {
-//     console.log(product);
-//     res.render("shop/product-detail", {
-//       product: product,
-//       pageTitle: product.title,
-//       path: "/products",
-//     });
-//   });
-// };
+// Display a product's detail
+exports.getDisplayProductDetail = (req, res, next) => {
+  const id = req.params.productId;
+  Product.findProductById(id)
+    .then((product) => {
+      console.log(product);
+      res.render("shop/product-detail", {
+        product: product,
+        pageTitle: product.title,
+        path: "/products",
+      });
+    })
+    .catch((err) => console.log(err));
+};
 
 // // Display the cart page
 // exports.getDisplayCartPage = (req, res, next) => {

@@ -10,6 +10,7 @@ const fs = require("fs");
 const p = path.join(rootPath, "data", "products.json");
 const Cart = require("./cart");
 const { getDb } = require("../util/db");
+const MongoDb = require("mongodb");
 
 module.exports = class Product {
   // Constructor, passing in the title
@@ -28,7 +29,6 @@ module.exports = class Product {
   }
 
   static fetchAll() {
-    console.log("calling fetchAll");
     const db = getDb();
     return db
       .collection("products")
@@ -39,6 +39,20 @@ module.exports = class Product {
       })
       .catch((err) => {
         console.log(err);
+      });
+  }
+
+  static findProductById(id) {
+    const db = getDb();
+    return db
+      .collection("products")
+      .find({ _id: new MongoDb.ObjectId(id) })
+      .next()
+      .then((product) => {
+        return product;
+      })
+      .catch((err) => {
+        console.log();
       });
   }
 };
