@@ -1,5 +1,3 @@
-const { Db } = require("mongodb");
-
 const MongoClient = require("mongodb").MongoClient;
 const uri =
   "mongodb+srv://Hans:shop@shop.ozkkk.mongodb.net/shop?retryWrites=true&w=majority";
@@ -17,6 +15,7 @@ const mongoConnect = (callback) => {
 };
 
 const getDb = () => {
+  console.log("called");
   if (_db) {
     return _db;
   }

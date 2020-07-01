@@ -36,5 +36,6 @@ app.use(page404Controller.get404Page);
 // Connecting to mongoDb
 mongoDb.mongoConnect(() => {
   // Listening on port 3000 as default
+  console.log("server connected");
   app.listen(3000);
 });
