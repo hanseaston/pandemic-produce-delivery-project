@@ -42,11 +42,12 @@ exports.updateAdmindProduct = (req, res, next) => {
   const updatedImageUrl = req.body.imageUrl;
   const updatedDesc = req.body.description;
   const updatedProduct = new Product(
-    prodId,
     updatedTitle,
-    updatedImageUrl,
+    updatedPrice,
     updatedDesc,
-    updatedPrice
+    updatedImageUrl,
+    prodId,
+    req.user._id
   );
   // Saving the updated changes
   updatedProduct.saveProduct();
