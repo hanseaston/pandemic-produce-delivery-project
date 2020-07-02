@@ -8,6 +8,7 @@ const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoDb = require("./util/db");
+const User = require("./models/user");
 
 // Importing routes and controller
 const adminRoutes = require("./routes/admin");
@@ -25,6 +26,16 @@ app.use(express.static(path.join(__dirname, "public")));
 // Setting HTML template engines to be of ejs
 app.set("view engine", "ejs");
 app.set("views", "views");
+
+// First middleware that will always be executed
+app.use((req, res, next) => {
+  User.findUserById("5efd224fb9c9f315cca111a7")
+    .then((user) => {
+      req.user = new User(user.name, user.email, user.cart, user._id);
+      next();
+    })
+    .catch((err) => console.log(err));
+});
 
 // Admin and shop routes
 app.use("/admin", adminRoutes);

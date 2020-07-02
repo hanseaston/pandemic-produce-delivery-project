@@ -4,7 +4,6 @@
 
 // Imports
 const Product = require("../models/product");
-const Cart = require("../models/Cart");
 
 // Display the original index page
 exports.getDisplayIndexPage = (req, res, next) => {
@@ -71,17 +70,27 @@ exports.getDisplayProductDetail = (req, res, next) => {
 //   });
 // };
 
-// // Adding a product to the cart
-// exports.postCardPage = (req, res, next) => {
-//   const prodId = req.body.productId;
-//   Product.findProductById(prodId, (product) => {
-//     Cart.addProduct(prodId, product.price);
-//   });
-//   res.redirect("/cart");
-// };
+// Adding a product to the cart
+exports.postCartPage = (req, res, next) => {
+  Product.findProductById(req.body.productId)
+    .then((product) => {
+      req.user
+        .addToCart(product)
+        .then(() => console.log("adding to cart successful"))
+        .catch((err) => console.log(err));
+    })
+    .catch((err) => console.log(err));
+};
 
 // // Deleting a product from the cart page
-// exports.postCartDeleteProduct = (req, res, next) => {
+// exports.postCartDeletePProduct.findById(req.body.productId)
+//     .then((product) => {
+//       req.user
+//         .addToCart(product)
+//         .then(() => console.log("adding to cart sucessful"))
+//         .catch((err) => console.log(err));
+//     })
+//     .catch((err) => console.log(err));roduct = (req, res, next) => {
 //   const prodId = req.body.productId;
 //   Product.findProductById(prodId, (product) => {
 //     Cart.deleteProduct(prodId, product.price);

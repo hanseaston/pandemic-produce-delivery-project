@@ -16,7 +16,14 @@ exports.postProductAndRedirect = (req, res, next) => {
   const imageUrl = req.body.imageUrl;
   const price = req.body.price;
   const description = req.body.description;
-  const newProduct = new Product(null, title, imageUrl, description, price);
+  const newProduct = new Product(
+    title,
+    price,
+    description,
+    imageUrl,
+    null,
+    req.user._id
+  );
   newProduct
     .saveProduct(this)
     .then((result) => {
@@ -27,41 +34,42 @@ exports.postProductAndRedirect = (req, res, next) => {
     });
 };
 
-// // Posting the updated changes of the product and redirect to the main admin page
-// exports.updateAdmindProduct = (req, res, next) => {
-//   const prodId = req.body.productId;
-//   const updatedTitle = req.body.title;
-//   const updatedPrice = req.body.price;
-//   const updatedImageUrl = req.body.imageUrl;
-//   const updatedDesc = req.body.description;
-//   const updatedProduct = new Product(
-//     prodId,
-//     updatedTitle,
-//     updatedImageUrl,
-//     updatedDesc,
-//     updatedPrice
-//   );
-//   // Saving the updated changes
-//   updatedProduct.saveProduct();
-//   // Redirect back to admin product page
-//   res.redirect("/admin/admin-products");
-// };
+// Posting the updated changes of the product and redirect to the main admin page
+exports.updateAdmindProduct = (req, res, next) => {
+  const prodId = req.body.productId;
+  const updatedTitle = req.body.title;
+  const updatedPrice = req.body.price;
+  const updatedImageUrl = req.body.imageUrl;
+  const updatedDesc = req.body.description;
+  const updatedProduct = new Product(
+    prodId,
+    updatedTitle,
+    updatedImageUrl,
+    updatedDesc,
+    updatedPrice
+  );
+  // Saving the updated changes
+  updatedProduct.saveProduct();
+  // Redirect back to admin product page
+  res.redirect("/admin/admin-products");
+};
 
-// // Getting edit product page
-// exports.getEditProductPage = (req, res, next) => {
-//   const editMode = req.query.edit;
-//   if (editMode === "false") return res.redirect("/");
-//   Product.findProductById(req.params.productId, (product) => {
-//     console.log("product is ", product);
-//     if (!product) return res.redirect("/");
-//     res.render("admin/edit-product", {
-//       pageTitle: "Edit Product",
-//       path: "/admin/edit-product",
-//       editing: true,
-//       product: product,
-//     });
-//   });
-// };
+// Getting edit product page
+exports.getEditProductPage = (req, res, next) => {
+  const editMode = req.query.edit;
+  if (editMode === "false") return res.redirect("/");
+  Product.findProductById(req.params.productId)
+    .then((product) => {
+      if (!product) return res.redirect("/");
+      res.render("admin/edit-product", {
+        pageTitle: "Edit Product",
+        path: "/admin/edit-product",
+        editing: true,
+        product: product,
+      });
+    })
+    .catch((err) => console.log(err));
+};
 
 // Display the product page for admins
 exports.getDisplayProductPage = (req, res, next) => {
@@ -77,9 +85,11 @@ exports.getDisplayProductPage = (req, res, next) => {
     .catch((err) => console.log(err));
 };
 
-// // Deleting the certain product from the admin page
-// exports.postDeleteProduct = (req, res, next) => {
-//   const prodId = req.body.productId;
-//   Product.deleteProduct(prodId);
-//   res.redirect("/admin/admin-products");
-// };
+exports.postDeleteProduct = (req, res, next) => {
+  const prodId = req.body.productId;
+  Product.deleteProductById(prodId)
+    .then(() => {
+      res.redirect("/admin/admin-products");
+    })
+    .catch((err) => console.log(err));
+};
