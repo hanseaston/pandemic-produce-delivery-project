@@ -17,10 +17,15 @@ class User {
   }
 
   addToCart(product) {
+    if (!this.cart) {
+      this.cart = { items: [] };
+    }
+
     const cartProductIndex = this.cart.items.findIndex((cp) => {
       return cp.productId.toString() === product._id.toString();
     });
     let newQuantity = 1;
+
     const updatedCartItems = [...this.cart.items];
 
     if (cartProductIndex >= 0) {

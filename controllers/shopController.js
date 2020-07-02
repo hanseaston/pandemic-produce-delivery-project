@@ -74,6 +74,8 @@ exports.getDisplayProductDetail = (req, res, next) => {
 exports.postCartPage = (req, res, next) => {
   Product.findProductById(req.body.productId)
     .then((product) => {
+      console.log("receiving product", product);
+      console.log("user is ", req.user);
       req.user
         .addToCart(product)
         .then(() => console.log("adding to cart successful"))
