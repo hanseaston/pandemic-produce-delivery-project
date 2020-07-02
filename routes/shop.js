@@ -13,9 +13,9 @@ router.get("/products", shopController.getDisplayProductPage);
 router.get("/products/:productId", shopController.getDisplayProductDetail);
 router.get("/cart", shopController.getDisplayCartPage);
 router.post("/cart", shopController.postCartPage);
-// router.post("/cart-delete-item", shopController.postCartDeleteProduct);
-// router.post("/create-order", shopController.postOrder);
-// router.get("/orders", shopController.getOrders);
+router.post("/cart-delete-item", shopController.postCartDeleteProduct);
+router.post("/create-order", shopController.postOrder);
+router.get("/orders", shopController.getOrders);
 
 // Exports
 module.exports = router;
