@@ -7,7 +7,7 @@ const Product = require("../models/product");
 
 // Display the original index page
 exports.getDisplayIndexPage = (req, res, next) => {
-  Product.fetchAll()
+  Product.find()
     .then((products) => {
       res.render("shop/index", {
         prods: products,
@@ -20,7 +20,7 @@ exports.getDisplayIndexPage = (req, res, next) => {
 
 // Display the product page with all the products added
 exports.getDisplayProductPage = (req, res, next) => {
-  Product.fetchAll()
+  Product.find()
     .then((products) => {
       res.render("shop/product-list", {
         prods: products,
@@ -35,7 +35,7 @@ exports.getDisplayProductPage = (req, res, next) => {
 // Display a product's detail
 exports.getDisplayProductDetail = (req, res, next) => {
   const id = req.params.productId;
-  Product.findProductById(id)
+  Product.findById(id)
     .then((product) => {
       console.log(product);
       res.render("shop/product-detail", {
@@ -50,8 +50,11 @@ exports.getDisplayProductDetail = (req, res, next) => {
 // Display the cart page
 exports.getDisplayCartPage = (req, res, next) => {
   req.user
-    .getCart()
-    .then((products) => {
+    .populate("cart.items.productId")
+    .execPopulate()
+    .then((user) => {
+      const products = user.cart.items;
+      console.log(products);
       res.render("shop/cart", {
         path: "/cart",
         pageTitle: "Your Cart",
@@ -63,7 +66,7 @@ exports.getDisplayCartPage = (req, res, next) => {
 
 // Adding a product to the cart
 exports.postCartPage = (req, res, next) => {
-  Product.findProductById(req.body.productId)
+  Product.findById(req.body.productId)
     .then((product) => {
       req.user.addToCart(product).then(() => res.redirect("/cart"));
     })
