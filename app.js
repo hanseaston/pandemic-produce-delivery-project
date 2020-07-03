@@ -43,7 +43,7 @@ app.set("views", "views");
 
 // First middleware that will always be executed
 app.use((req, res, next) => {
-  User.findById("5efe5dee0bd72511ec85b95f")
+  User.findById("5effa71045c6cb9493a3f33f")
     .then((user) => {
       req.user = user;
       next();
@@ -68,7 +68,7 @@ mongoose
         const user = new User({
           name: "Hans",
           email: "hans00@uw.edu",
-          cadt: { items: [] },
+          cart: { items: [] },
         });
         user.save();
       }
