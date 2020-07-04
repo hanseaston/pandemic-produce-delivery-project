@@ -1,6 +1,7 @@
 /**
- * This controller class handles all of the product logics
+ * Shopping controller
  */
+var x = 0;
 
 // Imports
 const Product = require("../models/product");
