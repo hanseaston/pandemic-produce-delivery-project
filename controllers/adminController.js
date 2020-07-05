@@ -1,4 +1,9 @@
-// Imports
+/**
+ * Controller handling all admin related requests
+ * @module
+ */
+
+/** Imports */
 const Product = require("../models/product");
 
 // Getting add product page
@@ -11,7 +16,7 @@ exports.getAddProductPage = (req, res, next) => {
   });
 };
 
-// Handling the post request and redirecting to the main shop page
+/** Handling the post request and redirecting to the main shop page */
 exports.postProductAndRedirect = (req, res, next) => {
   const title = req.body.title;
   const imageUrl = req.body.imageUrl;
@@ -25,7 +30,7 @@ exports.postProductAndRedirect = (req, res, next) => {
   });
   newProduct
     .save()
-    .then((result) => {
+    .then(() => {
       res.redirect("/");
     })
     .catch((err) => {
@@ -33,7 +38,7 @@ exports.postProductAndRedirect = (req, res, next) => {
     });
 };
 
-// Posting the updated changes of the product and redirect to the main admin page
+/** Posting the updated changes of the product and redirect to the main admin page */
 exports.updateAdmindProduct = (req, res, next) => {
   const prodId = req.body.productId;
   const updatedTitle = req.body.title;
@@ -48,13 +53,13 @@ exports.updateAdmindProduct = (req, res, next) => {
       product.imageUrl = updatedImageUrl;
       return product.save();
     })
-    .then((result) => {
+    .then(() => {
       res.redirect("/admin/admin-products");
     })
     .catch((err) => console.log(err));
 };
 
-// Getting edit product page
+/** Getting edit product page */
 exports.getEditProductPage = (req, res, next) => {
   const editMode = req.query.edit;
   if (editMode === "false") return res.redirect("/");
@@ -72,7 +77,7 @@ exports.getEditProductPage = (req, res, next) => {
     .catch((err) => console.log(err));
 };
 
-// Display the product page for admins
+/** Display the product page for admins */
 exports.getDisplayProductPage = (req, res, next) => {
   Product.find()
     .then((products) => {
@@ -87,6 +92,7 @@ exports.getDisplayProductPage = (req, res, next) => {
     .catch((err) => console.log(err));
 };
 
+/** Post request after a product has been deleted */
 exports.postDeleteProduct = (req, res, next) => {
   const prodId = req.body.productId;
   Product.findByIdAndRemove(prodId)

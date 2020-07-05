@@ -1,5 +1,6 @@
 /**
  * Simple controller for setting up the 404 page
+ * @module
  */
 
 exports.get404Page = (req, res, next) => {

@@ -1,3 +1,8 @@
+/**
+ * Controller handling all authentification related requests
+ * @module
+ */
+
 exports.getLogin = (req, res, next) => {
   res.render("auth/login", {
     path: "/login",

@@ -1,13 +1,8 @@
-/**
- *
- */
-var x = 0;
-
-// Imports
+/** Imports */
 const Product = require("../models/product");
 const Order = require("../models/order");
 
-// Display the original index page
+/** Display the original index page */
 exports.getDisplayIndexPage = (req, res, next) => {
   Product.find()
     .then((products) => {
@@ -21,7 +16,7 @@ exports.getDisplayIndexPage = (req, res, next) => {
     .catch((err) => console.log(err));
 };
 
-// Display the product page with all the products added
+/** Display the product page with all the products added */
 exports.getDisplayProductPage = (req, res, next) => {
   Product.find()
     .then((products) => {
@@ -36,7 +31,7 @@ exports.getDisplayProductPage = (req, res, next) => {
     .catch((err) => console.log(err));
 };
 
-// Display a product's detail
+/** Display a product's detail */
 exports.getDisplayProductDetail = (req, res, next) => {
   const id = req.params.productId;
   Product.findById(id)
@@ -51,12 +46,15 @@ exports.getDisplayProductDetail = (req, res, next) => {
     .catch((err) => console.log(err));
 };
 
-// Display the cart page
+/** Display the cart page */
 exports.getDisplayCartPage = (req, res, next) => {
+  console.log("user is", req.user.cart.items);
+  // Populating productId field with information of product
   req.user
     .populate("cart.items.productId")
     .execPopulate()
     .then((user) => {
+      console.log("after populating", user.cart.items);
       const products = user.cart.items;
       res.render("shop/cart", {
         path: "/cart",
@@ -68,7 +66,7 @@ exports.getDisplayCartPage = (req, res, next) => {
     .catch((err) => console.log(err));
 };
 
-// Adding a product to the cart
+/** Adding a product to the cart */
 exports.postCartPage = (req, res, next) => {
   Product.findById(req.body.productId)
     .then((product) => {
@@ -77,7 +75,7 @@ exports.postCartPage = (req, res, next) => {
     .catch((err) => console.log(err));
 };
 
-// Deleting a product from the cart page
+/** Deleting a product from the cart page */
 exports.postCartDeleteProduct = (req, res, next) => {
   const prodId = req.body.productId;
   console.log("before", prodId);
@@ -89,6 +87,7 @@ exports.postCartDeleteProduct = (req, res, next) => {
     .catch((err) => console.log(err));
 };
 
+/** Posting the order and clearning the cart */
 exports.postOrder = (req, res, next) => {
   req.user
     .populate("cart.items.productId")
@@ -115,6 +114,7 @@ exports.postOrder = (req, res, next) => {
     .catch((err) => console.log(err));
 };
 
+/** Displaying information of the order */
 exports.getOrders = (req, res, next) => {
   Order.find({ "user.userId": req.user._id })
     .then((orders) => {
