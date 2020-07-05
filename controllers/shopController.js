@@ -1,5 +1,5 @@
 /**
- * Shopping controller
+ *
  */
 var x = 0;
 

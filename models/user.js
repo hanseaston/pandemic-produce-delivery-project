@@ -1,7 +1,13 @@
-const mongoose = require("mongoose");
+/**
+ * This model class stores information about a single user
+ * @module models/product.js
+ */
 
+/** Imports */
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+/** Schema */
 const userSchema = new Schema({
   name: {
     type: String,
@@ -25,6 +31,11 @@ const userSchema = new Schema({
   },
 });
 
+/**
+ * Adding a product to the cart, updating the user's model
+ * @param {Product} - a single poduct model
+ * @returns {Promise} - indicating whether the operation has been
+ */
 userSchema.methods.addToCart = function (product) {
   const cartProductIndex = this.cart.items.findIndex((cp) => {
     return cp.productId.toString() === product._id.toString();
@@ -48,6 +59,11 @@ userSchema.methods.addToCart = function (product) {
   return this.save();
 };
 
+/**
+ * Adding a product to the cart, updating the user's model
+ * @param {ProductId} - a single product's unique productId
+ * @returns {Promise} - indicating whether the remove operation succeeds
+ */
 userSchema.methods.removeFromCart = function (productId) {
   console.log("prod id", productId);
   const updatedCartItems = this.cart.items.filter((item) => {
@@ -63,4 +79,5 @@ userSchema.methods.clearCart = function () {
   return this.save();
 };
 
+/** Exports the user model with its schema */
 module.exports = mongoose.model("User", userSchema);

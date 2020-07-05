@@ -1,7 +1,13 @@
-const mongoose = require("mongoose");
+/**
+ * This model class stores information about a single user
+ * @module models/order.js
+ */
 
+/** Imports */
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+/** Schema */
 const orderSchema = new Schema({
   products: [
     {
@@ -22,4 +28,5 @@ const orderSchema = new Schema({
   },
 });
 
+/** Exporting the order model with its schema */
 module.exports = mongoose.model("Order", orderSchema);
