@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-complete-guide",
+  "version": "1.0.0",
+  "description": "Complete Node.js Guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js",
+    "doc": "jsdoc -c jsdoc.json"
+  },
+  "author": "Hans",
+  "devDependencies": {
+    "jsdoc": "^3.6.4",
+    "nodemon": "^1.18.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-mongodb-session": "^2.3.3",
+    "ejs": "^2.7.4",
+    "express": "^4.16.3",
+    "express-session": "^1.17.1",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.21",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.2.3"
+  }
+}
