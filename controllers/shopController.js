@@ -28,7 +28,7 @@ exports.getDisplayProductPage = (req, res, next) => {
         isAuthenticated: req.session.isLoggedIn,
       });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => console.err(err));
 };
 
 /** Display a product's detail */
@@ -43,18 +43,17 @@ exports.getDisplayProductDetail = (req, res, next) => {
         isAuthenticated: req.session.isLoggedIn,
       });
     })
-    .catch((err) => console.err(err));
+    .catch((err) => console.(err));
 };
 
 /** Display the cart page */
 exports.getDisplayCartPage = (req, res, next) => {
-  console.log("user is", req.user.cart.items);
   // Populating productId field with information of product
   req.user
     .populate("cart.items.productId")
     .execPopulate()
     .then((user) => {
-      console.log("after populating", user.cart.items);
+      console.err("after populating", user.cart.items);
       const products = user.cart.items;
       res.render("shop/cart", {
         path: "/cart",
@@ -63,7 +62,7 @@ exports.getDisplayCartPage = (req, res, next) => {
         isAuthenticated: req.session.isLoggedIn,
       });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => console.err(err));
 };
 
 /** Adding a product to the cart */
