@@ -47,8 +47,8 @@ app.set("views", "views");
 app.use((req, res, next) => {
   User.findOne()
     .then((user) => {
-      console.log(user);
       req.user = user;
+      /** Needs next to handle other requests */
       next();
     })
     .catch((err) => console.err(err));

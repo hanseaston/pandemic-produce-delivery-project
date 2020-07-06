@@ -13,7 +13,7 @@ exports.getDisplayIndexPage = (req, res, next) => {
         isAuthenticated: req.session.isLoggedIn,
       });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => console.err(err));
 };
 
 /** Display the product page with all the products added */
@@ -43,7 +43,7 @@ exports.getDisplayProductDetail = (req, res, next) => {
         isAuthenticated: req.session.isLoggedIn,
       });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => console.err(err));
 };
 
 /** Display the cart page */
