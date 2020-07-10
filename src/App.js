@@ -7,6 +7,7 @@ import Header from "./components/header/header";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shop";
 import SignInUp from "./pages/signin-signup/signin-signup";
+import ShoppingCart from "./components/cart-icon/cart-icon";
 import { setCurrentUser } from "./redux/users/userAction";
 
 class App extends React.Component {
@@ -40,6 +41,7 @@ class App extends React.Component {
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
           <Route path='/signin' component={SignInUp} />
+          <ShoppingCart />
         </Switch>
       </div>
     );
