@@ -8,7 +8,7 @@ import "./App.css";
 import Header from "./components/header/header";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shop";
-import CartCheckoutPage from "./components/cart-checkout/cart-checkout";
+import CartCheckoutPage from "./pages/cart-checkout/cart-checkout";
 import SignInAndSignUp from "./pages/signin-signup/signin-signup";
 
 import { setCurrentUser } from "./redux/users/userAction";
