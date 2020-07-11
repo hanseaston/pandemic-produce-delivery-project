@@ -8,6 +8,7 @@ import "./App.css";
 import Header from "./components/header/header";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shop";
+import CartCheckoutPage from "./components/cart-checkout/cart-checkout";
 import SignInAndSignUp from "./pages/signin-signup/signin-signup";
 
 import { setCurrentUser } from "./redux/users/userAction";
@@ -42,6 +43,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
+          <Route exact path='/checkout' component={CartCheckoutPage} />
           <Route
             exact
             path='/signin'
