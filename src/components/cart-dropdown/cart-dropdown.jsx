@@ -12,9 +12,11 @@ import "./cart-dropdown.scss";
 const CartDropdown = ({ cart, history, dispatch }) => (
   <div className='cart-dropdown'>
     <div className='cart-items'>
-      {cart.map((cartItem) => (
-        <CartItem key={cartItem.id} item={cartItem} />
-      ))}
+      {cart.length ? (
+        cart.map((cartItem) => <CartItem key={cartItem.id} item={cartItem} />)
+      ) : (
+        <span className='empty-message'> Your cart is empty</span>
+      )}
     </div>
     <CustomButton
       onClick={() => {
