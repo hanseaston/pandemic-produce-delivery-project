@@ -10,10 +10,10 @@ export const selectProducts = createSelector(
 
 // Transforming the shop data (which is stored in object, into an array form for map function)
 export const selectProductsForPreview = createSelector(
-  [createSelector],
+  [selectProducts],
   (products) => Object.keys(products).map((category) => products[category])
 );
 
 // Selecting a particular category of the products in the shop for overview
 export const selectCategory = (category) =>
-  createSelector([createSelector], (products) => products[category]);
+  createSelector([selectProducts], (products) => products[category]);

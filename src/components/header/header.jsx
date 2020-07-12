@@ -33,8 +33,8 @@ const Header = ({ currentUser, hidden }) => (
         </Link>
       )}
       <CardIcon />
-      {hidden ? null : <CardDropDown />}
     </div>
+    {hidden ? null : <CardDropDown />}
   </div>
 );
 
