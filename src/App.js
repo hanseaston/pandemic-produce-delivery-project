@@ -1,7 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Route, Switch, Redirect } from "react-router-dom";
-import { auth, createUserProfileDocument } from "./firebase/firebase";
+import {
+  auth,
+  createUserProfileDocument,
+  addCollectionAndDocuments,
+} from "./firebase/firebase";
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "./redux/users/userSelector";
 import "./App.css";
@@ -12,10 +16,11 @@ import CartCheckoutPage from "./pages/cart-checkout/cart-checkout";
 import SignInAndSignUp from "./pages/signin-signup/signin-signup";
 
 import { setCurrentUser } from "./redux/users/userAction";
+import { selectProductsForPreview } from "./redux/shop/shopSelector";
 
 class App extends React.Component {
   componentDidMount() {
-    const { setCurrentUser } = this.props;
+    const { setCurrentUser, collectionItems } = this.props;
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
@@ -25,6 +30,10 @@ class App extends React.Component {
             id: snapShot.id,
             ...snapShot.data(),
           });
+          addCollectionAndDocuments(
+            "products",
+            collectionItems.map(({ title, items }) => ({ title, items }))
+          ).catch((err) => console.log(err));
         });
       } else {
         setCurrentUser(null);
@@ -63,6 +72,7 @@ const mapDispatchToProps = (dispatch) => ({
 
 const mapStateToProps = createStructuredSelector({
   user: selectCurrentUser,
+  collectionItems: selectProductsForPreview,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
