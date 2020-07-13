@@ -30,10 +30,14 @@ class App extends React.Component {
             id: snapShot.id,
             ...snapShot.data(),
           });
-          addCollectionAndDocuments(
-            "products",
-            collectionItems.map(({ title, items }) => ({ title, items }))
-          ).catch((err) => console.log(err));
+
+          /** Programatically populating collection data into firebase,
+           *  Only need to do once, so commented it out
+           */
+          // addCollectionAndDocuments(
+          //   "products",
+          //   collectionItems.map(({ title, items }) => ({ title, items }))
+          // ).catch((err) => console.log(err));
         });
       } else {
         setCurrentUser(null);
