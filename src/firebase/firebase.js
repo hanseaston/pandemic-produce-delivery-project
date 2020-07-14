@@ -47,7 +47,7 @@ export const addCollectionAndDocuments = async (
 };
 
 export const convertProductsToMap = (snapshot) => {
-  return snapshot.docs.map((doc) => {
+  const products = snapshot.docs.map((doc) => {
     const { title, items } = doc.data();
     return {
       routeName: encodeURI(title.toLowerCase()),
@@ -56,6 +56,10 @@ export const convertProductsToMap = (snapshot) => {
       items,
     };
   });
+  return products.reduce((accumulator, product) => {
+    accumulator[product.title.toLowerCase()] = product;
+    return accumulator;
+  }, {});
 };
 
 // Exporting auth and firestore documents

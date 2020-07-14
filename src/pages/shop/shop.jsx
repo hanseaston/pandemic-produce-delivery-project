@@ -1,4 +1,6 @@
 import React from "react";
+import { connect } from "react-redux";
+import { populateProducts } from "../../redux/shop/shopAction";
 import { Route } from "react-router-dom";
 import CollectionOverview from "../../components/collection-overview/collection-overview";
 import ProductCollection from "../../pages/product-collections/product-collections";
@@ -6,9 +8,10 @@ import { firestore, convertProductsToMap } from "../../firebase/firebase";
 
 class ShopPage extends React.Component {
   componentDidMount() {
+    const { populateProducts } = this.props;
     const collectionRef = firestore.collection("products");
     collectionRef.onSnapshot(async (snapshot) => {
-      console.log(convertProductsToMap(snapshot));
+      populateProducts(convertProductsToMap(snapshot));
     });
   }
 
@@ -26,4 +29,8 @@ class ShopPage extends React.Component {
   }
 }
 
-export default ShopPage;
+const mapDispatchToProps = (dispatch) => ({
+  populateProducts: (products) => dispatch(populateProducts(products)),
+});
+
+export default connect(null, mapDispatchToProps)(ShopPage);
