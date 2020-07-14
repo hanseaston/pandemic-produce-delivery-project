@@ -1,11 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Route, Switch, Redirect } from "react-router-dom";
-import {
-  auth,
-  createUserProfileDocument,
-  addCollectionAndDocuments,
-} from "./firebase/firebase";
+import { auth, createUserProfileDocument } from "./firebase/firebase";
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "./redux/users/userSelector";
 import "./App.css";
@@ -20,7 +16,7 @@ import { selectProductsForPreview } from "./redux/shop/shopSelector";
 
 class App extends React.Component {
   componentDidMount() {
-    const { setCurrentUser, collectionItems } = this.props;
+    const { setCurrentUser } = this.props;
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
