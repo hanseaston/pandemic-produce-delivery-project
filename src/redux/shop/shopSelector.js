@@ -20,4 +20,6 @@ export const selectProductsForPreview = createSelector(
 
 // Selecting a particular category of the products in the shop for overview
 export const selectCategory = (category) =>
-  createSelector([selectProducts], (products) => products[category]);
+  createSelector([selectProducts], (products) =>
+    products ? products[category] : null
+  );
