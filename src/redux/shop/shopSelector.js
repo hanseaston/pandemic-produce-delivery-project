@@ -23,3 +23,8 @@ export const selectCategory = (category) =>
   createSelector([selectProducts], (products) =>
     products ? products[category] : null
   );
+
+export const selectProductIsLoading = createSelector(
+  [selectShop],
+  (shop) => shop.isFetching
+);
