@@ -1,3 +1,8 @@
+/**
+ * @class
+ * Main entry of the front-end project
+ */
+
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
