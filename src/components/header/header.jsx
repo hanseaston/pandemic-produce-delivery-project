@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase/firebase";
 import { connect } from "react-redux";
-import { ReactComponent as Logo } from "../../assets/crown.svg";
+import { ReactComponent as PotatoLogo } from "../../assets/potato.svg";
 import CardIcon from "../cart-icon/cart-icon";
 import CardDropDown from "../cart-dropdown/cart-dropdown";
 import { selectCartHidden } from "../../redux/cart/cartSelector";
@@ -14,7 +14,7 @@ import "./header.scss";
 const Header = ({ currentUser, hidden }) => (
   <div className='header'>
     <Link className='logo-container' to='/'>
-      <Logo className='logo' />
+      <PotatoLogo className='logo' />
     </Link>
     <div className='options'>
       <Link className='option' to='/shop'>

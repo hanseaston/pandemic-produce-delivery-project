@@ -1,25 +1,53 @@
+/**
+ * @Library
+ */
 import React from "react";
 import { connect } from "react-redux";
 import { Route, Switch, Redirect } from "react-router-dom";
-import { auth, createUserProfileDocument } from "./firebase/firebase";
 import { createStructuredSelector } from "reselect";
+import { auth, createUserProfileDocument } from "./firebase/firebase";
+
+/**
+ * @Selector
+ */
 import { selectCurrentUser } from "./redux/users/userSelector";
-import "./App.css";
+import { selectProductsForPreview } from "./redux/shop/shopSelector";
+
+/**
+ * @Action
+ */
+import { setCurrentUser } from "./redux/users/userAction";
+
+/**
+ * @Components
+ */
 import Header from "./components/header/header";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shop";
 import CartCheckoutPage from "./pages/cart-checkout/cart-checkout";
 import SignInAndSignUp from "./pages/signin-signup/signin-signup";
 
-import { setCurrentUser } from "./redux/users/userAction";
-import { selectProductsForPreview } from "./redux/shop/shopSelector";
+/**
+ * @Style
+ */
+import "./App.css";
 
+/**
+ * @class
+ * Main entry point of app front-end logic
+ */
 class App extends React.Component {
+  /**
+   * When app component mounts, needs to fetch user information if necessary
+   */
+
   componentDidMount() {
     const { setCurrentUser } = this.props;
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
-      if (userAuth) {
-        const userRef = await createUserProfileDocument(userAuth);
+
+    // Once the user's authentification status is changed
+    auth.onAuthStateChanged(async (user) => {
+      if (user !== null) {
+        const userRef = await createUserProfileDocument(user);
 
         userRef.onSnapshot((snapShot) => {
           setCurrentUser({
@@ -36,13 +64,10 @@ class App extends React.Component {
           // ).catch((err) => console.log(err));
         });
       } else {
+        // No user is set, set current user to null
         setCurrentUser(null);
       }
     });
-  }
-
-  componentWillUnmount() {
-    this.unsubscribeFromAuth = null;
   }
 
   render() {

@@ -1,22 +1,38 @@
+/**
+ * @Libraries
+ */
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 import config from "./connection";
 
+/**
+ * Initialize firebase
+ */
 firebase.initializeApp(config);
 
-export const createUserProfileDocument = async (userAuth, additionalData) => {
-  if (!userAuth) return;
+/**
+ *
+ * @param user the User object from firebase
+ * @param additionalData any additionalData passed in
+ * @returns firebase document reference to the user document
+ */
+export const createUserProfileDocument = async (user, additionalData) => {
+  // If user is null
+  if (user === null) return;
+
+  // TODO: might want to add the Google account's profile pic!
+  // const profilePic = user.photoURL;
 
   // Reference to the document
-  const userRef = firestore.doc(`users/${userAuth.uid}`);
+  const userRef = firestore.doc(`users/${user.uid}`);
 
-  // Data in the document
+  // Check whether user document exists
   const snapShot = await userRef.get();
 
   // If data doesn't exist
   if (!snapShot.exists) {
-    const { displayName, email } = userAuth;
+    const { displayName, email } = user;
     const createdAt = new Date();
     try {
       // Populate data
@@ -28,6 +44,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
       });
     } catch (error) {
       console.log("error creating user", error.message);
+      throw error;
     }
   }
   // Return doucment reference
