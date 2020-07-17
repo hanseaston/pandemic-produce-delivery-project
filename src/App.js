@@ -5,7 +5,11 @@ import React from "react";
 import { connect } from "react-redux";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { createStructuredSelector } from "reselect";
-import { auth, createUserProfileDocument } from "./firebase/firebase";
+import {
+  auth,
+  createUserProfileDocument,
+  addCollectionAndDocuments,
+} from "./firebase/firebase";
 
 /**
  * @Selector
@@ -25,6 +29,7 @@ import Header from "./components/header/header";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shop";
 import CartCheckoutPage from "./pages/cart-checkout/cart-checkout";
+import AdminAddProductPage from "./pages/admin-add-products/admin-add-products";
 import SignInAndSignUp from "./pages/signin-signup/signin-signup";
 
 /**
@@ -57,11 +62,15 @@ class App extends React.Component {
 
           /** Programatically populating collection data into firebase,
            *  Only need to do once, so commented it out
+           * TODO: rather than adding produce items there, we want to add it to database via a form
            */
-          // addCollectionAndDocuments(
-          //   "products",
-          //   collectionItems.map(({ title, items }) => ({ title, items }))
-          // ).catch((err) => console.log(err));
+          if (false) {
+            const collectionItems = [];
+            addCollectionAndDocuments(
+              "products",
+              collectionItems.map(({ title, items }) => ({ title, items }))
+            ).catch((err) => console.log(err));
+          }
         });
       } else {
         // No user is set, set current user to null
@@ -71,6 +80,7 @@ class App extends React.Component {
   }
 
   render() {
+    const { user } = this.props;
     return (
       <div>
         <Header />
@@ -81,10 +91,13 @@ class App extends React.Component {
           <Route
             exact
             path='/signin'
-            render={() =>
-              this.props.user ? <Redirect to='/' /> : <SignInAndSignUp />
-            }
+            render={() => (user ? <Redirect to='/' /> : <SignInAndSignUp />)}
           />
+          <Route
+            exact
+            path='/admin/add'
+            component={AdminAddProductPage}
+          ></Route>
         </Switch>
       </div>
     );
