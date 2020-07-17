@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { auth } from "../../firebase/firebase";
 import { connect } from "react-redux";
 import { ReactComponent as PotatoLogo } from "../../assets/potato.svg";
@@ -17,20 +17,24 @@ const Header = ({ currentUser, hidden }) => (
       <PotatoLogo className='logo' />
     </Link>
     <div className='options'>
-      <Link className='option' to='/shop'>
+      <NavLink activeStyle={{ opacity: 0.6 }} className='option' to='/shop'>
         SHOP
-      </Link>
-      <Link className='option' to='/admin/add'>
+      </NavLink>
+      <NavLink
+        activeStyle={{ opacity: 0.6 }}
+        className='option'
+        to='/admin/add'
+      >
         ADMIN
-      </Link>
+      </NavLink>
       {currentUser ? (
         <div className='option' onClick={() => auth.signOut()}>
           SIGN OUT
         </div>
       ) : (
-        <Link className='option' to='/signin'>
+        <NavLink activeStyle={{ opacity: 0.6 }} className='option' to='/signin'>
           SIGN IN
-        </Link>
+        </NavLink>
       )}
       <CardIcon />
     </div>

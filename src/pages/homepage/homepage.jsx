@@ -1,10 +1,21 @@
+/**
+ * @Libraries
+ */
 import React from "react";
 
-import Directory from "../../components/directory/directory";
+/**
+ * @Components
+ */
+import HomepageDirectory from "../../components/homepage-directory/homepage-directory";
+
+/**
+ * @Style
+ */
 import "./homepage.scss";
+
 const HomePage = () => (
   <div className='homepage'>
-    <Directory />
+    <HomepageDirectory />
   </div>
 );
 

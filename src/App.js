@@ -15,7 +15,6 @@ import {
  * @Selector
  */
 import { selectCurrentUser } from "./redux/users/userSelector";
-import { selectProductsForPreview } from "./redux/shop/shopSelector";
 
 /**
  * @Action
@@ -79,6 +78,9 @@ class App extends React.Component {
     });
   }
 
+  /**
+   * Using React Router to dynamically render different routes
+   */
   render() {
     const { user } = this.props;
     return (
@@ -104,13 +106,18 @@ class App extends React.Component {
   }
 }
 
+/**
+ * Storing user's information in the reducer
+ */
 const mapDispatchToProps = (dispatch) => ({
   setCurrentUser: (user) => dispatch(setCurrentUser(user)),
 });
 
+/**
+ * Fetching user's information and the products(deleted)
+ */
 const mapStateToProps = createStructuredSelector({
   user: selectCurrentUser,
-  collectionItems: selectProductsForPreview,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
