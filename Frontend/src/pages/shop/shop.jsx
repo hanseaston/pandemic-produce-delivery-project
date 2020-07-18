@@ -8,7 +8,7 @@ import {
 import { createStructuredSelector } from "reselect";
 import { Route } from "react-router-dom";
 import CollectionOverview from "../../components/collection-overview/collection-overview";
-import ProductCollection from "../../pages/product-collections/product-collections";
+import ProductCollection from "../product-collections/product-collections";
 import WithSpinner from "../../components/spinner/spinner";
 
 const CollectionOverviewWithSpinner = WithSpinner(CollectionOverview);
