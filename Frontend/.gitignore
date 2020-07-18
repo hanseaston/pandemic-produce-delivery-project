@@ -1,6 +1,0 @@
-Backend/node_modules
-node_modules
-.DS_Store
-Backend/docs
-Backend/pdstore.js
-firebase/connection.js
