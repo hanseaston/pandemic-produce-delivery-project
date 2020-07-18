@@ -1,12 +1,13 @@
 {
-  "name": "nodejs-complete-guide",
+  "name": "shop-backend",
   "version": "1.0.0",
-  "description": "Complete Node.js Guide",
+  "description": "Backend of the delivery shop",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "start-server": "node app.js",
+    "frontend": "cd .. && cd FrontEnd && npm start",
+    "build": "concurrently \"npm start\" \" cd ../Frontend && npm start \"",
     "doc": "jsdoc -c jsdoc.json"
   },
   "author": "Hans",
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "concurrently": "^5.2.0",
     "connect-mongodb-session": "^2.3.3",
     "ejs": "^2.7.4",
     "express": "^4.16.3",
