@@ -1,6 +1,17 @@
+/**
+ * @class
+ * Handles all of the shop-related page logic
+ */
+
+/**
+ * @libraries
+ */
 import React from "react";
 import { connect } from "react-redux";
-import { fetchProductsStartAsync } from "../../redux/shop/shopAction";
+import {
+  fetchProductsStartAsync,
+  fetchProductsInMongoDB,
+} from "../../redux/shop/shopAction";
 import {
   selectProductIsLoading,
   selectIsProductLoaded,
@@ -47,7 +58,8 @@ class ShopPage extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchingProducts: () => dispatch(fetchProductsStartAsync()),
+  // fetchingProducts: () => dispatch(fetchProductsStartAsync()),
+  fetchingProducts: () => dispatch(fetchProductsInMongoDB()),
 });
 
 const mapStateToProps = createStructuredSelector({

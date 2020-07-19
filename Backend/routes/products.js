@@ -31,4 +31,10 @@ router.post("/", function (req, res) {
     });
 });
 
+router.get("/", function (req, res) {
+  Product.find().then((products) => {
+    console.log("products are ", products);
+  });
+});
+
 module.exports = router;

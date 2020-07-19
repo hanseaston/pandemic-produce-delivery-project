@@ -2,6 +2,8 @@ import { ShopActionType } from "./shopActionType";
 
 import { firestore, convertProductsToMap } from "../../firebase/firebase";
 
+import axios from "axios";
+
 export const fetchProductsStart = (products) => ({
   type: ShopActionType.FETCH_COLLECTION_START,
 });
@@ -28,5 +30,15 @@ export const fetchProductsStartAsync = () => {
         dispatch(fetchProductsSuccess(products));
       })
       .catch((err) => dispatch(fetchProductsFailure(err.message)));
+  };
+};
+
+export const fetchProductsInMongoDB = () => {
+  return (dispatch) => {
+    dispatch(fetchProductsStart());
+    axios
+      .get("/products")
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   };
 };
