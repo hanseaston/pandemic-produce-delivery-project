@@ -38,7 +38,9 @@ export const fetchProductsInMongoDB = () => {
     dispatch(fetchProductsStart());
     axios
       .get("/products")
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res.data);
+      })
       .catch((err) => console.log(err));
   };
 };

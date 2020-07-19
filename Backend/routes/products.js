@@ -32,9 +32,13 @@ router.post("/", function (req, res) {
 });
 
 router.get("/", function (req, res) {
-  Product.find().then((products) => {
-    console.log("products are ", products);
-  });
+  Product.find()
+    .lean()
+    .exec((err, products) => {
+      if (err) throw err;
+      console.log(JSON.stringify(products));
+      return res.status(201).send(JSON.stringify(products));
+    });
 });
 
 module.exports = router;

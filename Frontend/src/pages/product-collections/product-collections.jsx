@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import CollectionItem from "../../components/collection-item/collection-item";
-import { selectCategory } from "../../redux/shop/shopSelector.js";
+import { selectProductsInCategory } from "../../redux/shop/shopSelector.js";
 import "./product-collections.scss";
 
 const ProductCollection = ({ products }) => {
@@ -20,7 +20,9 @@ const ProductCollection = ({ products }) => {
 };
 
 const matchStateToProps = (state, otherProps) => ({
-  products: selectCategory(otherProps.match.params.collectionId)(state),
+  products: selectProductsInCategory(otherProps.match.params.collectionId)(
+    state
+  ),
 });
 
 export default connect(matchStateToProps)(ProductCollection);
