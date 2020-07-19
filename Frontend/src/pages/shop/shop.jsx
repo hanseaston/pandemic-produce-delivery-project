@@ -7,21 +7,36 @@
  * @libraries
  */
 import React from "react";
+import { Route } from "react-router-dom";
 import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+
+/**
+ * @action
+ */
 import {
   fetchProductsStartAsync,
   fetchProductsInMongoDB,
 } from "../../redux/shop/shopAction";
+
+/**
+ * @selector
+ */
 import {
   selectProductIsLoading,
   selectIsProductLoaded,
 } from "../../redux/shop/shopSelector";
-import { createStructuredSelector } from "reselect";
-import { Route } from "react-router-dom";
+
+/**
+ * Components
+ */
 import CollectionOverview from "../../components/collection-overview/collection-overview";
 import ProductCollection from "../product-collections/product-collections";
 import WithSpinner from "../../components/spinner/spinner";
 
+/**
+ * HOC with spinners
+ */
 const CollectionOverviewWithSpinner = WithSpinner(CollectionOverview);
 const ProductCollectionWithSpinner = WithSpinner(ProductCollection);
 
