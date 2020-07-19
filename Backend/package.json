@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Backend of the delivery shop",
-  "main": "app.js",
+  "main": "./bin/www",
   "scripts": {
     "start": "nodemon ./bin/www",
     "build": "concurrently \"npm start\" \" cd ../Frontend && npm start \"",
@@ -12,6 +12,7 @@
   "author": "Hans",
   "devDependencies": {
     "jsdoc": "^3.6.4",
+    "kill-port": "^1.6.1",
     "nodemon": "^1.18.3"
   },
   "dependencies": {

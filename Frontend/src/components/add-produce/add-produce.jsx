@@ -5,6 +5,8 @@ import CustomButton from "../custom-button/custom-button";
 
 import "./add-produce.scss";
 
+import axios from "axios";
+
 class SignUp extends React.Component {
   constructor() {
     super();
@@ -19,11 +21,23 @@ class SignUp extends React.Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
-    const { produceName, producePrice } = this.state;
-    alert(
-      "After submitting the form, the state is [" + produceName,
-      +", " + producePrice + "]"
-    );
+    const { produceName, producePrice, produceImage, produceDesp } = this.state;
+
+    axios
+      .post("/products", {
+        produceName,
+        producePrice,
+        produceImage,
+        produceDesp,
+      })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+        throw err;
+      });
+
     this.setState({
       produceName: "",
       producePrice: "",
