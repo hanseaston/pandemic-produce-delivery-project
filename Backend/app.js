@@ -6,17 +6,33 @@ const express = require("express");
 const path = require("path");
 const logger = require("morgan");
 const cors = require("cors");
-
-/**
- * Router imports
- */
-const productRouter = require("./routes/products");
+const mongoose = require("mongoose");
 
 /**
  * Configs files for private information
  */
 const config = require("dotenv").config();
 if (config.error) throw error;
+
+/**
+ * Connecting to Moogse database
+ */
+mongoose.connect(process.env.mongooseConnection, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "connection error:"));
+db.once("open", function () {
+  // we're connected!
+  console.log("here");
+});
+
+/**
+ * Router imports
+ */
+const productRouter = require("./routes/products");
 
 // Initialize the app
 const app = express();
