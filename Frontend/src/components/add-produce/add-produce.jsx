@@ -13,6 +13,7 @@ class SignUp extends React.Component {
 
     this.state = {
       produceName: "",
+      produceType: "",
       producePrice: "",
       produceImage: "",
       produceDesp: "",
@@ -21,17 +22,28 @@ class SignUp extends React.Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
-    const { produceName, producePrice, produceImage, produceDesp } = this.state;
+
+    let {
+      produceName,
+      produceType,
+      producePrice,
+      produceImage,
+      produceDesp,
+    } = this.state;
+
+    produceName = produceName.toLowerCase();
+    produceType = produceType.toLowerCase();
 
     axios
       .post("/products", {
         produceName,
+        produceType,
         producePrice,
         produceImage,
         produceDesp,
       })
       .then((res) => {
-        console.log(res);
+        alert("products added!");
       })
       .catch((err) => {
         console.log(err);
@@ -40,6 +52,7 @@ class SignUp extends React.Component {
 
     this.setState({
       produceName: "",
+      produceType: "",
       producePrice: "",
       produceImage: "",
       produceDesp: "",
@@ -53,7 +66,13 @@ class SignUp extends React.Component {
   };
 
   render() {
-    const { produceName, producePrice, produceImage, produceDesp } = this.state;
+    let {
+      produceName,
+      producePrice,
+      produceImage,
+      produceDesp,
+      produceType,
+    } = this.state;
     return (
       <div className='add-produce'>
         <h2 className='title'>Add produce information</h2>
@@ -64,6 +83,14 @@ class SignUp extends React.Component {
             value={produceName}
             onChange={this.handleChange}
             label='Add produce name'
+            required
+          />
+          <FormInput
+            type='text'
+            name='produceType'
+            value={produceType}
+            onChange={this.handleChange}
+            label='Add produce type'
             required
           />
           <FormInput

@@ -1,8 +1,34 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
+
+const Product = require("../model/productModel");
 
 router.post("/", function (req, res) {
-  res.status(201).send();
+  const {
+    produceName,
+    produceType,
+    producePrice,
+    produceImage,
+    produceDesp,
+  } = req.body;
+
+  const newProduct = new Product({
+    name: produceName,
+    type: produceType,
+    price: producePrice,
+    imageUrl: produceImage,
+    description: produceDesp,
+  });
+
+  newProduct
+    .save()
+    .then(() => {
+      res.status(201).send();
+    })
+    .catch((err) => {
+      console.log(err);
+      throw err;
+    });
 });
 
 module.exports = router;
