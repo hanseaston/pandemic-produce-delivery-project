@@ -1,3 +1,7 @@
+/**
+ * Utility function to convert product data
+ * @param products products fetched from database
+ */
 export const convertDBFormatToReactFormat = (products) => {
   // Hard coded values for initialization
   // Because we know there are only 5 categories in the product shop

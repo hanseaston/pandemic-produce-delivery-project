@@ -1,9 +1,9 @@
+/**
+ * @imports
+ */
 import { ShopActionType } from "./shopActionType";
-
 import { firestore, convertProductsToMap } from "../../firebase/firebase";
-
 import { convertDBFormatToReactFormat } from "./shopUtil";
-
 import axios from "axios";
 
 /** Indicating the starting process of fetching products from DB */
@@ -24,6 +24,7 @@ export const fetchProductsFailure = (errMesg) => ({
 });
 
 /** Fetching products dispatch action with redux thunk */
+/** NOTE: will no longer be using this method after switching to mongoDB */
 export const fetchProductsStartAsync = () => {
   return (dispatch) => {
     const collectionRef = firestore.collection("products");
@@ -39,6 +40,7 @@ export const fetchProductsStartAsync = () => {
   };
 };
 
+/** Fetching products dispatch action with redux thunk */
 export const fetchProductsInMongoDB = () => {
   return (dispatch) => {
     dispatch(fetchProductsStart());

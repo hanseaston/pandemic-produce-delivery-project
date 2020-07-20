@@ -43,7 +43,8 @@ export const createUserProfileDocument = async (user, additionalData) => {
         ...additionalData,
       });
     } catch (error) {
-      console.log("error creating user", error.message);
+      //TODO: want to show a pop-window rather than simply doing alert
+      alert("error creating user", error.message);
       throw error;
     }
   }

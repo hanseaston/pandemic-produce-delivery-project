@@ -41,6 +41,7 @@ const CollectionOverviewWithSpinner = WithSpinner(CollectionOverview);
 const ProductCollectionWithSpinner = WithSpinner(ProductCollection);
 
 class ShopPage extends React.Component {
+  // initially, when we render no spinners
   state = {
     isLoading: true,
   };
@@ -65,6 +66,10 @@ class ShopPage extends React.Component {
         <Route
           path={`${match.path}/:collectionId`}
           render={(props) => (
+            /** Note: needs isLoaded function rather than isFetching function
+             * isFetching wouldn't work because we will be extracting product
+             * information in the product collection page.
+             */
             <ProductCollectionWithSpinner isLoading={!isLoaded} {...props} />
           )}
         />

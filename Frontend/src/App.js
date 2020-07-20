@@ -58,18 +58,6 @@ class App extends React.Component {
             id: snapShot.id,
             ...snapShot.data(),
           });
-
-          /** Programatically populating collection data into firebase,
-           *  Only need to do once, so commented it out
-           * TODO: rather than adding produce items there, we want to add it to database via a form
-           */
-          if (false) {
-            const collectionItems = [];
-            addCollectionAndDocuments(
-              "products",
-              collectionItems.map(({ title, items }) => ({ title, items }))
-            ).catch((err) => console.log(err));
-          }
         });
       } else {
         // No user is set, set current user to null

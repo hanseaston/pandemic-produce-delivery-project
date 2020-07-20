@@ -1,6 +1,7 @@
 /**
  * @class
- *
+ * The shop page containing the overview of all of the products in the store
+ * Made up of multiple preview components.
  */
 
 /**

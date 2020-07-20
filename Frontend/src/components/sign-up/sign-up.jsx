@@ -1,10 +1,22 @@
-import React from "react";
+/**
+ * @class Signup class handling all of the signup logic
+ */
 
+/**
+ * @libraries
+ */
+import React from "react";
+import { auth, createUserProfileDocument } from "../../firebase/firebase";
+
+/**
+ * @components
+ */
 import FormInput from "../form-input/form-input";
 import CustomButton from "../custom-button/custom-button";
 
-import { auth, createUserProfileDocument } from "../../firebase/firebase";
-
+/**
+ * @styles
+ */
 import "./sign-up.scss";
 
 class SignUp extends React.Component {
@@ -25,6 +37,7 @@ class SignUp extends React.Component {
     const { displayName, email, password, confirmPassword } = this.state;
 
     if (password !== confirmPassword) {
+      //TODO: might want to show a message instead of alert
       alert("passwords don't match");
       return;
     }
@@ -35,6 +48,7 @@ class SignUp extends React.Component {
         password
       );
 
+      // Storing the
       await createUserProfileDocument(user, { displayName });
 
       this.setState({
@@ -43,8 +57,20 @@ class SignUp extends React.Component {
         password: "",
         confirmPassword: "",
       });
-    } catch (error) {
-      console.error(error);
+    } catch (errr) {
+      //TODO: similar here, might want to show another more helpful error message
+      switch (err.code) {
+        case "auth/weak-passwod":
+          alert("password too weak, try again!");
+        case "auth/invalid-email":
+          alert("the email you typed in is invalid, try again!");
+        case "auth/email-already-in-use":
+          alert(
+            "the email you typed in has already been registered, try another one"
+          );
+        default:
+          alert("an error occurred");
+      }
     }
   };
 
