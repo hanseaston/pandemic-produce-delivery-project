@@ -1,16 +1,42 @@
+/**
+ * @class
+ * Handles all of the shop-related page logic
+ */
+
+/**
+ * @libraries
+ */
 import React from "react";
+import { Route } from "react-router-dom";
 import { connect } from "react-redux";
-import { fetchProductsStartAsync } from "../../redux/shop/shopAction";
+import { createStructuredSelector } from "reselect";
+
+/**
+ * @action
+ */
+import {
+  fetchProductsStartAsync,
+  fetchProductsInMongoDB,
+} from "../../redux/shop/shopAction";
+
+/**
+ * @selector
+ */
 import {
   selectProductIsLoading,
   selectIsProductLoaded,
 } from "../../redux/shop/shopSelector";
-import { createStructuredSelector } from "reselect";
-import { Route } from "react-router-dom";
+
+/**
+ * Components
+ */
 import CollectionOverview from "../../components/collection-overview/collection-overview";
-import ProductCollection from "../../pages/product-collections/product-collections";
+import ProductCollection from "../product-collections/product-collections";
 import WithSpinner from "../../components/spinner/spinner";
 
+/**
+ * HOC with spinners
+ */
 const CollectionOverviewWithSpinner = WithSpinner(CollectionOverview);
 const ProductCollectionWithSpinner = WithSpinner(ProductCollection);
 
@@ -19,6 +45,7 @@ class ShopPage extends React.Component {
     isLoading: true,
   };
 
+  /** After mounting, do async fetch to retrieve products data */
   componentDidMount() {
     const { fetchingProducts } = this.props;
     fetchingProducts();
@@ -48,6 +75,7 @@ class ShopPage extends React.Component {
 
 const mapDispatchToProps = (dispatch) => ({
   fetchingProducts: () => dispatch(fetchProductsStartAsync()),
+  // fetchingProducts: () => dispatch(fetchProductsInMongoDB()),
 });
 
 const mapStateToProps = createStructuredSelector({

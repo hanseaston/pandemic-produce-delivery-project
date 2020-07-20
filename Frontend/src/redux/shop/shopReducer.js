@@ -1,5 +1,10 @@
 import { ShopActionType } from "./shopActionType";
 
+/**
+ * @products: products contained in the data
+ * @isFetching: whether fetching product is currently taking place
+ * @errorMessage: if error encountered when fetching data
+ */
 const INITIAL_STATE = {
   products: null,
   isFetching: false,

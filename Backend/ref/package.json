@@ -1,33 +1,33 @@
 {
   "name": "shop-backend",
   "version": "1.0.0",
-  "private": true,
   "description": "Backend of the delivery shop",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "frontend": "cd .. && cd FrontEnd && npm start",
     "build": "concurrently \"npm start\" \" cd ../Frontend && npm start \"",
     "doc": "jsdoc -c jsdoc.json"
   },
   "author": "Hans",
   "devDependencies": {
     "jsdoc": "^3.6.4",
-    "kill-port": "^1.6.1"
+    "nodemon": "^1.18.3"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "concurrently": "^5.2.0",
     "connect-mongodb-session": "^2.3.3",
-    "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
-    "debug": "~2.6.9",
     "dotenv": "^8.2.0",
-    "express": "~4.16.1",
+    "ejs": "^2.7.4",
+    "express": "^4.16.3",
     "express-session": "^1.17.1",
-    "http-errors": "~1.6.3",
     "mongodb": "^3.5.9",
     "mongoose": "^5.9.21",
-    "morgan": "~1.9.1",
-    "nodemon": "^2.0.4",
-    "stripe": "^8.76.0",
-    "lodash": ">=4.17.19"
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.2.3",
+    "stripe": "^8.76.0"
   }
 }

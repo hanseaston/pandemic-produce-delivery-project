@@ -43,7 +43,7 @@ exports.getDisplayProductDetail = (req, res, next) => {
         isAuthenticated: req.session.isLoggedIn,
       });
     })
-    .catch((err) => console.(err));
+    .catch((err) => console.log(err));
 };
 
 /** Display the cart page */

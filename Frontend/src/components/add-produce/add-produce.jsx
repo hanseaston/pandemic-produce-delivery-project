@@ -5,12 +5,15 @@ import CustomButton from "../custom-button/custom-button";
 
 import "./add-produce.scss";
 
+import axios from "axios";
+
 class SignUp extends React.Component {
   constructor() {
     super();
 
     this.state = {
       produceName: "",
+      produceType: "",
       producePrice: "",
       produceImage: "",
       produceDesp: "",
@@ -19,13 +22,37 @@ class SignUp extends React.Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
-    const { produceName, producePrice } = this.state;
-    alert(
-      "After submitting the form, the state is [" + produceName,
-      +", " + producePrice + "]"
-    );
+
+    let {
+      produceName,
+      produceType,
+      producePrice,
+      produceImage,
+      produceDesp,
+    } = this.state;
+
+    produceName = produceName.toLowerCase();
+    produceType = produceType.toLowerCase();
+
+    axios
+      .post("/products", {
+        produceName,
+        produceType,
+        producePrice,
+        produceImage,
+        produceDesp,
+      })
+      .then((res) => {
+        alert("products added!");
+      })
+      .catch((err) => {
+        console.log(err);
+        throw err;
+      });
+
     this.setState({
       produceName: "",
+      produceType: "",
       producePrice: "",
       produceImage: "",
       produceDesp: "",
@@ -34,12 +61,17 @@ class SignUp extends React.Component {
 
   handleChange = (event) => {
     const { name, value } = event.target;
-    console.log(value);
     this.setState({ [name]: value });
   };
 
   render() {
-    const { produceName, producePrice, produceImage, produceDesp } = this.state;
+    let {
+      produceName,
+      producePrice,
+      produceImage,
+      produceDesp,
+      produceType,
+    } = this.state;
     return (
       <div className='add-produce'>
         <h2 className='title'>Add produce information</h2>
@@ -50,6 +82,14 @@ class SignUp extends React.Component {
             value={produceName}
             onChange={this.handleChange}
             label='Add produce name'
+            required
+          />
+          <FormInput
+            type='text'
+            name='produceType'
+            value={produceType}
+            onChange={this.handleChange}
+            label='Add produce type'
             required
           />
           <FormInput
