@@ -46,7 +46,7 @@ export const fetchProductsInMongoDB = () => {
       .get("/products")
       .then((products) => {
         const transformedProducts = convertDBFormatToReactFormat(products.data);
-        // dispatch(fetchProductsSuccess(transformedProducts));
+        dispatch(fetchProductsSuccess(transformedProducts));
       })
       .catch((err) => dispatch(fetchProductsFailure(err.message)));
   };

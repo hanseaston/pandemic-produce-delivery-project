@@ -1,4 +1,8 @@
 export const convertDBFormatToReactFormat = (products) => {
+  // Hard coded values for initialization
+  // Because we know there are only 5 categories in the product shop
+  // Might need to change it and store it in database in the future
+  // But it's good for now
   const transformedData = {
     vegetable: {
       routeName: "vegetable",
@@ -33,9 +37,10 @@ export const convertDBFormatToReactFormat = (products) => {
   };
 
   products.forEach(({ name, description, imageUrl, _id, price, type }) => {
+    // If type is not found in the database, throw err.
     if (!transformedData[type.toLowerCase()]) {
       throw new Error(
-        "error in product type, does not match with any existing product types"
+        `error in product type ${type.toLowerCase()} - does not match with any existing product types`
       );
     } else {
       transformedData[type.toLowerCase()]["items"].push({
