@@ -7,7 +7,7 @@ import { convertDBFormatToReactFormat } from "./shopUtil";
 import axios from "axios";
 
 /** Indicating the starting process of fetching products from DB */
-export const fetchProductsStart = (products) => ({
+export const fetchProductsStart = () => ({
   type: ShopActionType.FETCH_COLLECTION_START,
 });
 
