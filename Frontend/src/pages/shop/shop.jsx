@@ -74,8 +74,8 @@ class ShopPage extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchingProducts: () => dispatch(fetchProductsStartAsync()),
-  // fetchingProducts: () => dispatch(fetchProductsInMongoDB()),
+  // fetchingProducts: () => dispatch(fetchProductsStartAsync()),
+  fetchingProducts: () => dispatch(fetchProductsInMongoDB()),
 });
 
 const mapStateToProps = createStructuredSelector({

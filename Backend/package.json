@@ -5,7 +5,7 @@
   "description": "Backend of the delivery shop",
   "scripts": {
     "start": "nodemon ./bin/www",
-    "build": "concurrently \"npm start\" \" cd ../Frontend && npm start \"",
+    "build": "concurrently  --kill-others-on-fail \"npm start\" \" cd ../Frontend && npm start \"",
     "doc": "jsdoc -c jsdoc.json"
   },
   "author": "Hans",

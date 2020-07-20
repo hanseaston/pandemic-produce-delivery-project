@@ -29,7 +29,6 @@ export const selectIsProductLoaded = createSelector(
 export const selectProductsForPreview = createSelector(
   [selectProducts],
   (products) => {
-    console.log(products);
     return products
       ? Object.keys(products).map((category) => products[category])
       : [];

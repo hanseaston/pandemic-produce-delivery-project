@@ -26,7 +26,7 @@ const INITIAL_STATE = {
       linkUrl: "shop/womens",
     },
     {
-      title: "dairys",
+      title: "dairy",
       imageUrl: "https://i.ibb.co/dWR8R6b/dairy.jpg",
       size: "large",
       id: 5,

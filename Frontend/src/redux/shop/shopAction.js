@@ -45,8 +45,8 @@ export const fetchProductsInMongoDB = () => {
     axios
       .get("/products")
       .then((products) => {
-        const transformedProducts = convertDBFormatToReactFormat(products);
-        dispatch(fetchProductsSuccess(transformedProducts));
+        const transformedProducts = convertDBFormatToReactFormat(products.data);
+        // dispatch(fetchProductsSuccess(transformedProducts));
       })
       .catch((err) => dispatch(fetchProductsFailure(err.message)));
   };
