@@ -45,6 +45,7 @@ class ShopPage extends React.Component {
     isLoading: true,
   };
 
+  /** After mounting, do async fetch to retrieve products data */
   componentDidMount() {
     const { fetchingProducts } = this.props;
     fetchingProducts();
@@ -73,8 +74,8 @@ class ShopPage extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  // fetchingProducts: () => dispatch(fetchProductsStartAsync()),
-  fetchingProducts: () => dispatch(fetchProductsInMongoDB()),
+  fetchingProducts: () => dispatch(fetchProductsStartAsync()),
+  // fetchingProducts: () => dispatch(fetchProductsInMongoDB()),
 });
 
 const mapStateToProps = createStructuredSelector({

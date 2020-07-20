@@ -2,22 +2,28 @@ import { ShopActionType } from "./shopActionType";
 
 import { firestore, convertProductsToMap } from "../../firebase/firebase";
 
+import { convertDBFormatToReactFormat } from "./shopUtil";
+
 import axios from "axios";
 
+/** Indicating the starting process of fetching products from DB */
 export const fetchProductsStart = (products) => ({
   type: ShopActionType.FETCH_COLLECTION_START,
 });
 
+/** Fetching product success handler */
 export const fetchProductsSuccess = (products) => ({
   type: ShopActionType.FETCH_COLLECTION_SUCCESS,
   payload: products,
 });
 
+/** Fetching product failure handler */
 export const fetchProductsFailure = (errMesg) => ({
   type: ShopActionType.FETCH_COLLECTION_FAILURE,
   payload: errMesg,
 });
 
+/** Fetching products dispatch action with redux thunk */
 export const fetchProductsStartAsync = () => {
   return (dispatch) => {
     const collectionRef = firestore.collection("products");
@@ -38,9 +44,10 @@ export const fetchProductsInMongoDB = () => {
     dispatch(fetchProductsStart());
     axios
       .get("/products")
-      .then((res) => {
-        console.log(res.data);
+      .then((products) => {
+        const transformedProducts = convertDBFormatToReactFormat(products);
+        dispatch(fetchProductsSuccess(transformedProducts));
       })
-      .catch((err) => console.log(err));
+      .catch((err) => dispatch(fetchProductsFailure(err.message)));
   };
 };
