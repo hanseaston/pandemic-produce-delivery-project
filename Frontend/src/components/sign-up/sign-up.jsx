@@ -31,6 +31,9 @@ class SignUp extends React.Component {
     };
   }
 
+  /**
+   * Creating user with given email and password
+   */
   handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -57,17 +60,20 @@ class SignUp extends React.Component {
         password: "",
         confirmPassword: "",
       });
-    } catch (errr) {
+    } catch (err) {
       //TODO: similar here, might want to show another more helpful error message
       switch (err.code) {
-        case "auth/weak-passwod":
+        case "auth/weak-password":
           alert("password too weak, try again!");
+          break;
         case "auth/invalid-email":
           alert("the email you typed in is invalid, try again!");
+          break;
         case "auth/email-already-in-use":
           alert(
             "the email you typed in has already been registered, try another one"
           );
+          break;
         default:
           alert("an error occurred");
       }

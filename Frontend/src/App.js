@@ -5,11 +5,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { createStructuredSelector } from "reselect";
-import {
-  auth,
-  createUserProfileDocument,
-  addCollectionAndDocuments,
-} from "./firebase/firebase";
+import { auth, createUserProfileDocument } from "./firebase/firebase";
 
 /**
  * @Selector
@@ -51,9 +47,10 @@ class App extends React.Component {
     // Once the user's authentification status is changed
     auth.onAuthStateChanged(async (user) => {
       if (user !== null) {
-        const userRef = await createUserProfileDocument(user);
+        const userRef = await createUserProfileDocument(user, false);
 
         userRef.onSnapshot((snapShot) => {
+          console.log("snapshot is ", snapShot.id);
           setCurrentUser({
             id: snapShot.id,
             ...snapShot.data(),

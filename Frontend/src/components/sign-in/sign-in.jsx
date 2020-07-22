@@ -1,8 +1,22 @@
-import React from "react";
+/**
+ * @class Signin class handling all of the signin logic
+ */
 
+/**
+ * @libaries
+ */
+import React from "react";
+import { signInWithGoogle, auth } from "../../firebase/firebase";
+
+/**
+ * @components
+ */
 import FormInput from "../form-input/form-input";
 import CustomButton from "../custom-button/custom-button";
-import { signInWithGoogle, auth } from "../../firebase/firebase";
+
+/**
+ * @styles
+ */
 import "./sign-in.scss";
 
 class SignIn extends React.Component {

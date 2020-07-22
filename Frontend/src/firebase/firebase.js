@@ -21,6 +21,8 @@ export const createUserProfileDocument = async (user, additionalData) => {
   // If user is null
   if (user === null) return;
 
+  console.log("additional data is ", additionalData);
+
   // TODO: might want to add the Google account's profile pic!
   // const profilePic = user.photoURL;
 
@@ -40,7 +42,7 @@ export const createUserProfileDocument = async (user, additionalData) => {
         displayName,
         email,
         createdAt,
-        ...additionalData,
+        privelege: additionalData,
       });
     } catch (error) {
       //TODO: want to show a pop-window rather than simply doing alert
