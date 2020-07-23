@@ -1,47 +1,35 @@
 import React from "react";
 import "./card-item.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
+const envelope = <FontAwesomeIcon icon={faEnvelope} size='2x' color='white' />;
 
 const CardItem = () => {
   return (
     <div className='card-overall'>
       <div className='container'>
         <div className='wrapper'>
-          <a href='#'>
-            <img src='profile.jpeg' alt='' />
-          </a>
-          <div className='title'>Hans</div>
-          <div className='place'>Seattle, USA</div>
+          <img src='profile.jpeg' alt='' />
+          <div className='title'>Username</div>
+          <div className='place'>Date of Order</div>
         </div>
         <div className='content'>
-          <p>
-            User Interface Designer and <br />
-            front-end developer
-          </p>
+          <p>Address</p>
+          <p>Items ordered</p>
           <div className='buttons'>
             <div className='btn'>
-              <button>Message</button>
+              <button>Edit</button>
             </div>
             <div className='btn'>
-              <button>Following</button>
+              <button>Done</button>
             </div>
           </div>
         </div>
         <div className='icons'>
-          <li>
-            <a href='#'>
-              <span className='fab fa-facebook-f'></span>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <span className='fab fa-twitter'></span>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <span className='fab fa-instagram'></span>
-            </a>
-          </li>
+          <a href='#'>
+            <li>{envelope}</li>
+          </a>
         </div>
       </div>
     </div>
