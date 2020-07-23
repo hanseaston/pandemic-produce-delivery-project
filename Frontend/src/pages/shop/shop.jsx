@@ -15,7 +15,7 @@ import { createStructuredSelector } from "reselect";
  * @action
  */
 import {
-  fetchProductsStartAsync,
+  // fetchProductsStartAsync,
   fetchProductsInMongoDB,
 } from "../../redux/shop/shopAction";
 

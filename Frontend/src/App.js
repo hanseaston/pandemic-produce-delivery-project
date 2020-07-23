@@ -47,10 +47,8 @@ class App extends React.Component {
     // Once the user's authentification status is changed
     auth.onAuthStateChanged(async (user) => {
       if (user !== null) {
-        const userRef = await createUserProfileDocument(user, false);
-
+        const userRef = await createUserProfileDocument(user, [false]);
         userRef.onSnapshot((snapShot) => {
-          console.log("snapshot is ", snapShot.id);
           setCurrentUser({
             id: snapShot.id,
             ...snapShot.data(),
@@ -83,7 +81,13 @@ class App extends React.Component {
           <Route
             exact
             path='/admin/add'
-            component={AdminAddProductPage}
+            render={() =>
+              !user || !user.privelege ? (
+                <Redirect to='/' />
+              ) : (
+                <AdminAddProductPage />
+              )
+            }
           ></Route>
         </Switch>
       </div>
