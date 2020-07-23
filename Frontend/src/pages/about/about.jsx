@@ -3,7 +3,7 @@ import "./about.scss";
 
 const About = () => {
   const paragraphOne =
-    "Glad you are here. We are the Seattle Produce Delivery, a small delivery service" +
+    "Glad you are here! We are the Seattle Produce Delivery, a small delivery service" +
     " in Seattle neighborhood. " +
     " The pandemic has been challenging for everyone, and we want to try our best to help." +
     " Our goal is to help those who have difficulty going out to shop " +
@@ -19,7 +19,16 @@ const About = () => {
     <div className='about-content'>
       <p> {paragraphOne} </p>
       <br />
-      <p> {paragraphTwo} </p>
+      <p> {paragraphTwo} &#128522;</p>
+      <p>
+        <a
+          href='mailto:hanszhang2000@gmail.com?subject=Inquiry About Seattle Shop Delivery'
+          style={{ color: "red" }}
+        >
+          Email us
+        </a>{" "}
+        for inquiries or simply getting connected!
+      </p>
     </div>
   );
 };
