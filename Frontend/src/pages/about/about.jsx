@@ -2,25 +2,26 @@ import React from "react";
 import "./about.scss";
 
 const About = () => {
-    const paragraphOne = "Glad you are here. We are the Seattle Produce Delivery, a small delivery service"
-    + " prodviding produce delivery services around the Seattle neighborhood. "
-    + " The pandemic has been challengine for everyone, and some faced greater challenges "
-    + " in life than others. Our goal is to help those who have difficulty going out to shop "
-    + " themselves."
+  const paragraphOne =
+    "Glad you are here. We are the Seattle Produce Delivery, a small delivery service" +
+    " in Seattle neighborhood. " +
+    " The pandemic has been challenging for everyone, and we want to try our best to help." +
+    " Our goal is to help those who have difficulty going out to shop " +
+    " themselves.";
 
-    const paragraphTwo = "We are here to offer you help. We buy goods from wholesalers in Seattle area,
-    + " and we deliver them directly to your doorsteps."
+  const paragraphTwo =
+    "We are here to offer you help. We buy goods from wholesalers in Seattle area," +
+    " and we deliver them directly to your doorsteps. Right now, the service is limited " +
+    " to people we know personally due to limited staff. However, we are planning to expand" +
+    " in the future so that everyone is able to enjoy the service. Stay tuned!";
 
-    return (
-        <div>
-        <p> {paragraphOne} </p>
-        <br />
-        <p> {paragraphTwo} </p>
-        </div>
-    )
+  return (
+    <div className='about-content'>
+      <p> {paragraphOne} </p>
+      <br />
+      <p> {paragraphTwo} </p>
+    </div>
+  );
+};
 
-
-
-
-
-}
+export default About;

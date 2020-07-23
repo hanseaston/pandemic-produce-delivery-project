@@ -17,6 +17,9 @@ const Header = ({ currentUser, hidden }) => (
       <PotatoLogo className='logo' />
     </Link>
     <div className='options'>
+      <NavLink activeStyle={{ opacity: 0.6 }} className='option' to='/about'>
+        ABOUT
+      </NavLink>
       <NavLink activeStyle={{ opacity: 0.6 }} className='option' to='/shop'>
         SHOP
       </NavLink>
