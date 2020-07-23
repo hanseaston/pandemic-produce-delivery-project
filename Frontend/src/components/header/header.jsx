@@ -32,6 +32,15 @@ const Header = ({ currentUser, hidden }) => (
           ADMIN
         </NavLink>
       ) : null}
+      {currentUser && currentUser.privelege ? (
+        <NavLink
+          activeStyle={{ opacity: 0.6 }}
+          className='option'
+          to='/admin/checkout'
+        >
+          CHECKOUT
+        </NavLink>
+      ) : null}
       {currentUser ? (
         <div className='option' onClick={() => auth.signOut()}>
           SIGN OUT

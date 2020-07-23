@@ -27,6 +27,7 @@ import AboutPage from "./pages/about/about";
 import CartCheckoutPage from "./pages/cart-checkout/cart-checkout";
 import AdminAddProductPage from "./pages/admin-add-products/admin-add-products";
 import SignInAndSignUp from "./pages/signin-signup/signin-signup";
+import CardItem from "./components/card-item/card-item";
 
 /**
  * @Style
@@ -89,6 +90,13 @@ class App extends React.Component {
               ) : (
                 <AdminAddProductPage />
               )
+            }
+          ></Route>
+          <Route
+            exact
+            path='/admin/checkout'
+            render={() =>
+              !user || !user.privelege ? <Redirect to='/' /> : <CardItem />
             }
           ></Route>
         </Switch>
