@@ -3,7 +3,7 @@ import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 import STRIPE_PUBLIC_KEY from "./stripe-public-key";
 
-const StripeCheckoutButton = ({ price }) => {
+const StripeCheckoutButton = ({ price, paymentSuccessCallback }) => {
   const priceForStripe = price * 100;
 
   const onToken = (token) => {
@@ -16,9 +16,11 @@ const StripeCheckoutButton = ({ price }) => {
       },
     })
       .then((response) => {
-        console.log(response);
         //TODO: might want to show a more helpful success message
-        alert("succesful payment");
+        paymentSuccessCallback();
+        alert(
+          "Your payment is successful. We will be in touch through email soon"
+        );
       })
       .catch((error) => {
         console.log("Payment Error: ", error);
