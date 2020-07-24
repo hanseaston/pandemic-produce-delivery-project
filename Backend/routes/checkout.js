@@ -1,26 +1,21 @@
 const express = require("express");
 const router = express.Router();
 
-const Product = require("../model/productModel");
+const Checkout = require("../model/checkoutModel");
 
 router.post("/", function (req, res) {
-  const {
-    produceName,
-    produceType,
-    producePrice,
-    produceImage,
-    produceDesp,
-  } = req.body;
+  console.log("request sent");
+  const { transformedCartItems, displayName, email, _id } = req.body;
 
-  const newProduct = new Product({
-    name: produceName,
-    type: produceType,
-    price: producePrice,
-    imageUrl: produceImage,
-    description: produceDesp,
+  const newCheckout = new Checkout({
+    userName: displayName,
+    userEmail: email,
+    purchasedProduct: transformedCartItems,
+    // In ideal case, we want to pass in the user id as the id of this product
+    // but for now, we let mongoose do it for us.
   });
 
-  newProduct
+  newCheckout
     .save()
     .then(() => {
       res.status(201).send();

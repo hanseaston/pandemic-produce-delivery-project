@@ -34,6 +34,7 @@ db.once("open", function () {
  */
 const productRouter = require("./routes/products");
 const paymentRouter = require("./routes/payment");
+const checkoutRouter = require("./routes/checkout");
 
 // Initialize the app
 const app = express();
@@ -62,6 +63,7 @@ if (process.env.NODE_ENV === "production") {
  */
 app.use("/products", productRouter);
 app.use("/payment", paymentRouter);
+app.use("/checkout", checkoutRouter);
 
 /**
  * Export modules to be used in the bin file

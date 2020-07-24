@@ -1,6 +1,7 @@
 import React from "react";
 import StripeCheckout from "../../components/stripe-button/stripe-button";
 import CheckoutItem from "../../components/checkout-item/checkout-item";
+import CustomButton from "../../components/custom-button/custom-button";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import {
@@ -12,21 +13,20 @@ import "./cart-checkout.scss";
 import axios from "axios";
 
 class CheckoutPage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   paymentSucceeded = () => {
     const { cartItems, user } = this.props;
-    console.log("paymentSucceeded called");
-    console.log(cartItems);
-    const { displayName, email, id } = user;
+    const { displayName, email } = user;
+    // Want to transform the cartItems into an array of object
+    // Where each object contains the product name and the product quantity bought
+    const transformedCartItems = cartItems.map((cartItem) => {
+      const { name, quantity, id } = cartItem;
+      return { name, quantity, _id: id };
+    });
     axios
       .post("/checkout", {
-        cartItems,
+        transformedCartItems,
         displayName,
         email,
-        id,
       })
       .catch((err) => {
         console.log(err);
@@ -59,6 +59,9 @@ class CheckoutPage extends React.Component {
           <CheckoutItem key={cartItem.id} cartItem={cartItem} />
         ))}
         <div className='total'>TOTAL: ${total.toFixed(2)}</div>
+        <CustomButton onClick={this.paymentSucceeded} inverted>
+          Testing
+        </CustomButton>
         {user ? (
           <div>
             <StripeCheckout
