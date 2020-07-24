@@ -1,11 +1,10 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
+import STRIPE_PUBLIC_KEY from "./stripe-public-key";
 
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
-  const publishableKey =
-    "pk_test_51H4B83HbjepOj68glYv8EjGSuqAhIEsb7R69JaNDNSPF0L81DQupI60zljBNK5MPomdu40dDeAeJtMCUuwNFYY8e00nvkvY6z3";
 
   const onToken = (token) => {
     axios({
@@ -40,7 +39,7 @@ const StripeCheckoutButton = ({ price }) => {
       amount={priceForStripe}
       panelLabel='Pay'
       token={onToken}
-      stripeKey={publishableKey}
+      stripeKey={STRIPE_PUBLIC_KEY}
     />
   );
 };

@@ -12,7 +12,7 @@ const mongoose = require("mongoose");
  * Configs files for private information
  */
 const config = require("dotenv").config();
-if (config.error) throw error;
+if (config.error) throw config.error;
 
 /**
  * Connecting to Moogse database
@@ -33,6 +33,7 @@ db.once("open", function () {
  * Router imports
  */
 const productRouter = require("./routes/products");
+const paymentRouter = require("./routes/payment");
 
 // Initialize the app
 const app = express();
@@ -60,6 +61,7 @@ if (process.env.NODE_ENV === "production") {
  * Rourter for handling backend endpoint requests
  */
 app.use("/products", productRouter);
+app.use("/payment", paymentRouter);
 
 /**
  * Export modules to be used in the bin file
