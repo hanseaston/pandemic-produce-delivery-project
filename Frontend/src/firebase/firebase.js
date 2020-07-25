@@ -15,11 +15,12 @@ firebase.initializeApp(config);
  *
  * @param user the User object from firebase
  * @param additionalData any additionalData passed in
+ * @param additionalData[0] boolean value of whether the user is previleged or not
  * @returns firebase document reference to the user document
  */
 export const createUserProfileDocument = async (user, additionalData) => {
   // If user is null
-  if (user === null) return;
+  if (user === null) throw new Error("user passed in shouldn't be null");
 
   // TODO: might want to add the Google account's profile pic!
   // const profilePic = user.photoURL;
@@ -40,15 +41,33 @@ export const createUserProfileDocument = async (user, additionalData) => {
         displayName,
         email,
         createdAt,
-        ...additionalData,
+        privelege: additionalData[0],
       });
     } catch (error) {
-      console.log("error creating user", error.message);
+      //TODO: want to show a pop-window rather than simply doing alert
+      alert("error creating user", error.message);
       throw error;
     }
   }
   // Return doucment reference
   return userRef;
+};
+
+export const checkUserIsAuthenticated = async (user) => {
+  // If user is null
+  if (user === null) throw new Error("user passed in shouldn't be null");
+
+  // Reference to the document
+  const userRef = firestore.doc(`users/${user.uid}`);
+
+  // Check whether user document exists
+  const snapShot = await userRef.get();
+
+  if (!snapShot.exists) {
+    throw new Error("user should already be created and stored in the store");
+  } else {
+    return snapShot.get("privelege");
+  }
 };
 
 export const addCollectionAndDocuments = async (

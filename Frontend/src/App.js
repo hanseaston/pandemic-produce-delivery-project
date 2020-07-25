@@ -5,11 +5,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { createStructuredSelector } from "reselect";
-import {
-  auth,
-  createUserProfileDocument,
-  addCollectionAndDocuments,
-} from "./firebase/firebase";
+import { auth, createUserProfileDocument } from "./firebase/firebase";
 
 /**
  * @Selector
@@ -27,7 +23,8 @@ import { setCurrentUser } from "./redux/users/userAction";
 import Header from "./components/header/header";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shop";
-import CartCheckoutPage from "./pages/cart-checkout/cart-checkout";
+import AboutPage from "./pages/about/about";
+import UserOrdersPage from "./pages/admin-user-checkouts/admin-user-checkouts";
 import AdminAddProductPage from "./pages/admin-add-products/admin-add-products";
 import SignInAndSignUp from "./pages/signin-signup/signin-signup";
 
@@ -51,25 +48,12 @@ class App extends React.Component {
     // Once the user's authentification status is changed
     auth.onAuthStateChanged(async (user) => {
       if (user !== null) {
-        const userRef = await createUserProfileDocument(user);
-
+        const userRef = await createUserProfileDocument(user, [false]);
         userRef.onSnapshot((snapShot) => {
           setCurrentUser({
             id: snapShot.id,
             ...snapShot.data(),
           });
-
-          /** Programatically populating collection data into firebase,
-           *  Only need to do once, so commented it out
-           * TODO: rather than adding produce items there, we want to add it to database via a form
-           */
-          if (false) {
-            const collectionItems = [];
-            addCollectionAndDocuments(
-              "products",
-              collectionItems.map(({ title, items }) => ({ title, items }))
-            ).catch((err) => console.log(err));
-          }
         });
       } else {
         // No user is set, set current user to null
@@ -89,7 +73,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
-          <Route exact path='/checkout' component={CartCheckoutPage} />
+          <Route path='/about' component={AboutPage} />
           <Route
             exact
             path='/signin'
@@ -98,7 +82,24 @@ class App extends React.Component {
           <Route
             exact
             path='/admin/add'
-            component={AdminAddProductPage}
+            render={() =>
+              !user || !user.privelege ? (
+                <Redirect to='/' />
+              ) : (
+                <AdminAddProductPage />
+              )
+            }
+          ></Route>
+          <Route
+            exact
+            path='/admin/checkout'
+            render={() =>
+              !user || !user.privelege ? (
+                <Redirect to='/' />
+              ) : (
+                <UserOrdersPage />
+              )
+            }
           ></Route>
         </Switch>
       </div>

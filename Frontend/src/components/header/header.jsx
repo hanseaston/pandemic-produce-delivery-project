@@ -17,16 +17,30 @@ const Header = ({ currentUser, hidden }) => (
       <PotatoLogo className='logo' />
     </Link>
     <div className='options'>
+      <NavLink activeStyle={{ opacity: 0.6 }} className='option' to='/about'>
+        ABOUT
+      </NavLink>
       <NavLink activeStyle={{ opacity: 0.6 }} className='option' to='/shop'>
         SHOP
       </NavLink>
-      <NavLink
-        activeStyle={{ opacity: 0.6 }}
-        className='option'
-        to='/admin/add'
-      >
-        ADMIN
-      </NavLink>
+      {currentUser && currentUser.privelege ? (
+        <NavLink
+          activeStyle={{ opacity: 0.6 }}
+          className='option'
+          to='/admin/add'
+        >
+          ADMIN
+        </NavLink>
+      ) : null}
+      {currentUser && currentUser.privelege ? (
+        <NavLink
+          activeStyle={{ opacity: 0.6 }}
+          className='option'
+          to='/admin/checkout'
+        >
+          ORDERS
+        </NavLink>
+      ) : null}
       {currentUser ? (
         <div className='option' onClick={() => auth.signOut()}>
           SIGN OUT
