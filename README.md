@@ -19,8 +19,8 @@ Our shop platform is an open-source project, and we are always looking for more 
 #### [Hans Zhang](https://github.com/hanszhang00) - Lead
 
 <img align="left" width="120" height="120" style="border-radius:50%" src="./Frontend/src/assets/readmeRes/me-min.JPG">
-  <p>My name is Hans. I am currently a comptuer science major in Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful in the real world.</p>
-<br />
+  <br /><p>My name is Hans. I am currently a comptuer science major in Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful in the real world.</p>
+<br /><br />
 
 
 # First Contributions
