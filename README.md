@@ -1,8 +1,8 @@
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-
 <p align="center">
   <img src="./Frontend/src/assets/readmeRes/shop.jpg">
 </p>
+
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 
 
@@ -21,8 +21,10 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 #### [Hans Zhang](https://github.com/hanszhang00) - Lead
 
-<img align="left" width="80" height="80" src="https://www.gravatar.com/avatar/96270e4c3e5e9806cf7245475c00b275.png?s=40">
+<img align="left" width="120" height="120" src="">
   I am Hans!
+
+
 
 
 
