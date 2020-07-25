@@ -26,6 +26,8 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 # Join our open-source Project!
 
+## Motivation for open-source
+
 This is a **beginner-friendly** open-source project aimed for **social good**. We are always looking for more passionate programmers, like you, to contribute!
 
 Open-source project is powerful because it lowers the barriers to adoption and collaboration, allowing people to spread and improve projects quickly. It also is a perfect place for anyne to hone their programming skills and share their visions and ideas with like-minded others. Here are three major reasons as to why you should contribute to our open-source project!
@@ -34,6 +36,15 @@ Open-source project is powerful because it lowers the barriers to adoption and c
  - **Transparency**: Anyone can inspect an open source project for errors and making small and big improvements.
  
  If you are still confused about the concept of open source and would like to learn more, check out the [Github's official guide!](https://github.com/open-source)
+ 
+ ## Coding for social good
+ 
+ I am a firm believer that a personal project is **so much more meaningful** if it is able to bring positive impact to the soceity. 
+ 
+ I have always been in awe of people who strive to make a change in the world.  The philanthropists and activists on the television, in interviews, and in books inspire me with their radiating passion for what they stand for, and I used to hope that one day I could be passionate enough about something to also create change in the world. 
+ 
+ And now, here I am, launching the first open-source project here on Github. This is an opportunity for people to connect with others who share the same drive for creating positive changes around us.
+
 
 <p> My personal belief on open-source </p>
 <p> Contributing first time can be hard. Why? Personal experince </p>
