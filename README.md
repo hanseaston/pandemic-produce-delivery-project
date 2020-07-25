@@ -49,28 +49,12 @@ Open-source project is powerful because it lowers the barriers to adoption and c
  
  I remember the first time I tried to make contribution to an open-source project. The experience was quite overwhelming. There were so many things I did not understand about the project, and I couldn't even understand many of the command lines that were merely used for setting up the project.
  
- **I understand that feeling**, especially for programmers who just started out. I was in that same boat, and in some sense, I still am. I am always learning. 
+ **I understand that feeling**, especially for programmers who just started. I was in that same boat, and in some sense, I still am. I am always learning. 
  
- But because I know that feeling, I want to make sure your experience here is a positive, friendly, and exciting one. Together, we will build up our website with well-documented code as well as step-by-step guide on how to get started.
+I want to make sure your experience here is a ***positive, friendly, and exciting one***. Together, we will build up our website with well-documented code as well as a step-by-step guide on how to get started.
+
+ ## Join us!
  
-**The important lesson is: keep trying, don't give up!**
- 
- 
+**Please join us if you can!**
 
-
-<p> My personal belief on open-source </p>
-<p> Contributing first time can be hard. Why? Personal experince </p>
-<p> More encourgement on joining, while listing out certain essential requirements"
-
-
-
-
-
-
-
-# First Contributions
-
-It's hard. It's always hard the first time you do something. Especially when you are collaborating, making mistakes isn't a comfortable thing. We wanted to simplify the way new open-source contributors learn & contribute for the first time.
-
-Reading articles & watching tutorials can help, but what's better than actually doing the stuff in a practice environment? This project aims at providing guidance & simplifying the way beginners make their first contribution. If you are looking to make your first contribution, follow the steps below.
 
