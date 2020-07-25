@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="./Frontend/src/assets/readmeRes/shop.jpg">
-</p>
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
@@ -21,10 +18,8 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 #### [Hans Zhang](https://github.com/hanszhang00) - Lead
 
-<img align="left" width="120" height="120" src="">
+<img align="left" width="120" height="120" style="border-radius:50%" src="./Frontend/src/assets/readmeRes/me-min.JPG">
   I am Hans!
-
-
 
 
 
