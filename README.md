@@ -47,18 +47,18 @@ Open-source project is powerful because it lowers the barriers to adoption and c
  
  ## It can be overwhelming
  
- I remember the first time I tried to make contribution to an open-source project. The experience was quite overwhelming. There were so many things I did not understand about the project, and I couldn't even understand many of the command lines that were merely used for setting up the project.
+ I remember the first time  when I tried to make contribution to an open-source. The experience was quite overwhelming. There were so many things I did not understand about the project, and I couldn't even understand the command lines that were used for setting up the project.
  
  **I understand that feeling**, especially for programmers who just started. I was in that same boat, and in some sense, I still am. I am always learning. 
  
-I want to make sure your experience here is a ***positive, friendly, and exciting one***. Together, we will build up our website with well-documented code as well as a step-by-step guide on how to get started.
+I want to make sure your experience here is a ***positive, friendly, and exciting one***. Together, we will foster a loving community for developers.
 
  ## Join us!
  
 Whether it is because of your **passion for social good**, or your desire to **hone your web programming skills**, or simply to find an opportunity to **gain some experiences programming with others**, we would love to have you.
 
-    - Our slack server is coming up soon! <br />
-    - If you have any hesitations, questions, or concerns. Feel free to [shoot me an email](hanszhang2000@gmail.com). Happy to connect!
+- Our slack server is coming up soon! <br />
+- If you have any hesitations, questions, or concerns. Feel free to [shoot me an email](hanszhang2000@gmail.com). Happy to connect!
 
 
 
