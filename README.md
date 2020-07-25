@@ -11,6 +11,8 @@ It all started out a few weeks ago, when several people in our Bellevue neighbor
 
 The website is our next phase of expansion. We are planning to contact wholesalers in the greater Seattle aread and directly order products from them. This would save us more time to order and fetch the products. It will also open up a broader variety of quality produces for the customers. We are planning on using this website as a platform for customers to order goods directly. 
 
+<br />
+
 
 # Open-source Team
 
@@ -24,8 +26,12 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 # Join our open-source Project!
 
-<p> This is a beginner-friendly open-source project aimed for social good. We are always looking for more people, like you, to contribute!</p>
-<p> Inserting a paragpgrah on why open source is good </p>
+This is a **beginner-friendly** open-source project aimed for **social good**. We are always looking for more people, like you, to contribute!
+Open-source project is powerful because it lowers the barriers to adoption and collaboration, allowing people to spread and improve projects quickly. It also is a perfect place for anyne to hone their programmign skills and share their visions and ideas with like-minded others. Here are three major reasons as to why you should contribute to our open-source project!
+ - Collaboration: Open source projects can accept changes from anybody in the world. It is truly a diverse workspace.
+ - Adoption and remixing: Open source projects can be used by anyone for nearly any purpose. People can even use it to build other things. 
+ - Transparency: Anyone can inspect an open source project for errors or inconsistencies and making small and big improvements everyday!
+
 <p> My personal belief on open-source </p>
 <p> Contributing first time can be hard. Why? Personal experince </p>
 <p> More encourgement on joining, while listing out certain essential requirements"
