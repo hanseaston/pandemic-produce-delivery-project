@@ -31,8 +31,8 @@ Our shop platform is an open-source project, and we are always looking for more 
 This is a **beginner-friendly** open-source project aimed for **social good**. We are always looking for more passionate programmers, like you, to contribute!
 
 Open-source project is powerful because it lowers the barriers to adoption and collaboration, allowing people to spread and improve projects quickly. It also is a perfect place for anyne to hone their programming skills and share their visions and ideas with like-minded others. Here are three major reasons as to why you should contribute to our open-source project!
- - **Collaboration**: Open source projects can accept changes from anybody in the world. It is truly a diverse workspace.
- - **Adoption**: Open source projects can be used by anyone for nearly any purpose. People can use it to build other things. 
+ - **Collaboration**: Open-source project can accept changes from anyone in the world. 
+ - **Adoption**: Open source project can be used by anyone for nearly any purpose. 
  - **Transparency**: Anyone can inspect an open source project for errors and making small and big improvements.
  
  If you are still confused about the concept of open source and would like to learn more, check out the [Github's official guide!](https://github.com/open-source)
