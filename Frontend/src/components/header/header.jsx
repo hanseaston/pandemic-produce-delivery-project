@@ -38,7 +38,7 @@ const Header = ({ currentUser, hidden }) => (
           className='option'
           to='/admin/checkout'
         >
-          CHECKOUT
+          ORDERS
         </NavLink>
       ) : null}
       {currentUser ? (

@@ -24,10 +24,9 @@ import Header from "./components/header/header";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shop";
 import AboutPage from "./pages/about/about";
-import CartCheckoutPage from "./pages/cart-checkout/cart-checkout";
+import UserOrdersPage from "./pages/admin-user-checkouts/admin-user-checkouts";
 import AdminAddProductPage from "./pages/admin-add-products/admin-add-products";
 import SignInAndSignUp from "./pages/signin-signup/signin-signup";
-import CardItem from "./components/card-item/card-item";
 
 /**
  * @Style
@@ -75,7 +74,6 @@ class App extends React.Component {
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
           <Route path='/about' component={AboutPage} />
-          <Route exact path='/checkout' component={CartCheckoutPage} />
           <Route
             exact
             path='/signin'
@@ -96,7 +94,11 @@ class App extends React.Component {
             exact
             path='/admin/checkout'
             render={() =>
-              !user || !user.privelege ? <Redirect to='/' /> : <CardItem />
+              !user || !user.privelege ? (
+                <Redirect to='/' />
+              ) : (
+                <UserOrdersPage />
+              )
             }
           ></Route>
         </Switch>
