@@ -55,10 +55,10 @@ I want to make sure your experience here is a ***positive, friendly, and excitin
 
  ## Join us!
  
-**Please join us if you can!** Whether it is because of your **passion for social good**, or your desire to **hone your web programming skills**, or simply to find an opportunity to **gain some experiences programming with others**, we would love to have you.
-<br />
+Whether it is because of your **passion for social good**, or your desire to **hone your web programming skills**, or simply to find an opportunity to **gain some experiences programming with others**, we would love to have you.
+
     - Our slack server is coming up soon! <br />
     - If you have any hesitations, questions, or concerns. Feel free to [shoot me an email](hanszhang2000@gmail.com). Happy to connect!
-**
+
 
 
