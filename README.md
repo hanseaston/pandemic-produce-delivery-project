@@ -9,7 +9,7 @@ During the ongoing pandemic, getting groceries can be a **real challenge**. The 
 
 It all started out a few weeks ago, when several people in our Bellevue neighborhood decided to organize a no-contact delivery service to help people in need. We noticed that some of our friends or families find it challenging to shop outside, either due to shortage of mask supplies or health reasons. Most of them were worried about their safety, and whether they were able to always get the goods that they wanted if they went out to shop. Understanding their concerns, we decided to start this non-profit community service and deliver the produce to people's doors without any charge. We currently have around 5 people in our neighborhood as our regular customers. 
 
-The website is our next phase of expansion. We are planning to contact wholesalers in the greater Seattle aread and directly order products from them. This would save us more time to order and fetch the products. It will also open up a broader variety of quality produces for the customers. We are planning on using this website as a platform for customers to order goods directly. 
+The website is our next phase of expansion. We are planning to contact wholesalers in the greater Seattle area and directly order products from them. This would save us more time to order and fetch the products. It will also open up a broader variety of quality produces for the customers. We are planning on using this website as a platform for customers to order goods directly. 
 
 <br />
 
@@ -39,11 +39,23 @@ Open-source project is powerful because it lowers the barriers to adoption and c
  
  ## Coding for social good
  
- I am a firm believer that a personal project is **so much more meaningful** if it is able to bring positive impact to the soceity. 
+ I am a firm believer that a personal project is **so much more meaningful** if it brings positive impact to the soceity. 
  
  I have always been in awe of people who strive to make a change in the world.  The philanthropists and activists on the television, in interviews, and in books inspire me with their radiating passion for what they stand for, and I used to hope that one day I could be passionate enough about something to also create change in the world. 
  
- And now, here I am, launching the first open-source project here on Github. This is an opportunity for people to connect with others who share the same drive for creating positive changes around us.
+ And now, here I am, launching **the first open-source project here on Github**. This is an opportunity for people to connect with others who share the same drive for creating positive changes around us.
+ 
+ ## It can be overwhelming
+ 
+ I remember the first time I tried to make contribution to an open-source project. The experience was quite overwhelming. There were so many things I did not understand about the project, and I couldn't even understand many of the command lines that were merely used for setting up the project.
+ 
+ **I understand that feeling**, especially for programmers who just started out. I was in that same boat, and in some sense, I still am. I am always learning. 
+ 
+ But because I know that feeling, I want to make sure your experience here is a positive, friendly, and exciting one. Together, we will build up our website with well-documented code as well as step-by-step guide on how to get started.
+ 
+**The important lesson is: keep trying, don't give up!**
+ 
+ 
 
 
 <p> My personal belief on open-source </p>
