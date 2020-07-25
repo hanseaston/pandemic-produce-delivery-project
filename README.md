@@ -21,7 +21,7 @@ Our shop platform is an open-source project, and we are always looking for more 
 #### [Hans Zhang](https://github.com/hanszhang00) - Organizer/Developer
 
 <img align="left" width="120" height="120" style="border-radius:50%" src="./Frontend/src/assets/readmeRes/me-min.JPG">
-  <br /><p>I am Hans. I am currently pusuring a computer science major at Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
+  <br /><p>I am Hans. I am currently pusuing a computer science major at Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
 <br /><br />
 
 # Join our open-source Project!
@@ -55,6 +55,9 @@ I want to make sure your experience here is a ***positive, friendly, and excitin
 
  ## Join us!
  
-**Please join us if you can!**
+**Please join us if you can! Whether it is because of your passion for social good, or your desire to hone your web programming skills, or simply to find an opportunity to gain some more experiences programming with others, we would love to have you.**
+    - Our slack server is coming up soon!
+    - If you have any hesitations, questions, or concerns. Feel free to [shoot me an email](hanszhang2000@gmail.com). Happy to connect!
+**
 
 
