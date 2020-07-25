@@ -22,6 +22,19 @@ Our shop platform is an open-source project, and we are always looking for more 
   <br /><p>I am Hans. I am currently pusuring a computer science major at Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
 <br /><br />
 
+# Join our open-source Project!
+
+<p> This is a beginner-friendly open-source project aimed for social good. We are always looking for more people, like you, to contribute!</p>
+<p> Inserting a paragpgrah on why open source is good </p>
+<p> My personal belief on open-source </p>
+<p> Contributing first time can be hard. Why? Personal experince </p>
+<p> More encourgement on joining, while listing out certain essential requirements"
+
+
+
+
+
+
 
 # First Contributions
 
