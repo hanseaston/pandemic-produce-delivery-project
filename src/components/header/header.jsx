@@ -36,6 +36,13 @@ const Header = ({ currentUser, hidden }) => (
           SIGN IN
         </NavLink>
       )}
+      <NavLink
+        activeStyle={{ opacity: 0.6 }}
+        className='option'
+        to='/covid-glimpse'
+      >
+        GLIMPSE
+      </NavLink>
       <CardIcon />
     </div>
     {hidden ? null : <CardDropDown />}

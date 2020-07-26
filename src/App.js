@@ -30,6 +30,7 @@ import ShopPage from "./pages/shop/shop";
 import CartCheckoutPage from "./pages/cart-checkout/cart-checkout";
 import AdminAddProductPage from "./pages/admin-add-products/admin-add-products";
 import SignInAndSignUp from "./pages/signin-signup/signin-signup";
+import CovidGlimpse from "./pages/covid-glimpse/covid-glimpse";
 
 /**
  * @Style
@@ -95,11 +96,8 @@ class App extends React.Component {
             path='/signin'
             render={() => (user ? <Redirect to='/' /> : <SignInAndSignUp />)}
           />
-          <Route
-            exact
-            path='/admin/add'
-            component={AdminAddProductPage}
-          ></Route>
+          <Route exact path='/admin/add' component={AdminAddProductPage} />
+          <Route exact path='/covid-glimpse' component={CovidGlimpse} />
         </Switch>
       </div>
     );
