@@ -27,6 +27,7 @@ import AboutPage from "./pages/about/about";
 import UserOrdersPage from "./pages/admin-user-checkouts/admin-user-checkouts";
 import AdminAddProductPage from "./pages/admin-add-products/admin-add-products";
 import SignInAndSignUp from "./pages/signin-signup/signin-signup";
+import CovidGlimpse from "./pages/covid-glimpse/covid-glimpse";
 
 /**
  * @Style
@@ -79,6 +80,10 @@ class App extends React.Component {
             path='/signin'
             render={() => (user ? <Redirect to='/' /> : <SignInAndSignUp />)}
           />
+<<<<<<< HEAD:src/App.js
+          <Route exact path='/admin/add' component={AdminAddProductPage} />
+          <Route exact path='/covid-glimpse' component={CovidGlimpse} />
+=======
           <Route
             exact
             path='/admin/add'
@@ -101,6 +106,7 @@ class App extends React.Component {
               )
             }
           ></Route>
+>>>>>>> 31b9fc1436281d76948f0ce4c65f6a83bcb4fd6f:Frontend/src/App.js
         </Switch>
       </div>
     );
