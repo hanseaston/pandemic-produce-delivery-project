@@ -81,12 +81,11 @@ Now that you've made your decision to make your first contribution. Here's how t
     - Personally I use VScode. You are welcome to use any of your preferences!
 
 3.  **From the root directory of the project, install dependencies with npm**
-4.  ```javascript
-    ```
-    npm install    /* install dependencies of frontend */
-    cd Backend
-    npm install
-    ```
+4. 
+    ```javascript
+    npm install    // install dependencies of frontend 
+    cd Backend     // nagivate to the backend directory
+    npm install    // install dependencies of backend
     ```
 
 
@@ -107,9 +106,9 @@ Now that you've made your decision to make your first contribution. Here's how t
       - This will give you access to the entirety of the application. Note that you need to set up the Google Firebase and prepopulate products using the Admin page in your application before being able to use the products in the shop page.
 
       From your root directory:
-      ```
+      ```javascript
         cd Backend
-        npm run build
+        npm run build   // you can change the command in package.json, but don't push it to Github
       ```
 
     This will spin up **both** your frontend React and backend Express server.
