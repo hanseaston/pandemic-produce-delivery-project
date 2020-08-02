@@ -74,7 +74,7 @@ Now that you've made your decision to make your first contribution. Here's how t
 
 ## General Setup
 
-1. **Fork the project**.
+1. **Fork and clone the project**.
     - If you are fairly new to Github or Git, please checkout the [official Github Guide!](https://guides.github.com/activities/forking/)
 
 2.  **Use your favorite text editor**
@@ -87,8 +87,6 @@ Now that you've made your decision to make your first contribution. Here's how t
     cd Backend     // nagivate to the backend directory
     npm install    // install dependencies of backend
     ```
-
-
 
 5.  **Configure the appropriate [environment variables](#configuring-environment-variables)**
 
@@ -114,6 +112,19 @@ Now that you've made your decision to make your first contribution. Here's how t
     This will spin up **both** your frontend React and backend Express server.
       - Visit the frontend application in your browser at http://localhost:3000
       - Your backend server is listening on port **5000**
+
+## Understanding User Authorization
+
+  In our current shop setup, users are able to log in and log out. Users are able to sign in with their Google account directly. Alternatively, they are also able to sign up using their personal email address and password.
+
+  We currently have two types of users: admin user and normal user.
+    - The normal user is able to access the general functionality of the shop, including adding items to cart and checking out.
+    - The admin user is able to access the *admin edit-product* and *admin checkout* page that are inaccessible to normal users. In particular,
+      - Admin edit-product page enables you to add new products (with relevant product information) to Mongo Database. Other users will be able to see the new product once they refresh the page.
+      - Admin checkout page keeps track all of the successful orders made by the all of the users. We use this page to know what products users have ordered in preperation for our delivery process.
+      - ***Note***: The admin pages are still in development process. Help us make them better!
+
+
 
 
 
