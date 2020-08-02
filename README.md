@@ -65,7 +65,6 @@ Whether it is because of your **passion for social good**, or your desire to **h
 - If you have any hesitations, questions, or concerns. Feel free to [send me at email](mailto:hanszhang2000@gmail.com). Happy to connect!
 
 <br />
-<br />
 
 # Project Setup
 
@@ -113,23 +112,58 @@ Now that you've made your decision to make your first contribution. Here's how t
       - Visit the frontend application in your browser at http://localhost:3000
       - Your backend server is listening on port **5000**
 
+## Configuring Project
+
+### .env file on the backend
+
+On our backend, our application uses **[MongoDB](https://www.mongodb.com/)** to store produce-related information and the **[Stripe API](https://stripe.com/)** to process user payments. Note that even though the user payment's logic is set up on the back-end, you **won't be able to process payment in the shop checkout page**, since the application has not reached the deployment process.
+
+
+Our application uses [environmental variables](https://en.wikipedia.org/wiki/Environment_variable) to manage configuration for both MongoDB and Stripe on the backend. These values are set in a `.env` file in the project root directory that **SHOULD NOT BE PUSHED TO GITHUB for safety reasons**. Each developer ***should set up their own account's connection string on their own local machine instead.**
+
+We have provivded you with an example of `.env` file in the root directory.
+
+To set up a `.env`, copy the `.env.example` file, which lists needed configuration values. For example, in the Mac OS terminal:
+```
+cp .env.example .env
+```
+
+A set variable in the `.env` file will look like this:
+```
+mongooseConnection='123456789'
+```
+
+Change the `'123456789` to **your own mongooseConnection string**. You will need to create a user account, set up a cluster, and find where connection String is; it should be easy though!
+
+Repeat the same process for the Stripe API. You should replace the placeholder with **your own Stripe API private key.**
+
+If you need to introduce a new environmental variable, please coordinate with the project lead. Make usre to add it to the `.env.example` file, and note it in your pull request.
+
+### configuring connection on frontend
+
+
+
+
+
+
 ## Understanding User Authorization
 
-  In our current shop setup, users are able to log in and log out. Users are able to sign in with their **Google account** directly. Alternatively, they are also able to **sign up** using their personal email address and password.
+In our current shop setup, users are able to log in and log out. Users are able to sign in with their **Google account** directly. Alternatively, they are also able to **sign up** using their personal email address and password.
 
-  We currently have two types of users: **admin user** and **normal user**.
+We currently have two types of users: **admin user** and **normal user**.
+
+- The normal user is able to access the general functionality of the shop, including adding items to cart and checking out.
+- The admin user is able to access the **admin edit-product** and **admin checkout** page that are inaccessible to normal users. In particular:
+
+
+  - **Admin edit-product page** enables you to add new products (with relevant product information) to Mongo Database. Other users will be able to see the new product once they refresh the page.
+
+
+  - **Admin checkout page** keeps track all of the successful orders made by the all of the users. We use this page to know what products users have ordered in preperation for our delivery process.
+
+
+  - ***Note***: The admin pages are still in development process (basic functionality already implemented). Help us make them better!
   
-  - The normal user is able to access the general functionality of the shop, including adding items to cart and checking out.
-  - The admin user is able to access the **admin edit-product** and **admin checkout** page that are inaccessible to normal users. In particular:
-  
-
-    - **Admin edit-product page** enables you to add new products (with relevant product information) to Mongo Database. Other users will be able to see the new product once they refresh the page.
-
-
-    - **Admin checkout page** keeps track all of the successful orders made by the all of the users. We use this page to know what products users have ordered in preperation for our delivery process.
-
-
-    - ***Note***: The admin pages are still in development process (basic functionality already implemented). Help us make them better!
 
 ## User Authorization in Code
 
@@ -142,29 +176,20 @@ auth.onAuthStateChanged(async (user) => {
     const userRef = await createUserProfileDocument(user, [false]);
 ```
 
-Note that in the function, we are calling a function called `reateUserProfileDocument`. This function captures the user's information and stores it back to our firebase database, so that next time a user signs in, we are able to verify their identity. 
+Note that in the function, we are calling a function called `createUserProfileDocument`. This function captures the user's information and stores it back to our firebase database, so that next time a user signs in, we are able to verify their identity. 
 
 In particular, notice that the second parameter of the function is an array containing a boolean value. The value ***determines whether the user passed in will have the admin privelege or not***.
 Normally, the default is false, since we don't want to grant a user the admin privelege.
 
-In the case when you want to grant a user privelege (e.x. for your personal account), follow the following steps
+In the case when you want to grant a user privelege (e.x. for your personal account), follow the following steps:
 
-- make sure you have set up the connection for firebase.
-- run the server using `npm run build`.
-- change the paramter `[false]` to  `[true]` in `createUserProfileDocument` indicate you want the admin privelege for any incoming account registration.
-- register a **new** email account (either through google signin or normal signup, but make sure the account doesn't store in the database) using the application.
-- go to your [firebase console](https://console.firebase.google.com/) and make sure your user entry in the firestore collection `users` has the privelege field set to `true`.
-- reset the paramter from `[true]` to `[false]` in your `app.js`.
+- make sure you have set up the connection for firebase
+- run the server using `npm run build`
+- change the paramter `[false]` to  `[true]` in `createUserProfileDocument` indicate you want the admin privelege for any incoming account registration
+- register a **new** email account (either through google signin or normal signup, but make sure the account doesn't store in the database) using the application
+- go to your [firebase console](https://console.firebase.google.com/) and make sure your user entry in the firestore collection `users` has the privelege field set to `true`
+- reset the paramter from `[true]` to `[false]` in your `app.js`
 
-
-
-
-
-
-
-  
-
-## Configuring Environment Variables
 
 
 

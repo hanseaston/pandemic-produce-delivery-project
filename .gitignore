@@ -3,4 +3,5 @@ node_modules*
 .env*
 Backend/docs
 Backend/pdstore.js
-Frontend/firebase/connection.js
+Frontend/src/firebase/connection.js
+Frontend/src/components/stripe-button/stripe-public-key.js
