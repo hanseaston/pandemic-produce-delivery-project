@@ -81,17 +81,19 @@ Now that you've made your decision to make your first contribution. Here's how t
     - Personally I use VScode. You are welcome to use any of your preferences!
 
 3.  **From the root directory of the project, install dependencies with npm**
+4.  ```javascript
     ```
-    npm install
+    npm install    /* install dependencies of frontend */
     cd Backend
     npm install
     ```
+    ```
 
 
 
-4.  **Configure the appropriate [environment variables](#configuring-environment-variables)**
+5.  **Configure the appropriate [environment variables](#configuring-environment-variables)**
 
-5.  **Running only the frontend**
+6.  **Running only the frontend**
      - This means that you will be able to run the website locally without most of the shop features. Since all of the produce information are fetched from the backend server, you won't be able to access any of the produce, thus the shop page will be listed as empty. If you have not set up the Google firebase, your sign-in and sign-up page also will not be functioning. However, you can use this if you are **only interested in changing the styles of frontend compoennts.**   
     
     From your root directory:
@@ -101,7 +103,7 @@ Now that you've made your decision to make your first contribution. Here's how t
     Visit the frontend application in your browser at http://localhost:3000
       - Note: your frontend server will autostart whenever you save on a file, a feature of React
 
-6.  **Running frontend and backend**
+7.  **Running frontend and backend**
       - This will give you access to the entirety of the application. Note that you need to set up the Google Firebase and prepopulate products using the Admin page in your application before being able to use the products in the shop page.
 
       From your root directory:
