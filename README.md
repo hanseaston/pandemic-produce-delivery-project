@@ -24,6 +24,7 @@ Our shop platform is an open-source project, and we are always looking for more 
   <br /><p>I am Hans. I am currently pusuing a computer science major at Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
 
 <br />
+<br />
 
 # Join our open-source Project!
 
@@ -64,6 +65,7 @@ Whether it is because of your **passion for social good**, or your desire to **h
 - If you have any hesitations, questions, or concerns. Feel free to [send me at email](mailto:hanszhang2000@gmail.com). Happy to connect!
 
 <br />
+<br />
 
 # Project Setup
 
@@ -78,11 +80,43 @@ Now that you've made your decision to make your first contribution. Here's how t
 2.  **Use your favorite text editor**
     - Personally I use VScode. You are welcome to use any of your preferences!
 
-3.  **In the root directory of the project, install dependencies with npm**
+3.  **From the root directory of the project, install dependencies with npm**
     ```
     npm install
+    cd Backend
+    npm install
     ```
-4.  **Configure the appropriate [environment variables](#configuring-environment-variables)
+
+
+
+4.  **Configure the appropriate [environment variables](#configuring-environment-variables)**
+
+5.  **Running only the frontend**
+     - This means that you will be able to run the website locally without most of the shop features. Since all of the produce information are fetched from the backend server, you won't be able to access any of the produce, thus the shop page will be listed as empty. If you have not set up the Google firebase, your sign-in and sign-up page also will not be functioning. However, you can use this if you are **only interested in changing the styles of frontend compoennts.**   
+    
+    From your root directory:
+    ```
+      npm start
+    ```    
+    Visit the frontend application in your browser at http://localhost:3000
+      - Note: your frontend server will autostart whenever you save on a file, a feature of React
+
+6.  **Running frontend and backend**
+      - This will give you access to the entirety of the application. Note that you need to set up the Google Firebase and prepopulate products using the Admin page in your application before being able to use the products in the shop page.
+
+      From your root directory:
+      ```
+        cd Backend
+        npm run build
+      ```
+
+    This will spin up **both** your frontend React and backend Express server.
+      - Visit the frontend application in your browser at http://localhost:3000
+      - Your backend server is listening on port **5000**
+
+
+
+
   
 
 ## Configuring Environment Variables
