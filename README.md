@@ -22,7 +22,9 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 <img align="left" width="120" height="120" style="border-radius:50%" src="./Frontend/src/assets/readmeRes/me-min.JPG">
   <br /><p>I am Hans. I am currently pusuing a computer science major at Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
-<br /><br />
+
+<br />
+<br />
 
 # Join our open-source Project!
 
@@ -47,13 +49,15 @@ Open-source project is powerful because it lowers the barriers to adoption and c
  
  ## It can be overwhelming
  
- I remember the first time  when I tried to make contribution to an open-source. The experience was quite overwhelming. There were so many things I did not understand about the project, and I couldn't even understand the command lines that were used for setting up the project.
+ I remember the first time I tried to make contribution to an open-source. The experience was quite overwhelming. There were so many things I did not understand about the project, and I couldn't even understand the command lines that were used for setting up the project.
+
+ Even now, I am by no means an experienced programmer. There's still so much I am learning everyday. I started programming about two years ago, and it has been a challenging yet exciting journey. One of my regrets I had along the way was failing to discover the beauty of contributing to an open-source. SomehoW in my mind, I always thought that I need to be somehow seasoned to be able to contribute. But **THAT IS TOTALLY NOT THE CASE**. All you need is a heart to contribute, a willpower that drives you forward, even after failure, and a faith that you will succeed if you keep at it.
  
- **I understand that feeling**, especially for programmers who just started.
- 
-I want to make sure your experience is a ***positive, friendly, and exciting one***. Together we can foster a loving community for developers.
+I want to make sure your experience here is a ***positive, friendly, and exciting one***. Together we can foster a loving community for developers.
 
  ## Join us!
+
+ Once you join our project and make your first contribution, we will list you as one of our [contributors](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) and add your profile in this README file. I truly believe that working on an open-source project will make you a better programmer and communicator, and it will also give you something meaningful to talk about when you talk to a recruitor (if you are going to industry in the future)!
  
 Whether it is because of your **passion for social good**, or your desire to **hone your web programming skills**, or simply to find an opportunity to **gain some experiences programming with others**, we would love to have you.
 
