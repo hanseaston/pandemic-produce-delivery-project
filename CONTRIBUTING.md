@@ -2,17 +2,16 @@
 
 When contributing to this repository, please first discuss the change you wish to make via the 
 Github issue page [here](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues). If you have any questions regarding project features, or ideas for potential new features,
-please also use the issue page and label your ideas with appropriate tags. The community members
+please also use the issue page and label your ideas with **appropriate tags**. The community members
 will be able to discuss it directly in your issue post.
 
-Please join our slack channel (link upcoming soon) to get plug our project community. You are
-welcome to ask any questions about the projects, or get to know us more in the channel.
+Please join our slack channel to get to know our project community. You are
+welcome to ask any questions about the projects, or get to know us more personally as well! 😶
 
-If you have a more important personal concern of any kind, feel free to contact project
-lead Hans via [email](mailto:hanszhang2000@gmail.com).
-email.
+If you have a more important personal concern of any kind, feel free to contact Hans, the project lead, via [email](mailto:hanszhang2000@gmail.com).
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+**Please note we have a code of conduct**, please follow it in all your interactions with the project.
+
 
 ## Pull Request Process
 
@@ -22,6 +21,7 @@ Please note we have a code of conduct, please follow it in all your interactions
    variables, exposed ports, useful file locations and container parameters.
 3. You may merge the Pull Request in once you have the sign-off of the project lead, or if you 
    do not have permission to do that, you may request the second reviewer to merge it for you.
+
 
 ## Code of Conduct
 
