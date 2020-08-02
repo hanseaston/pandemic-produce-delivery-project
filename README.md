@@ -24,7 +24,6 @@ Our shop platform is an open-source project, and we are always looking for more 
   <br /><p>I am Hans. I am currently pusuing a computer science major at Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
 
 <br />
-<br />
 
 # Join our open-source Project!
 
@@ -57,12 +56,40 @@ I want to make sure your experience here is a ***positive, friendly, and excitin
 
  ## Join us!
 
- Once you join our project and make your first contribution, we will list you as one of our [contributors](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) and add your profile in this README file. I truly believe that working on an open-source project will make you a better programmer and communicator, and it will also give you something meaningful to talk about when you talk to a recruitor (if you are going to industry in the future)!
+ Once you join our project and make your first contribution, we will list you as one of our [contributors](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) and add your profile in our [README.md section](#Open-source-Team). I truly believe that working on an open-source project will make you a better programmer and communicator, and it will also give you something meaningful to talk about when you talk to a recruitor (if you are going to industry in the future)!
  
 Whether it is because of your **passion for social good**, or your desire to **hone your web programming skills**, or simply to find an opportunity to **gain some experiences programming with others**, we would love to have you.
 
 - Our slack server is coming up soon! <br />
 - If you have any hesitations, questions, or concerns. Feel free to [send me at email](mailto:hanszhang2000@gmail.com). Happy to connect!
+
+<br />
+
+# Project Setup
+
+Now that you've made your decision to make your first contribution. Here's how to set it up.
+
+
+## General Setup
+
+1. **Fork the project**.
+    - If you are fairly new to Github or Git, please checkout the [official Github Guide!](https://guides.github.com/activities/forking/)
+
+2.  **Use your favorite text editor**
+    - Personally I use VScode. You are welcome to use any of your preferences!
+
+3.  **In the root directory of the project, install dependencies with npm**
+    ```
+    npm install
+    ```
+4.  **Configure the appropriate [environment variables](#configuring-environment-variables)
+  
+
+## Configuring Environment Variables
+
+
+
+
 
 
 
