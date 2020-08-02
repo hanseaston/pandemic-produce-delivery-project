@@ -115,15 +115,47 @@ Now that you've made your decision to make your first contribution. Here's how t
 
 ## Understanding User Authorization
 
-  In our current shop setup, users are able to log in and log out. Users are able to sign in with their Google account directly. Alternatively, they are also able to sign up using their personal email address and password.
+  In our current shop setup, users are able to log in and log out. Users are able to sign in with their **Google account** directly. Alternatively, they are also able to **sign up** using their personal email address and password.
 
-  We currently have two types of users: admin user and normal user.
+  We currently have two types of users: **admin user** and **normal user**.
   
   - The normal user is able to access the general functionality of the shop, including adding items to cart and checking out.
-  - The admin user is able to access the ***admin edit-product*** and ***admin checkout*** page that are inaccessible to normal users. In particular:
-    - ***Admin edit-product page*** enables you to add new products (with relevant product information) to Mongo Database. Other users will be able to see the new product once they refresh the page.
-    - ***Admin checkout page*** keeps track all of the successful orders made by the all of the users. We use this page to know what products users have ordered in preperation for our delivery process.
-    - ***Note***: The admin pages are still in development process. Help us make them better!
+  - The admin user is able to access the **admin edit-product** and **admin checkout** page that are inaccessible to normal users. In particular:
+  
+
+    - **Admin edit-product page** enables you to add new products (with relevant product information) to Mongo Database. Other users will be able to see the new product once they refresh the page.
+
+
+    - **Admin checkout page** keeps track all of the successful orders made by the all of the users. We use this page to know what products users have ordered in preperation for our delivery process.
+
+
+    - ***Note***: The admin pages are still in development process (basic functionality already implemented). Help us make them better!
+
+## User Authorization in Code
+
+Our shop's signin logic is mostly handled by Firebase. In our `app.js`, the function onAuthStateChanged is an observer function defined by Firebase that is triggered whenever a user signs in or signs out.
+
+```javascript
+// Once the user's authentification status is changed
+auth.onAuthStateChanged(async (user) => {
+  if (user !== null) {
+    const userRef = await createUserProfileDocument(user, [false]);
+```
+
+Note that in the function, we are calling a function called `reateUserProfileDocument`. This function captures the user's information and stores it back to our firebase database, so that next time a user signs in, we are able to verify their identity. 
+
+In particular, notice that the second parameter of the function is an array containing a boolean value. The value ***determines whether the user passed in will have the admin privelege or not***.
+Normally, the default is false, since we don't want to grant a user the admin privelege.
+
+In the case when you want to grant a user privelege (e.x. for your personal account), follow the following steps
+
+- make sure you have set up the connection for firebase.
+- run the server using `npm run build`.
+- change the paramter `[false]` to  `[true]` in `createUserProfileDocument` indicate you want the admin privelege for any incoming account registration.
+- register a **new** email account (either through google signin or normal signup, but make sure the account doesn't store in the database) using the application.
+- go to your [firebase console](https://console.firebase.google.com/) and make sure your user entry in the firestore collection `users` has the privelege field set to `true`.
+- reset the paramter from `[true]` to `[false]` in your `app.js`.
+
 
 
 
