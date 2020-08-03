@@ -2,10 +2,10 @@
   "name": "shop-backend",
   "version": "1.0.0",
   "private": true,
-  "description": "Backend of the delivery shop",
+  "description": "server-side logic of the delivery shop",
   "scripts": {
     "start": "nodemon ./bin/www",
-    "build": "concurrently  --kill-others-on-fail \"npm start\" \" cd ../Frontend && npm start \"",
+    "build": "concurrently  --kill-others-on-fail \"npm start\" \" cd .. && npm start \"",
     "doc": "jsdoc -c jsdoc.json"
   },
   "author": "Hans",

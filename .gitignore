@@ -1,7 +1,6 @@
 node_modules*
 .DS_Store*
 .env*
-Backend/docs
-Backend/pdstore.js
-Frontend/src/firebase/connection.js
-Frontend/src/components/stripe-button/stripe-public-key.js
+server/docs
+/src/firebase/connection.js
+/src/components/stripe-button/stripe-public-key.js
