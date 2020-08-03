@@ -1,0 +1,25 @@
+[
+  {
+    "name": "tomato",
+    "type": "vegetable",
+    "price": 2.99,
+    "imageUrl": "https://i.ibb.co/Jm58ZxC/Tomato.jpg",
+    "description": "it is a tomato!"
+  },
+
+  {
+    "name": "lamb leg",
+    "type": "poultry",
+    "price": 16.99,
+    "imageUrl": "https://i.ibb.co/84Z22RG/Lamb-leg.jpg",
+    "description": "Lamb Leg"
+  },
+
+  {
+    "name": "organic milk 12oz",
+    "type": "dairy",
+    "price": 4.99,
+    "imageUrl": "https://i.ibb.co/Hq4tqx3/Organic-milk.jpg",
+    "description": "Organic Milk 12Oz"
+  }
+]
