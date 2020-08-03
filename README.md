@@ -243,9 +243,25 @@ Finally, **make sure you set your email address to be an admin account using the
 
 ## Adding products
 
+Right now, your application should run ok! You should be able to log in and log out, and you are able to access all of the pages. However, notice that the shop page is all empty. This is because there's no produce stored in the database. Now it is time to add in some products!
+
 First of all, make sure:
 
 - you have set up the configurations successfully [**in this section**](#configuring-project)
-- you have authorized your own email/gmail account [\*\*in the previous section](#user-authorization-in-code)
+- you have authorized your own email/gmail account [**in the previous section**](#user-authorization-in-code)
 
 When you spin up the application, you should see the shop page **look like the following**:
+
+In the navbar, click on the admin tab. It should bring you to the following page.
+
+Now, simply type in the relevent information. Here are a few things to note:
+
+- None of the fields should be left empty
+- The image url needs to be a valid image link, like [this](https://i.ibb.co/Hq4tqx3/Organic-milk.jpg)
+- The product type needs to be matching with one of the following
+  - vegetable, poultry, dairy, seafood, fruit (case insensitive)
+- A pop-up window should appear when you click the "save" button. If everything goes well, you should
+- be able to see the product you have newly added in your shop page when you refresh the page! Otherwise, the pop-up window should display the error message.
+- Our shop currently does not support editing the product, as well as deletion. We will continue to work on these functionalities as they are crucial. If you want to do these operations, you would have to directly go to your MongoDB console and modify your database content.
+
+## Adding products
