@@ -2,9 +2,13 @@
 
 # About Our Online Shop
 
-During the ongoing pandemic, getting groceries can be a **real challenge**. The scarcity can go beyond delivery time slots. Items you order can run out of stock before being delivered, and if you venture to the store, you may find slim pickings in some aisles.
+During the ongoing pandemic, getting groceries can sometimes be a **real challenge**. The scarcity can go beyond delivery time slots. Items you order can run out of stock before being delivered, and if you venture to the store, you may find slim pickings in some aisles.
+
+It all started out a few weeks ago, when several people in our Seattle neighborhood decided to organize a no-contact delivery service to help people in need. We noticed that some of our friends or family members find it challenging to go out to shop, either due to shortage of mask supplies or health reasons. Most of them were worried about their safety, and whether they were able to always get the goods that they wanted if they went out to shop. Understanding their concerns, we decided to start this non-profit community service and deliver the produce to people's doors without any charge. We currently have around 5 people in our neighborhood as our regular customers.
 
 The website is our next phase of expansion. We are planning to contact wholesalers in the greater Seattle area and directly order products from them. This would save us more time to order and fetch the products. It will also open up a broader variety of quality produces for the customers. We are planning on using this website as a platform for customers to order goods directly.
+
+> > > > > > > b913635201c07bb76fcb8d9538f9294ccc7d0143
 
 <br />
 
