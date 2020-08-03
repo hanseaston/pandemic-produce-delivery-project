@@ -1,7 +1,6 @@
 import React from "react";
 import StripeCheckout from "../../components/stripe-button/stripe-button";
 import CheckoutItem from "../../components/checkout-item/checkout-item";
-import CustomButton from "../../components/custom-button/custom-button";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import {
@@ -59,9 +58,6 @@ class CheckoutPage extends React.Component {
           <CheckoutItem key={cartItem.id} cartItem={cartItem} />
         ))}
         <div className='total'>TOTAL: ${total.toFixed(2)}</div>
-        <CustomButton onClick={this.paymentSucceeded} inverted>
-          Testing
-        </CustomButton>
         {user ? (
           <div>
             <StripeCheckout

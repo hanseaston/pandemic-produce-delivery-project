@@ -257,11 +257,10 @@ In the navbar, click on the admin tab. It should bring you to the following page
 Now, simply type in the relevent information. Here are a few things to note:
 
 - None of the fields should be left empty
-- The image url needs to be a valid image link, like [this](https://i.ibb.co/Hq4tqx3/Organic-milk.jpg)
-- The product type needs to be matching with one of the following
-  - vegetable, poultry, dairy, seafood, fruit (case insensitive)
-- A pop-up window should appear when you click the "save" button. If everything goes well, you should
-- be able to see the product you have newly added in your shop page when you refresh the page! Otherwise, the pop-up window should display the error message.
-- Our shop currently does not support editing the product, as well as deletion. We will continue to work on these functionalities as they are crucial. If you want to do these operations, you would have to directly go to your MongoDB console and modify your database content.
+- The image url needs to be a valid image link, like [**this**](https://i.ibb.co/Hq4tqx3/Organic-milk.jpg)
+- The product type **needs to** be matching with one of the following
+  - `vegetable, poultry, dairy, seafood, fruit (case insensitive)`
+- A pop-up window should appear when you click the "save" button. If everything goes well, you should be able to see the product you have newly added in your shop page when you refresh the page! Otherwise, the pop-up window should display the error message.
+- Our shop currently **does not support** editing the product, as well as deletion. We will continue to work on these functionalities as they are crucial. If you want to do these operations as of right now, you would need to directly go to your MongoDB console and modify your database content.
 
 ## Adding products

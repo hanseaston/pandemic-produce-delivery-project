@@ -24,6 +24,7 @@ import Header from "./components/header/header";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shop";
 import AboutPage from "./pages/about/about";
+import UserCheckoutPage from "./pages/cart-checkout/cart-checkout";
 import UserOrdersPage from "./pages/admin-user-checkouts/admin-user-checkouts";
 import AdminAddProductPage from "./pages/admin-add-products/admin-add-products";
 import SignInAndSignUp from "./pages/signin-signup/signin-signup";
@@ -102,6 +103,7 @@ class App extends React.Component {
               )
             }
           ></Route>
+          <Route exact path='/checkout' component={UserCheckoutPage}></Route>
           <Route exact path='/covid-glimpse' component={CovidGlimpse}></Route>
         </Switch>
       </div>
