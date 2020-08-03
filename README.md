@@ -130,20 +130,58 @@ cp .env.example .env
 
 A set variable in the `.env` file will look like this:
 ```
-mongooseConnection='123456789'
+mongooseConnection='your own connection string'
 ```
 
-Change the `'123456789` to **your own mongooseConnection string**. You will need to create a user account, set up a cluster, and find where connection String is; it should be easy though!
+Change the `'your own connection string'` to **your own mongooseConnection string**. You will need to create a user account at the MongoDB website, set up a free cluster as well as database, and find where the connection String is for your cluster. It should be easy!
 
-Repeat the same process for the Stripe API. You should replace the placeholder with **your own Stripe API private key.**
+Repeat the same process for the Stripe API. You should replace the placeholder with **your own Stripe API private key.** If you will be working on code that is not related to the payment functionality, you *don't need to set up this API.*
 
-If you need to introduce a new environmental variable, please coordinate with the project lead. Make usre to add it to the `.env.example` file, and note it in your pull request.
+If you need to introduce a new environmental variable, please coordinate with Hans. Make sure to add it to the `.env.example` file, and note it in your pull request.
 
 ### configuring connection on frontend
 
+There are **two** files you need to configure beforing running the application successfully.
+
+Before the following process, make sure you have signed in [firebase](https://firebase.google.com/) and created a new project for this application. Log into your firebase console and configure the following setting for user signin and authorization.
 
 
+Then, from the project's root directory:
 
+```
+cd src/firebase/connection
+```
+
+You will see a file named  `connection-example.js`. This file sets up the connection for your
+firebase client and is used by `firebase.js` in the same folder. 
+
+Do:
+```
+cp connection-example.js connection.js
+```
+
+Copy in your own firebase config in the `connection.js`
+
+Next, if you want to test out the stripe API, you need to configure the **Stripe public key** as well.
+
+From the project's root directory:
+
+```
+cd src/components/stripe-button
+```
+
+Do:
+```
+cp stripe-public-key-example.js stripe-public-key.js
+```
+
+From your Stripe account, copy the public key into `stripe-public-key.js`
+
+***Congratulations! 🎉🎉🎉*** You are done with all of the project setup! Now you can test out 
+whether your configuration is correct by running the project. You should now be able
+to access all of the project's functionality.
+
+(**Note**: the configuration process feels a little cumbersome right now. We hope to put all of the configuration setup into .env file in the future to make the process a little easier. If you would like to make this happen, please check out this [issue](#)!
 
 
 ## Understanding User Authorization
