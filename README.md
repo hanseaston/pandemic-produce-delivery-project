@@ -135,12 +135,12 @@ mongooseConnection='your own connection string'
 
 Change the `'your own connection string'` to **your own mongooseConnection string**. You will need to create a user account at the MongoDB website, set up a free cluster as well as database, and find where the connection String is for your cluster. It should be easy!
 
-Repeat the same process for the Stripe API. You should replace the placeholder with **your own Stripe API private key.** If you will be working on code that is not related to the payment functionality, you **don't need to set up this API.**
+Repeat the same process for the Stripe API. You should replace the placeholder with **your own Stripe API secret key.** If you will be working on code that is not related to the payment functionality, you **can safely ignore this part.**
 
-If you need to introduce a new environmental variable, please coordinate with Hans. Make sure to add it to the `.env.example` file, and note it in your pull request.
+**If you need to introduce a new environmental variable**, please coordinate with Hans. Make sure to add it to the `.env.example` file, and note it in your pull request.
 
 
-
+<br />
 ### configuring frontend
 
 There are **two** files you need to configure before being able to run the application.
@@ -170,7 +170,7 @@ cd src/components/stripe-button
 cp stripe-public-key-example.js stripe-public-key.js
 ```
 
-From your Stripe account, copy the public key into `stripe-public-key.js`
+From your Stripe account, copy the publishable key into `stripe-public-key.js`
 
 ***Congratulations! 🎉🎉🎉*** You are done with all of the project setup! Now you can test out 
 whether your configuration is correct by running the project. You should now be able
@@ -227,21 +227,34 @@ Now, you are able to render components conditionally by checking the user's priv
 
 ```javascript
   <Route
-            exact
-            path='/admin/add'
-            render={() =>
-              !user || !user.privelege ? (
-                <Redirect to='/' />
-              ) : (
-                <AdminAddProductPage />
-              )
-            }
+    exact
+    path='/admin/add'
+    render={() =>
+      !user || !user.privelege ? (
+        <Redirect to='/' />
+      ) : (
+        <AdminAddProductPage />
+      )
+    }
 ```
 
-We are checking whether the user is signed in or not (`!user`) and whether the user has admin 
-privelege (`!user.privelege`).
+We are checking whether the user is signed in (`!user`) and whether the user has admin 
+privelege (`!user.privelege`) to determine rendering or redirecting.
 
 Finally, **make sure you set your email address to be an admin account using the steps above**. Only then will you be able to add products to the database via `admin-edit-product` page ♥️. 
+
+
+## Adding products 
+
+First of all, make sure:
+- you have set up the configurations successfully [**in this section**](#configuring-project)
+- you have authorized your own email/gmail account [**in the previous section](#user-authorization-in-code)
+
+When you spin up the application, you should see the shop page **look like the following**:
+
+
+
+
 
 
 
