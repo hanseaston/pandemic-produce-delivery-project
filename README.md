@@ -139,6 +139,8 @@ Repeat the same process for the Stripe API. You should replace the placeholder w
 
 If you need to introduce a new environmental variable, please coordinate with Hans. Make sure to add it to the `.env.example` file, and note it in your pull request.
 
+
+
 ### configuring frontend
 
 There are **two** files you need to configure before being able to run the application.
@@ -217,9 +219,30 @@ In the case when you want to grant a user privelege (e.x. for your personal acco
 - make sure you have set up the connection for firebase
 - run the server using `npm run build`
 - change the paramter `[false]` to  `[true]` in `createUserProfileDocument` indicate you want the admin privelege for any incoming account registration
-- register a **new** email account (either through google signin or normal signup, but make sure the account doesn't store in the database) using the application
+- register a **new** email account (either through google signin or normal signup, but make sure the account doesn't store in the database) using the applicatio:
 - go to your [firebase console](https://console.firebase.google.com/) and make sure your user entry in the firestore collection `users` has the privelege field set to `true`
 - reset the paramter from `[true]` to `[false]` in your `app.js`
+
+Now, you are able to render components conditionally by checking the user's privelege. For example, like this:
+
+```javascript
+  <Route
+            exact
+            path='/admin/add'
+            render={() =>
+              !user || !user.privelege ? (
+                <Redirect to='/' />
+              ) : (
+                <AdminAddProductPage />
+              )
+            }
+```
+
+We are checking whether the user is signed in or not (`!user`) and whether the user has admin 
+privelege (`!user.privelege`).
+
+Finally, **make sure you set your email address to be an admin account using the steps above**. Only then will you be able to add products to the database via `admin-edit-product` page ♥️. 
+
 
 
 
