@@ -2,6 +2,8 @@
 
 # About Our Online Shop
 
+Welcome to our Seattle produce delivery shop!
+
 During the ongoing pandemic, getting groceries can sometimes be a **real challenge**. The scarcity can go beyond delivery time slots. Items you order can run out of stock before being delivered, and if you venture to the store, you may find slim pickings in some aisles.
 
 It all started out a few weeks ago, when several people in our Seattle neighborhood decided to organize a no-contact delivery service to help people in need. We noticed that some of our friends or family members find it challenging to go out to shop, either due to shortage of mask supplies or health reasons. Most of them were worried about their safety, and whether they were able to always get the goods that they wanted if they went out to shop. Understanding their concerns, we decided to start this non-profit community service and deliver the produce to people's doors without any charge. We currently have around 5 people in our neighborhood as our regular customers.
@@ -26,7 +28,7 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 ## Motivation for open-source
 
-This is a **beginner-friendly** open-source project aimed for **social good**. We are always looking for more passionate programmers, like you, to contribute!
+This is a **beginner-friendly** open-source project aimed for **social good**. We are always looking for more passionate programmers, like you, to contribute! 💪💪💪
 
 Open-source project is powerful because it lowers the barriers to adoption and collaboration, allowing people to spread and improve projects quickly. It also is a perfect place for anyne to hone their programming skills and share their visions and ideas with like-minded others. Here are three major reasons as to why you should contribute to our open-source project!
 
@@ -55,6 +57,8 @@ I want to make sure your experience here is a **_positive, friendly, and excitin
 ## Join us!
 
 Once you join our project and make your first contribution, we will list you as one of our [contributors](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) and add your profile in our [README.md section](#Open-source-Team). I truly believe that working on an open-source project will make you a better programmer and communicator, and it will also give you something meaningful to talk about when you talk to a recruitor (if you are going to industry in the future)!
+
+I created this project in hope that the delivery service **_will not simply be limited to our Seattle neighborhood, but rather anywhere else in the world._** ♥️♥️♥️ Long before the idea of creating an open-source project even came to my mind, there were already kind-hearted people who were oferring such services to others in need in the neighborhood. So even without our online shop in place and out there ready to serve, you can do something for your community right now, regardless of where you are! 🎉❤️ With that said, I would **_really really encourge you to fork and utlize this project in however form you want. Feel free to use it and redesign it in your own language, for your own neighborhood. Let's keep spreading love during this challenging time. _**
 
 Whether it is because of your **passion for social good**, or your desire to **hone your web programming skills**, or simply to find an opportunity to **gain some experiences programming with others**, we would love to have you.
 
