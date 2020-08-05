@@ -271,4 +271,19 @@ Now, simply type in the relevent information. Here are a few things to note:
 - A pop-up window should appear when you click the "save" button. If everything goes well, you should be able to see the product you have newly added in your shop page when you refresh the page! Otherwise, the pop-up window should display the error message.
 - Our shop currently **does not support** editing the product, as well as deletion. We will continue to work on these functionalities as they are crucial. If you want to do these operations as of right now, you would need to directly go to your MongoDB console and modify your database content.
 
-## Adding products
+## Stripe checkout
+
+Since our project is currently in the development process, the stripe checkout is only valid for **test checkout**.
+
+**WARNING: PLEASE DON'T ENTER YOUR PERSONAL CREDIT CARD INFORMATION!!**
+
+Instead, if you want to test out the stripe functionality, you can use the dummy card information provided by Stripe.
+
+- The card number is 4242-4242-4242-4242
+- The exp date can be any date after the current date as you are typing it.
+- The CVC number is any 3-digit number.
+- **Do not** use the 'Remember me' option.
+
+Since this is pretty important, someone might want to add **a line of warning** at the bottom of the checkout page. Here's the [issue](#) if anyone likes to add work on it!
+
+This is what you should be seeing when the test payment is sucessful! Now, all of the products a customer has checked out and paid for has been added to the MongoDB database (feel free to check yourself)!
