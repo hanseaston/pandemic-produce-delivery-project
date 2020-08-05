@@ -8,8 +8,6 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 
 The website is our next phase of expansion. We are planning to contact wholesalers in the greater Seattle area and directly order products from them. This would save us more time to order and fetch the products. It will also open up a broader variety of quality produces for the customers. We are planning on using this website as a platform for customers to order goods directly.
 
-> > > > > > > b913635201c07bb76fcb8d9538f9294ccc7d0143
-
 <br />
 
 # Open-source Team
