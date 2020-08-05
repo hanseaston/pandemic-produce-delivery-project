@@ -58,9 +58,9 @@ I want to make sure your experience here is a **_positive, friendly, and excitin
 
 I started this project in hope that the delivery service **_will not simply be limited to our Seattle neighborhood, but rather anywhere else in the world._** ♥️♥️♥️
 
-Long before the idea of creating an open-source project even came to my mind, there were already kind-hearted people who were oferring such services to others in need in the neighborhood. So even without our online shop in place and out there ready to serve, you can do something for your community right now, regardless of where you are! 🎉♥️
+Long before the idea of creating an open-source project even came to my mind, there were already kind-hearted people who were oferring such services to others in need in the neighborhood. So even without our online shop in place and out there ready to serve, you can do something for your community right now, regardless of where you are! 🎉♥
 
-With that said, I would **\_really really encourge you to fork and utlize this project in however form you want. Feel free to use it and redesign it in your own language, for your own neighborhood. Let's keep spreading love during this challenging time. \***
+With that said, I would **_ really really encourge you to fork and use this project in whatever way you want. _** Feel free to **_ redesign it in your own language, for your own neighborhood _**. Let's keep spreading love during this challenging time.
 
 Once you join our project and make your first contribution, we will list you as one of our [contributors](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) and add your profile in our [README.md section](#Open-source-Team). I truly believe that working on an open-source project will make you a better programmer and communicator, and it will also give you something meaningful to talk about when you talk to a recruitor (if you are going to industry in the future)!
 
