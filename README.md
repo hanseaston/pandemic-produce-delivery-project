@@ -304,7 +304,7 @@ After you have sucessfully made the test payment, you should see a pop-up window
 
 # Contributing
 
-The previous parts help you set up the project. Please refer to the [**CONTRIBUTING.md**](/CONTRIBUTING.md) if you would like to take a further to contribute!
+The previous parts help you set up the project. Please refer to the [**CONTRIBUTING.md**](/CONTRIBUTING.md) if you would like to take a further step to contribute!
 
 
 # Special Thanks
