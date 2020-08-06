@@ -300,3 +300,7 @@ Since this is pretty important, someone might want to add **a line of warning** 
 After you have sucessfully made the test payment, you should see a pop-up window that displays **Your payment is successful. We will be in touch through email soon.** Now, all of the products a customer has checked out and paid for has been added to the MongoDB database (feel free to check yourself)!
 
 **Cool! Keep hacking!!** ♥️🎉
+
+## License
+
+See the [**LICENSE**](/LICENSE.md) file for license rights and limitations (MIT).
