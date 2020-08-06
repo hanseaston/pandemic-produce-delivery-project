@@ -52,15 +52,15 @@ I remember the first time I tried to make contribution to an open-source. The ex
 
 Even now, I am by no means an experienced programmer. There's still so much I am learning everyday. I started programming about two years ago, and it has been a challenging yet exciting journey. One of my regrets I had along the way was failing to discover the beauty of contributing to an open-source. Somehow in my mind, I always thought that I need to be an experinced developer to be able to contribute. But **THAT IS TOTALLY NOT THE CASE**. All you need is a heart to contribute, a willpower that drives you forward, even after failure, and a faith that you will succeed if you keep at it.
 
-I want to make sure your experience here is a **_positive, friendly, and exciting one_**. Together we can foster a loving community for developers.
+I want to make sure your experience here is a **positive, friendly, and exciting one**. Together we can foster a loving community for developers.
 
 ## Join us!
 
-I started this project in hope that the delivery service **_will not simply be limited to our Seattle neighborhood, but rather anywhere else in the world._** ♥️♥️♥️
+I started this project in hope that the delivery service **will not simply be limited to our Seattle neighborhood, but rather anywhere else in the world.** ♥️♥️♥️
 
 Long before the idea of creating an open-source project even came to my mind, there were already kind-hearted people who were oferring such services to others in need in the neighborhood. So even without our online shop in place and out there ready to serve, you can do something for your community right now, regardless of where you are! 🎉♥
 
-With that said, I would **_ really really encourge you to fork and use this project in whatever way you want. Feel free to redesign it in your own language, for your own neighborhood . Let's keep spreading love during this challenging time. _**
+With that said, I would **really really encourge you to fork and use this project in whatever way you want. Feel free to redesign it in your own language, for your own neighborhood . Let's keep spreading love during this challenging time.**
 
 Once you join our project and make your first contribution, we will list you as one of our [**contributors**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) and add your profile in our [**README.md section**](#Open-source-Team). I truly believe that working on an open-source project will make you a better programmer and communicator, and it will also give you something meaningful to talk about when you talk to a recruitor (if you are going to industry in the future)!
 
@@ -185,7 +185,7 @@ cp stripe-public-key-example.js stripe-public-key.js
 
 From your Stripe account, copy the publishable key into `stripe-public-key.js`
 
-**_Congratulations! 🎉🎉🎉_** You are done with all of the project setup! Now you can test out
+**Congratulations! 🎉🎉🎉** You are done with all of the project setup! Now you can test out
 whether your configuration is correct by running the project. You should now be able
 to access all of the project's functionality.
 
@@ -204,7 +204,7 @@ We currently have two types of users: **admin user** and **normal user**.
 
 - **Admin checkout page** keeps track all of the successful orders made by the all of the users. We use this page to know what products users have ordered in preperation for our delivery process.
 
-* **_Note_**: The admin pages are still in development process (basic functionality already implemented). Help us make them better!
+**Note**: The admin pages are still in development process (basic functionality already implemented). Help us make them better!
 
 ## User Authorization in Code
 
@@ -219,7 +219,7 @@ auth.onAuthStateChanged(async (user) => {
 
 Note that in the function, we are calling a function called `createUserProfileDocument`. This function captures the user's information and stores it back to our firebase database, so that next time a user signs in, we are able to verify their identity.
 
-In particular, notice that the second parameter of the function is an array containing a boolean value. The value **_determines whether the user passed in will have the admin privelege or not_**.
+In particular, notice that the second parameter of the function is an array containing a boolean value. The value **determines whether the user passed in will have the admin privelege or not**.
 Normally, the default is false, since we don't want to grant a user the admin privelege.
 
 In the case when you want to grant a user privelege (e.x. for your personal account), follow the following steps:
@@ -303,7 +303,7 @@ After you have sucessfully made the test payment, you should see a pop-up window
 
 ## Special Thanks
 
-Some of the project structure and technical knowledge are made possible by the awesome Udemy course instructor [**Andrei**](https://www.udemy.com/user/andrei-neagoie/) and [**Yihua](https://www.udemy.com/user/yihua-zhang-5/). A huge thanks to both of them! ☺️♥️
+Some of the project structure and technical knowledge are made possible by the awesome Udemy course instructor [**Andrei**](https://www.udemy.com/user/andrei-neagoie/) and [**Yihua**](https://www.udemy.com/user/yihua-zhang-5/). A huge thanks to both of them! ☺️♥️
 
 
 ## License
