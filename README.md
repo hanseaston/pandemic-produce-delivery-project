@@ -301,11 +301,11 @@ After you have sucessfully made the test payment, you should see a pop-up window
 
 **Cool! Keep hacking!!** ♥️🎉
 
-## Special Thanks
+# Special Thanks
 
 Some of the project structure and technical knowledge are made possible by the awesome Udemy course instructor [**Andrei**](https://www.udemy.com/user/andrei-neagoie/) and [**Yihua**](https://www.udemy.com/user/yihua-zhang-5/). A huge thanks to both of them! ☺️♥️
 
 
-## License
+# License
 
 See the [**LICENSE**](/LICENSE.md) file for license rights and limitations (MIT).
