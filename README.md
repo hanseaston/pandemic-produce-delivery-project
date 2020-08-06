@@ -50,7 +50,7 @@ And now, here I am, launching **the first open-source project here on Github**. 
 
 I remember the first time I tried to make contribution to an open-source. The experience was quite overwhelming. There were so many things I did not understand about the project, and I couldn't even understand the command lines that were used for setting up the project.
 
-Even now, I am by no means an experienced programmer. There's still so much I am learning everyday. I started programming about two years ago, and it has been a challenging yet exciting journey. One of my regrets I had along the way was failing to discover the beauty of contributing to an open-source. SomehoW in my mind, I always thought that I need to be somehow seasoned to be able to contribute. But **THAT IS TOTALLY NOT THE CASE**. All you need is a heart to contribute, a willpower that drives you forward, even after failure, and a faith that you will succeed if you keep at it.
+Even now, I am by no means an experienced programmer. There's still so much I am learning everyday. I started programming about two years ago, and it has been a challenging yet exciting journey. One of my regrets I had along the way was failing to discover the beauty of contributing to an open-source. w in my mind, I always thought that I need to be an experinced developer to be able to contribute. But **THAT IS TOTALLY NOT THE CASE**. All you need is a heart to contribute, a willpower that drives you forward, even after failure, and a faith that you will succeed if you keep at it.
 
 I want to make sure your experience here is a **_positive, friendly, and exciting one_**. Together we can foster a loving community for developers.
 
@@ -297,8 +297,6 @@ Instead, if you want to test out the stripe functionality, you can use the dummy
 
 Since this is pretty important, someone might want to add **a line of warning** at the bottom of the checkout page. Here's the [**issue**](#) if anyone likes to add work on it!
 
-**This is what you should be seeing when the test payment is sucessful!** Now, all of the products a customer has checked out and paid for has been added to the MongoDB database (feel free to check yourself)!
-
-<img src="public/readme/instruction-screenshots/popup-checkout-success.png">
+After you have sucessfully made the test payment, you should see a pop-up window that displays **Your payment is successful. We will be in touch through email soon.** Now, all of the products a customer has checked out and paid for has been added to the MongoDB database (feel free to check yourself)!
 
 **Cool! Keep hacking!!** ♥️🎉
