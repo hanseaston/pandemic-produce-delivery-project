@@ -21,8 +21,6 @@
   </strong>
 </p>
 
-<br />
-
 ## About Our Online Shop
 
 Welcome to our Seattle produce delivery shop! 🚚
@@ -32,6 +30,29 @@ During the ongoing pandemic, getting groceries can sometimes be a **real challen
 It all started out a few weeks ago, when several people in our Seattle neighborhood decided to organize a no-contact delivery service to help people in need. We noticed that some of our friends or family members find it challenging to go out to shop, either due to shortage of mask supplies or health reasons. Most of them were worried about their safety, and whether they were able to always get the goods that they wanted if they went out to shop. Understanding their concerns, we decided to start this **non-profit community service** and deliver the produce to people's doors without any charge. We currently have around 5 people in our neighborhood as our regular customers.
 
 **The website is our next phase of expansion.** We are planning to contact wholesalers in the greater Seattle area and directly order products from them. This would save us more time to order and fetch the products. It will also open up a broader variety of quality produces for the customers. We are planning on using this website as a platform for customers to order goods directly.
+
+- [About Our Online Shop](#about-our-online-shop)
+- [Features](#features)
+- [Tech-stack](#tech-stack)
+- [Open-source Team](#open-source-team)
+    - [Hans Zhang - Organizer/Developer](#hans-zhang---organizerdeveloper)
+- [Join our open-source project!](#join-our-open-source-project)
+  - [Motivation for open-source](#motivation-for-open-source)
+  - [Coding for social good](#coding-for-social-good)
+  - [It can be overwhelming](#it-can-be-overwhelming)
+  - [Join us!](#join-us)
+- [Project Setup](#project-setup)
+  - [General Setup](#general-setup)
+- [Configuring Project](#configuring-project)
+  - [.env file on the backend](#env-file-on-the-backend)
+  - [configuring frontend](#configuring-frontend)
+- [Understanding User Authorization](#understanding-user-authorization)
+- [User Authorization in Code](#user-authorization-in-code)
+- [Adding products](#adding-products)
+- [Stripe checkout](#stripe-checkout)
+- [Contributing](#contributing)
+- [Special Thanks](#special-thanks)
+- [License](#license)
 
 ## Features
 
@@ -62,10 +83,7 @@ Our shop platform is an open-source project, and we are always looking for more 
 <img align="left" width="120" height="120" style="border-radius:50%" src="public/readme/contributors/hans.JPG">
   <br /><p>I am Hans. I am currently pusuing a computer science major at Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
 
-<br />
-<br />
-
-## Join our open-source Project!
+## Join our open-source project!
 
 ### Motivation for open-source
 
@@ -109,8 +127,6 @@ Whether it is because of your **passion for social good**, or your desire to **h
 
 - Our slack server is coming up soon! <br />
 - If you have any hesitations, questions, or concerns. Feel free to [**send me at email**](mailto:hanszhang2000@gmail.com). Happy to connect!
-
-<br />
 
 ## Project Setup
 
@@ -340,7 +356,7 @@ Since this is pretty important, someone might want to add **a line of warning** 
 
 After you have sucessfully made the test payment, you should see a pop-up window that displays **Your payment is successful. We will be in touch through email soon.** Now, all of the products a customer has checked out and paid for has been added to the MongoDB database (feel free to check yourself)!
 
-**Cool! Keep hacking!!** ♥️🎉
+**Cool! Keep hacking!!** 🎉
 
 ## Contributing
 
@@ -348,7 +364,7 @@ The previous parts help you set up the project. Please refer to the [**CONTRIBUT
 
 ## Special Thanks
 
-Some of the project structure and technical knowledge are made possible by the awesome Udemy course instructor [**Andrei**](https://www.udemy.com/user/andrei-neagoie/) and [**Yihua**](https://www.udemy.com/user/yihua-zhang-5/). A huge thanks to both of them! ☺️♥️
+Some of the project structure and technical knowledge are made possible by the awesome Udemy course instructor [**Andrei**](https://www.udemy.com/user/andrei-neagoie/) and [**Yihua**](https://www.udemy.com/user/yihua-zhang-5/). A huge thanks to both of them! ☺️
 
 ## License
 
