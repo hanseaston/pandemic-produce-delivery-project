@@ -39,7 +39,7 @@
 - [Configuring Project](#configuring-project)
   - [.env file on the backend](#env-file-on-the-backend)
   - [configuring frontend](#configuring-frontend)
-- [Understanding User Authorization](#understanding-user-authorization)
+- [Understanding User Authorization ✔️](#understanding-user-authorization-️)
 - [User Authorization in Code](#user-authorization-in-code)
 - [Adding products](#adding-products)
 - [Stripe checkout](#stripe-checkout)
@@ -252,7 +252,7 @@ to access all of the project's functionality.
 
 (**Note**: the configuration process feels a little cumbersome right now. We hope to put all of the configuration setup into .env file in the future to make the process a little easier. If you would like to make this happen, please check out this [**issue**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/23#issue-675722071)!)
 
-## Understanding User Authorization
+## Understanding User Authorization ✔️
 
 In our current shop setup, users are able to log in and log out. Users are able to sign in with their **Google account** directly. Alternatively, they are also able to **sign up** using their personal email address and password.
 
