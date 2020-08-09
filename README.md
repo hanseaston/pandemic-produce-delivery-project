@@ -25,7 +25,7 @@
 
 # About Our Online Shop
 
-Welcome to our Seattle produce delivery shop!
+Welcome to our Seattle produce delivery shop! 🚚♥️💪🏼
 
 During the ongoing pandemic, getting groceries can sometimes be a **real challenge**. The scarcity can go beyond delivery time slots. Items you order can run out of stock before being delivered, and if you venture to the store, you may find slim pickings in some aisles.
 
@@ -35,9 +35,9 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 
 ## Features
 
-- Located in the greater Seattle area 🌴
+- Located in the greater Seattle area 🌴💦
 - Fully functional produce delivery shop with more than 50 items avaiable
-  - vegetables, fruit, protein, seafood, dairy
+  - vegetables, fruit, protein, seafood, dairy 🍋🍗🥬🍤🧀
 - Signin, signup, and signout functionalities, including Google signin
 - Secure checkout and payment using Stripe services
 - Admin page that handles user orders as well as product management
@@ -50,8 +50,8 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 - Database: MongoDB & FireStore
 - Authentification: Firebase
 - Payment: Stripe API
-- SEO: currently in development process
-- Testing: currently in development process
+- SEO: currently in development process 💪
+- Testing: currently in development process 💪
 
 </br>
 
