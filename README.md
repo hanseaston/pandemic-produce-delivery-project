@@ -391,6 +391,10 @@ After you have sucessfully made the test payment, you should see a pop-up window
 
 The previous parts help you set up the project. Please refer to the [**CONTRIBUTING.md**](/CONTRIBUTING.md) if you would like to take a further step to contribute!
 
+Also check out the issue guideline [**here!**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/35)
+
+Help us refine the README documentation here in this [**issue**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/37)!
+
 ## Special Thanks ❤️
 
 Some of the project structure and technical knowledge are made possible by the awesome Udemy course instructor [**Andrei**](https://www.udemy.com/user/andrei-neagoie/) and [**Yihua**](https://www.udemy.com/user/yihua-zhang-5/). A huge thanks to both of them! ☺️
