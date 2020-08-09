@@ -1,8 +1,13 @@
 {
-  "name": "shop-frontend",
+  "name": "seattle-produce-delivery-shop",
   "version": "0.1.0",
-  "private": true,
   "proxy": "http://localhost:5000/",
+  "author": "Hans Zhang <hanszhang2000@gmail.com>",
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.4.1"
+  },
+  "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
@@ -29,9 +34,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "server": "cd server && node app.js",
+    "dev": "concurrently --kill-others-on-fail \"npm start\" \"npm run server\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
   }
 }
