@@ -12,7 +12,7 @@
 
 <!-- short description -->
 <p align="center">
-  Pandemic neighborhood delivery service for social good ♥️</a>.
+  Pandemic neighborhood delivery service for social good ♥️</a>
 </p>
 
 <p align="center">
@@ -25,7 +25,7 @@
 
 # About Our Online Shop
 
-Welcome to our Seattle produce delivery shop! 🚚💪🏼
+Welcome to our Seattle produce delivery shop! 🚚
 
 During the ongoing pandemic, getting groceries can sometimes be a **real challenge**. The scarcity can go beyond delivery time slots. Items you order can run out of stock before being delivered, and if you venture to the store, you may find slim pickings in some aisles.
 
