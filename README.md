@@ -6,14 +6,19 @@
   />
 </p>
 
+<p align="center">
+  Pandemic neighborhood delivery service for social good</a>.
+</p>
+
+<p align="center">
+  <strong>
+    Demo at <a href="#">here</a>.
+  </strong>
+</p>
+
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
- <a href="https://www.netlify.com">
-    <img
-      src="https://img.shields.io/badge/deploys%20by-netlify-00c7b7.svg?style=flat-square"
-      alt="deploys by netlify"
-    />
-  </a>
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 # About Our Online Shop
 
