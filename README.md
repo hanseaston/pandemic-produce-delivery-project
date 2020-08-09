@@ -27,14 +27,14 @@
 - [About Our Online Shop 🛒](#about-our-online-shop-)
 - [Features](#features)
 - [Tech-stack](#tech-stack)
-- [Open-source Team 💛](#open-source-team-)
+- [Open-source Team](#open-source-team)
     - [Hans Zhang - Organizer/Developer](#hans-zhang---organizerdeveloper)
-- [Join our open-source project!](#join-our-open-source-project)
+- [Join our open-source project! 💪](#join-our-open-source-project-)
   - [Motivation for open-source](#motivation-for-open-source)
   - [Coding for social good](#coding-for-social-good)
   - [It can be overwhelming](#it-can-be-overwhelming)
   - [Join us!](#join-us)
-- [Project Setup](#project-setup)
+- [Project Setup 🚀](#project-setup-)
   - [General Setup](#general-setup)
 - [Configuring Project](#configuring-project)
   - [.env file on the backend](#env-file-on-the-backend)
@@ -43,9 +43,9 @@
 - [User Authorization in Code](#user-authorization-in-code)
 - [Adding products](#adding-products)
 - [Stripe checkout](#stripe-checkout)
-- [Contributing](#contributing)
-- [Special Thanks](#special-thanks)
-- [License](#license)
+- [Contributing 💦](#contributing-)
+- [Special Thanks ❤️](#special-thanks-️)
+- [License 📝](#license-)
 
 ## About Our Online Shop 🛒
 
@@ -77,7 +77,7 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 - SEO: currently in development process
 - Testing: currently in development process
 
-## Open-source Team 💛
+## Open-source Team
 
 Our shop platform is an open-source project, and we are always looking for more like-minded developers who would like to contribute! These are our current [**contributors**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) helping push the project forward each day.
 
@@ -86,7 +86,7 @@ Our shop platform is an open-source project, and we are always looking for more 
 <img align="left" width="120" height="120" style="border-radius:50%" src="public/readme/contributors/hans.JPG">
   <br /><p>I am Hans. I am currently pusuing a computer science major at Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
 
-## Join our open-source project!
+## Join our open-source project! 💪
 
 ### Motivation for open-source
 
@@ -131,7 +131,7 @@ Whether it is because of your **passion for social good**, or your desire to **h
 - Our slack server is coming up soon! <br />
 - If you have any hesitations, questions, or concerns. Feel free to [**send me at email**](mailto:hanszhang2000@gmail.com). Happy to connect!
 
-## Project Setup
+## Project Setup 🚀
 
 Now that you've made your decision to make your first contribution. Here's how to set it up.
 
@@ -361,14 +361,14 @@ After you have sucessfully made the test payment, you should see a pop-up window
 
 **Cool! Keep hacking!!** 🎉
 
-## Contributing
+## Contributing 💦
 
 The previous parts help you set up the project. Please refer to the [**CONTRIBUTING.md**](/CONTRIBUTING.md) if you would like to take a further step to contribute!
 
-## Special Thanks
+## Special Thanks ❤️
 
 Some of the project structure and technical knowledge are made possible by the awesome Udemy course instructor [**Andrei**](https://www.udemy.com/user/andrei-neagoie/) and [**Yihua**](https://www.udemy.com/user/yihua-zhang-5/). A huge thanks to both of them! ☺️
 
-## License
+## License 📝
 
 See the [**LICENSE**](/LICENSE.md) file for license rights and limitations (MIT).
