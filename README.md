@@ -141,24 +141,25 @@ Now that you've made your decision to make your first contribution. Here's how t
 
 ### Structure Overview
 
+```javascript
 .
-├── build # Compiled files (alternatively `dist`) # Documentation files
-├── src # handkes all of the frontend logcis
-├── assets # storing svg files
-└── components # where React components live
-└── pages # where main shop pages live
-└── firebase # handles firebase connections and logic
-└── redux # handles all redux logic, sets up redux store
-└── app.js # main entry point of the front end app
-├──
-├── server # handles all of the backend logics
-├── bin # starting point of the backend server
-└── models # product and checkout item model for database
-└── routes # route handler for API endpoints
-└── app.js # main entry point for all requests
-├── public  
+├── build                       # compiled files
+├── src                         # handles all of the frontend logics
+  ├── assets                    # storing svg files
+  └── components                # where React components live
+  └── pages                     # where main shop pages lives
+  └── firebase                  # handles firebase connections and logic
+  └── redux                     # handles all redux logic, sets up redux store
+└── app.js                      # main entry point of the front end app
+├── server                      # handles all of the backend logics
+  ├── bin                       # starting point of the backend server
+  └── models                    # product and checkout item model for database
+  └── routes                    # route handler for API endpoints
+  └── app.js                    # main entry point for all requests
+├── public
 ├── LICENSE
 └── README.md
+```
 
 ### General Setup
 
