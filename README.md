@@ -35,11 +35,11 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 
 ## Features
 
-- Shop page
-- Fully functional produce with more than 50 items
+- Located in the greater Seattle area 🌴
+- Fully functional produce delivery shop with more than 50 items avaiable
   - vegetables, fruit, protein, seafood, dairy
-- Signin, signup, and signout functionalities, including Google account
-- Secure checkout and payment
+- Signin, signup, and signout functionalities, including Google signin
+- Secure checkout and payment using Stripe services
 - Admin page that handles user orders as well as product management
 - Covid glimpse that displays useful current covid-19 information
 
@@ -54,6 +54,7 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 - Testing: currently in development process
 
 </br>
+
 # Open-source Team
 
 Our shop platform is an open-source project, and we are always looking for more like-minded developers who would like to contribute! These are our current [**contributors**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) helping push the project forward each day.
