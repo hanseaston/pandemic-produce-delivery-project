@@ -2,8 +2,6 @@
 <p align="center">
   <img
     src="/public/readme/illustration-images/project-bg.png"
-    height="100"
-    width="352"
     alt="project readme background"
   />
 </p>
