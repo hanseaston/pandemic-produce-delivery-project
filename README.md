@@ -1,3 +1,5 @@
+<!-- badges, feel free to add more! -->
+
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 <!-- project bg image, might want to replace it something more descriptive in the future -->
@@ -8,6 +10,7 @@
   />
 </p>
 
+<!-- short description -->
 <p align="center">
   Pandemic neighborhood delivery service for social good</a>.
 </p>
@@ -17,6 +20,8 @@
     Demo at <a href="#">here</a>.
   </strong>
 </p>
+
+<br />
 
 # About Our Online Shop
 
@@ -28,8 +33,27 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 
 **The website is our next phase of expansion.** We are planning to contact wholesalers in the greater Seattle area and directly order products from them. This would save us more time to order and fetch the products. It will also open up a broader variety of quality produces for the customers. We are planning on using this website as a platform for customers to order goods directly.
 
-<br />
+## Features
 
+- Shop page
+- Fully functional produce with more than 50 items
+  - vegetables, fruit, protein, seafood, dairy
+- Signin, signup, and signout functionalities, including Google account
+- Secure checkout and payment
+- Admin page that handles user orders as well as product management
+- Covid glimpse that displays useful current covid-19 information
+
+## Tech-stack
+
+- Frontend: React & Redux
+- Backend: Node & Express
+- Database: MongoDB & FireStore
+- Authentification: Firebase
+- Payment: Stripe API
+- SEO: currently in development process
+- Testing: currently in development process
+
+</br>
 # Open-source Team
 
 Our shop platform is an open-source project, and we are always looking for more like-minded developers who would like to contribute! These are our current [**contributors**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) helping push the project forward each day.
