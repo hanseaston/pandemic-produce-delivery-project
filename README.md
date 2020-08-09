@@ -23,7 +23,7 @@
 
 <br />
 
-# About Our Online Shop
+## About Our Online Shop
 
 Welcome to our Seattle produce delivery shop! 🚚
 
@@ -53,7 +53,7 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 - SEO: currently in development process 💪
 - Testing: currently in development process 💪
 
-# Open-source Team
+## Open-source Team
 
 Our shop platform is an open-source project, and we are always looking for more like-minded developers who would like to contribute! These are our current [**contributors**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) helping push the project forward each day.
 
@@ -65,9 +65,9 @@ Our shop platform is an open-source project, and we are always looking for more 
 <br />
 <br />
 
-# Join our open-source Project!
+## Join our open-source Project!
 
-## Motivation for open-source
+### Motivation for open-source
 
 This is a **beginner-friendly** open-source project aimed for **social good**. We are always looking for more passionate programmers, like you, to contribute! 💪💪💪
 
@@ -79,7 +79,7 @@ Open-source project is powerful because it lowers the barriers to adoption and c
 
 If you are still confused about the concept of open source and would like to learn more, check out the [**Github's official guide!**](https://github.com/open-source)
 
-## Coding for social good
+### Coding for social good
 
 I am a firm believer that a personal project is **so much more meaningful** if it brings positive impact to the soceity.
 
@@ -87,7 +87,7 @@ I have always been in awe of people who strive to make a change in the world. Th
 
 And now, here I am, launching **the first open-source project here on Github**. This is an opportunity for people to connect with others who share the same drive for creating positive changes around us.
 
-## It can be overwhelming
+### It can be overwhelming
 
 I remember the first time I tried to make contribution to an open-source. The experience was quite overwhelming. There were so many things I did not understand about the project, and I couldn't even understand the command lines that were used for setting up the project.
 
@@ -95,7 +95,7 @@ Even now, I am by no means an experienced programmer. There's still so much I am
 
 I want to make sure your experience here is a **positive, friendly, and exciting one**. Together we can foster a loving community for developers.
 
-## Join us!
+### Join us!
 
 I started this project in hope that the delivery service **will not simply be limited to our Seattle neighborhood, but rather anywhere else in the world.** ♥️♥️♥️
 
@@ -112,11 +112,11 @@ Whether it is because of your **passion for social good**, or your desire to **h
 
 <br />
 
-# Project Setup
+## Project Setup
 
 Now that you've made your decision to make your first contribution. Here's how to set it up.
 
-## General Setup
+### General Setup
 
 1. **Fork and clone the project**.
 
@@ -342,14 +342,14 @@ After you have sucessfully made the test payment, you should see a pop-up window
 
 **Cool! Keep hacking!!** ♥️🎉
 
-# Contributing
+## Contributing
 
 The previous parts help you set up the project. Please refer to the [**CONTRIBUTING.md**](/CONTRIBUTING.md) if you would like to take a further step to contribute!
 
-# Special Thanks
+## Special Thanks
 
 Some of the project structure and technical knowledge are made possible by the awesome Udemy course instructor [**Andrei**](https://www.udemy.com/user/andrei-neagoie/) and [**Yihua**](https://www.udemy.com/user/yihua-zhang-5/). A huge thanks to both of them! ☺️♥️
 
-# License
+## License
 
 See the [**LICENSE**](/LICENSE.md) file for license rights and limitations (MIT).
