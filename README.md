@@ -24,7 +24,7 @@
 ## Table of contents 📚
 
 - [Table of contents 📚](#table-of-contents-)
-- [About Our Online Shop �](#about-our-online-shop-)
+- [About Our Online Shop 🚚](#about-our-online-shop-)
 - [Features](#features)
 - [Tech-stack](#tech-stack)
 - [Open-source Team](#open-source-team)
@@ -61,7 +61,8 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 
 - Located in the greater Seattle area 🌴💦
 - Fully functional produce delivery shop with more than 50 items avaiable
-  - vegetables🥬, fruit🍋, protein🍗, seafood🍤, dairy🧀
+  - 5 main categories:
+    vegetables🥬, fruit🍋, protein🍗, seafood🍤, dairy🧀
 - Signin, signup, and signout functionalities, including Google signin
 - Secure checkout and payment using Stripe services
 - Admin page that handles user orders as well as product management
