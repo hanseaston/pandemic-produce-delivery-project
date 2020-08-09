@@ -24,7 +24,7 @@
 ## Table of contents 📚
 
 - [Table of contents 📚](#table-of-contents-)
-- [About Our Online Shop 🛒](#about-our-online-shop-)
+- [About Our Online Shop �](#about-our-online-shop-)
 - [Features](#features)
 - [Tech-stack](#tech-stack)
 - [Open-source Team](#open-source-team)
@@ -47,9 +47,9 @@
 - [Special Thanks ❤️](#special-thanks-️)
 - [License 📝](#license-)
 
-## About Our Online Shop 🛒
+## About Our Online Shop 🚚
 
-Welcome to our Seattle produce delivery shop! 🚚
+Welcome to our Seattle produce delivery shop!
 
 During the ongoing pandemic, getting groceries can sometimes be a **real challenge**. The scarcity can go beyond delivery time slots. Items you order can run out of stock before being delivered, and if you venture to the store, you may find slim pickings in some aisles.
 
@@ -90,7 +90,7 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 ### Motivation for open-source
 
-This is a **beginner-friendly** open-source project aimed for **social good**. We are always looking for more passionate programmers, like you, to contribute! 💪💪💪
+This is a **beginner-friendly** open-source project aimed for **social good**. We are always looking for more passionate programmers, like you, to contribute!
 
 Open-source project is powerful because it lowers the barriers to adoption and collaboration, allowing people to spread and improve projects quickly. It also is a perfect place for anyne to hone their programming skills and share their visions and ideas with like-minded others. Here are three major reasons as to why you should contribute to our open-source project!
 
