@@ -17,7 +17,7 @@
 
 <p align="center">
   <strong>
-    Demo at <a href="#">here</a>.
+    Demo at <a href="#">here</a>
   </strong>
 </p>
 
@@ -37,7 +37,7 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 
 - Located in the greater Seattle area 🌴💦
 - Fully functional produce delivery shop with more than 50 items avaiable
-  - vegetables, fruit, protein, seafood, dairy 🍋🍗🥬🍤🧀
+  - vegetables🥬, fruit🍋, protein🍗, seafood🍤, dairy🧀
 - Signin, signup, and signout functionalities, including Google signin
 - Secure checkout and payment using Stripe services
 - Admin page that handles user orders as well as product management
@@ -52,8 +52,6 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 - Payment: Stripe API
 - SEO: currently in development process 💪
 - Testing: currently in development process 💪
-
-</br>
 
 # Open-source Team
 
