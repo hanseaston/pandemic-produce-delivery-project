@@ -52,9 +52,9 @@ app.use(cors());
  */
 app.use(express.static(path.join(__dirname, "public")));
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(paths.join(__dirname, "..", "Frontend/build")));
+  app.use(express.static(paths.join(__dirname, "..", "build")));
   app.get("*", (req, res) => {
-    res.sendFile(paths.join(__dirname, "..", "Frontend/build", "index.html"));
+    res.sendFile(paths.join(__dirname, "..", "build", "index.html"));
   });
 }
 
