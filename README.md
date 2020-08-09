@@ -156,9 +156,9 @@ Now that you've made your decision to make your first contribution. Here's how t
   └── models                    # product and checkout item model for database
   └── routes                    # route handler for API endpoints
   └── app.js                    # main entry point for all requests
-├── public
-├── LICENSE
-└── README.md
+├── public                      # public resources & assets
+├── LICENSE                     # MIT license
+└── README.md                   # documentation of the shop project
 ```
 
 ### General Setup
