@@ -189,7 +189,7 @@ From your Stripe account, copy the publishable key into `stripe-public-key.js`
 whether your configuration is correct by running the project. You should now be able
 to access all of the project's functionality.
 
-(**Note**: the configuration process feels a little cumbersome right now. We hope to put all of the configuration setup into .env file in the future to make the process a little easier. If you would like to make this happen, please check out this [**issue**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/23#issue-675722071)!
+(**Note**: the configuration process feels a little cumbersome right now. We hope to put all of the configuration setup into .env file in the future to make the process a little easier. If you would like to make this happen, please check out this [**issue**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/23#issue-675722071)!)
 
 ## Understanding User Authorization
 
@@ -295,7 +295,7 @@ Instead, if you want to test out the stripe functionality, you can use the dummy
 - The CVC number is any 3-digit number.
 - **Do not** use the 'Remember me' option.
 
-Since this is pretty important, someone might want to add **a line of warning** at the bottom of the checkout page. Here's the [**issue**](#) if anyone likes to add work on it!
+Since this is pretty important, someone might want to add **a line of warning** at the bottom of the checkout page. Here's the [**issue**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/24) if anyone likes to add work on it!
 
 After you have sucessfully made the test payment, you should see a pop-up window that displays **Your payment is successful. We will be in touch through email soon.** Now, all of the products a customer has checked out and paid for has been added to the MongoDB database (feel free to check yourself)!
 
