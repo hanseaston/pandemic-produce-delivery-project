@@ -1,4 +1,21 @@
+<!-- project bg image, might want to replace it something more descriptive in the future -->
+<p align="center">
+  <img
+    src="/public/readme/illustration-images/project-bg.png"
+    height="100"
+    width="352"
+    alt="project readme background"
+  />
+</p>
+
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+ <a href="https://www.netlify.com">
+    <img
+      src="https://img.shields.io/badge/deploys%20by-netlify-00c7b7.svg?style=flat-square"
+      alt="deploys by netlify"
+    />
+  </a>
 
 # About Our Online Shop
 
