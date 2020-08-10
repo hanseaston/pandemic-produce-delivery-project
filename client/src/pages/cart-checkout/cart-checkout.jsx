@@ -9,7 +9,7 @@ import {
 } from "../../redux/cart/cartSelector";
 import { selectCurrentUser } from "../../redux/users/userSelector";
 import "./cart-checkout.scss";
-import axios from "axios";
+import { MyApiClient } from "../../baseURI.js";
 
 class CheckoutPage extends React.Component {
   paymentSucceeded = () => {
@@ -21,16 +21,14 @@ class CheckoutPage extends React.Component {
       const { name, quantity, id } = cartItem;
       return { name, quantity, _id: id };
     });
-    axios
-      .post("checkout", {
-        transformedCartItems,
-        displayName,
-        email,
-      })
-      .catch((err) => {
-        console.log(err);
-        throw err;
-      });
+    MyApiClient.post("checkout", {
+      transformedCartItems,
+      displayName,
+      email,
+    }).catch((err) => {
+      console.log(err);
+      throw err;
+    });
   };
 
   render() {

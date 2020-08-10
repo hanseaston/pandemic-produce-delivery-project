@@ -4,7 +4,7 @@
 import { ShopActionType } from "./shopActionType";
 import { firestore, convertProductsToMap } from "../../firebase/firebase";
 import { convertDBFormatToReactFormat } from "./shopUtil";
-import axios from "axios";
+import { MyApiClient } from "../../baseURI.js";
 
 /** Indicating the starting process of fetching products from DB */
 export const fetchProductsStart = () => ({
@@ -44,8 +44,7 @@ export const fetchProductsStartAsync = () => {
 export const fetchProductsInMongoDB = () => {
   return (dispatch) => {
     dispatch(fetchProductsStart());
-    axios
-      .get("products")
+    MyApiClient.get("products")
       .then((products) => {
         const transformedProducts = convertDBFormatToReactFormat(products.data);
         dispatch(fetchProductsSuccess(transformedProducts));

@@ -1,7 +1,6 @@
 {
   "name": "seattle-produce-delivery-shop",
   "version": "0.1.0",
-  "proxy": "http://localhost:5000/",
   "author": "Hans Zhang <hanszhang2000@gmail.com>",
   "license": "MIT",
   "dependencies": {

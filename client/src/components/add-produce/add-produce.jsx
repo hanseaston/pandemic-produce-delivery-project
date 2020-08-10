@@ -5,7 +5,7 @@ import CustomButton from "../custom-button/custom-button";
 
 import "./add-produce.scss";
 
-import axios from "axios";
+import { MyApiClient } from "../../baseURI";
 
 class SignUp extends React.Component {
   constructor() {

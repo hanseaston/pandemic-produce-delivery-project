@@ -2,18 +2,15 @@ import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 import STRIPE_PUBLIC_KEY from "./stripe-public-key";
+import { MyApiClient } from "../../baseURI.js";
 
 const StripeCheckoutButton = ({ price, paymentSuccessCallback }) => {
   const priceForStripe = price * 100;
 
   const onToken = (token) => {
-    axios({
-      url: "payment",
-      method: "post",
-      data: {
-        amount: priceForStripe,
-        token: token,
-      },
+    MyApiClient.post("payment", {
+      amount: priceForStripe,
+      token,
     })
       .then((response) => {
         //TODO: might want to show a more helpful success message
