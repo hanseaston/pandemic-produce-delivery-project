@@ -1,6 +1,5 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
-import axios from "axios";
 import STRIPE_PUBLIC_KEY from "./stripe-public-key";
 import { MyApiClient } from "../../baseURI.js";
 

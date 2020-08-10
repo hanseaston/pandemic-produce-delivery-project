@@ -1,8 +1,9 @@
 import axios from "axios";
 
+const inDevelopment = false;
+
 export const MyApiClient = axios.create({
-  baseURL = process.env.NODE_ENV === inDevelopment
+  baseURL: inDevelopment
     ? `http://localhost:5000/`
     : "https://seattle-produce-delivery.herokuapp.com/",
-  baseURL
 });

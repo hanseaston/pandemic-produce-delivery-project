@@ -34,14 +34,13 @@ class SignUp extends React.Component {
     produceName = produceName.toLowerCase();
     produceType = produceType.toLowerCase();
 
-    axios
-      .post("products", {
-        produceName,
-        produceType,
-        producePrice,
-        produceImage,
-        produceDesp,
-      })
+    MyApiClient.post("products", {
+      produceName,
+      produceType,
+      producePrice,
+      produceImage,
+      produceDesp,
+    })
       .then((res) => {
         alert("products added!");
       })
