@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8fda0ef3.chunk.css",
+    "main.js": "/static/js/main.b727b8fa.chunk.js",
+    "main.js.map": "/static/js/main.b727b8fa.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.894d8643.js",
+    "runtime-main.js.map": "/static/js/runtime-main.894d8643.js.map",
+    "static/js/2.8c5e4a46.chunk.js": "/static/js/2.8c5e4a46.chunk.js",
+    "static/js/2.8c5e4a46.chunk.js.map": "/static/js/2.8c5e4a46.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3dc5b92b4cb05ab571e5cedd5c208e4a.js": "/precache-manifest.3dc5b92b4cb05ab571e5cedd5c208e4a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.8fda0ef3.chunk.css.map": "/static/css/main.8fda0ef3.chunk.css.map",
+    "static/js/2.8c5e4a46.chunk.js.LICENSE.txt": "/static/js/2.8c5e4a46.chunk.js.LICENSE.txt",
+    "static/media/potato.88852d75.svg": "/static/media/potato.88852d75.svg",
+    "static/media/shopping-bag.09e6f5e7.svg": "/static/media/shopping-bag.09e6f5e7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.894d8643.js",
+    "static/js/2.8c5e4a46.chunk.js",
+    "static/css/main.8fda0ef3.chunk.css",
+    "static/js/main.b727b8fa.chunk.js"
+  ]
+}
