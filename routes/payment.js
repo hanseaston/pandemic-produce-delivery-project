@@ -1,9 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-const config = require("dotenv").config();
-if (config.error) throw config.error;
-
 const stripe = require("stripe")(process.env.stripeSecretKey);
 
 router.post("/", function (req, res) {
