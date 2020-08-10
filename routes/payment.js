@@ -6,7 +6,7 @@ const stripe = require("stripe")(process.env.stripeSecretKey);
 router.post("/", function (req, res) {
   const body = {
     source: req.body.token.id,
-    amount: req.body.amount,
+    amount: req.body.amount + 500,
     currency: "usd",
   };
 
