@@ -1,1 +1,1 @@
-web: cd server && node app.js
+ "start": "node bin/www",
