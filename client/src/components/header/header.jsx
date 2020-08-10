@@ -8,6 +8,7 @@ import CardDropDown from "../cart-dropdown/cart-dropdown";
 import { selectCartHidden } from "../../redux/cart/cartSelector";
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "../../redux/users/userSelector";
+import  ShopHeader  from "../shop-header/shop-header"
 
 import "./header.scss";
 
@@ -16,6 +17,7 @@ const Header = ({ currentUser, hidden }) => (
     <Link className='logo-container' to='/'>
       <PotatoLogo className='logo' />
     </Link>
+    <ShopHeader className='shoptitle' />
     <div className='options'>
       <NavLink activeStyle={{ opacity: 0.6 }} className='option' to='/about'>
         ABOUT
