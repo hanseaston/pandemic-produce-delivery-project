@@ -5,7 +5,7 @@ import CustomButton from "../custom-button/custom-button";
 
 import "./add-produce.scss";
 
-import { MyApiClient } from "../../baseURI";
+import axios from "axios";
 
 class SignUp extends React.Component {
   constructor() {
@@ -34,13 +34,14 @@ class SignUp extends React.Component {
     produceName = produceName.toLowerCase();
     produceType = produceType.toLowerCase();
 
-    MyApiClient.post("products", {
-      produceName,
-      produceType,
-      producePrice,
-      produceImage,
-      produceDesp,
-    })
+    axios
+      .post("/api/products", {
+        produceName,
+        produceType,
+        producePrice,
+        produceImage,
+        produceDesp,
+      })
       .then((res) => {
         alert("products added!");
       })
