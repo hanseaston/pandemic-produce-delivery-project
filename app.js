@@ -27,11 +27,14 @@ mongoose.connect(process.env.mongooseConnection, {
 const app = express();
 const port = process.env.PORT || 5000;
 
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error:"));
-db.once("open", function () {
-  // we're connected!
-  console.log("MongoDB connected");
+mongoose.connect(process.env.mongooseConnection, function (err, res) {
+  if (err) {
+    console.log(
+      "ERROR connecting to: " + process.env.mongooseConnection + ". " + err
+    );
+  } else {
+    console.log("Succeeded connected to: " + process.env.mongooseConnection);
+  }
 });
 
 /**
