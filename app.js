@@ -46,13 +46,14 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 
   app.get("*", function (req, res) {
+    console.log("hitting here..!", req);
     res.sendFile(path.join(__dirname, "client/build", "index.html"));
   });
 }
 /**
  * Router for handling backend endpoint requests
  */
-console.log("i'm here..");
+
 app.use("/api/products", productRouter);
 app.use("/api/payment", paymentRouter);
 app.use("/api/checkout", checkoutRouter);
