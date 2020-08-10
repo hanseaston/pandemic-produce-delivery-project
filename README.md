@@ -17,7 +17,8 @@
 
 <p align="center">
   <strong>
-    Demo at <a href="#">here</a>
+    Short demo <a href="https://streamable.com/8ww17h">**here**</a>
+    Deployed <a href="https://seattle-produce-delivery.herokuapp.com/" **here, not complete**>
   </strong>
 </p>
 
@@ -171,8 +172,8 @@ Now that you've made your decision to make your first contribution. Here's how t
 
 3. **From the root directory of the project, install dependencies with npm**
 4. ```javascript
-   npm install    // install dependencies of frontend
-   cd server    // nagivate to the server directory
+   npm install    // install dependencies of backend
+   cd client   // nagivate to the client directory
    npm install    // install dependencies of backend
    ```
 
@@ -185,7 +186,7 @@ Now that you've made your decision to make your first contribution. Here's how t
    From your root directory:
 
    ```
-     npm start
+     npm run client
    ```
 
    Visit the frontend application in your browser at **http://localhost:3000**
@@ -199,8 +200,7 @@ Now that you've made your decision to make your first contribution. Here's how t
    From your root directory:
 
    ```javascript
-     cd server
-     npm run build   // you can change the command in package.json, but don't push it to Github
+     npm run dev   // you can change the command in package.json, but don't push it to Github
    ```
 
    This will spin up **both** your frontend React and backend Express server.
@@ -248,7 +248,7 @@ Firstly, make sure you have signed in [**firebase**](https://firebase.google.com
 Then, from the project's root directory:
 
 ```
-cd src/firebase/connection
+cd client/src/firebase/connection
 ```
 
 You will see a file named `connection-example.js`. This file sets up the connection for your
@@ -263,7 +263,7 @@ Copy in your own firebase config in the `connection.js`
 If you want to test out the stripe API, you need to configure the **Stripe public key** as well. From the project's root directory:
 
 ```
-cd src/components/stripe-button
+cd client/src/components/stripe-button
 cp stripe-public-key-example.js stripe-public-key.js
 ```
 

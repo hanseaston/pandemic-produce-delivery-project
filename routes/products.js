@@ -36,7 +36,6 @@ router.get("/", function (req, res) {
     .lean()
     .exec((err, products) => {
       if (err) throw err;
-      console.log(JSON.stringify(products));
       return res.status(201).send(JSON.stringify(products));
     });
 });
