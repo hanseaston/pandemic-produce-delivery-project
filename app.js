@@ -50,13 +50,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 /**
- * Router for handling backend endpoint requests
- */
-app.use("/products", productRouter);
-app.use("/payment", paymentRouter);
-app.use("/checkout", checkoutRouter);
-
-/**
  * Production dependency for frontend connection
  */
 if (process.env.NODE_ENV === "production") {
@@ -66,6 +59,13 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "client/build", "index.html"));
   });
 }
+
+/**
+ * Router for handling backend endpoint requests
+ */
+app.use("/products", productRouter);
+app.use("/payment", paymentRouter);
+app.use("/checkout", checkoutRouter);
 
 /**
  * Export modules to be used in the bin file
