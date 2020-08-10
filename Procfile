@@ -1,1 +1,1 @@
- "start": "node bin/www",
+ "start": "node app.js",

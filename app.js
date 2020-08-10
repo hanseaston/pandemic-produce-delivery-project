@@ -24,22 +24,16 @@ mongoose.connect(process.env.mongooseConnection, {
   useUnifiedTopology: true,
 });
 
+// Initialize the app and port
+const app = express();
+const port = process.env.PORT || 5000;
+
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", function () {
   // we're connected!
   console.log("MongoDB connected");
 });
-
-/**
- * Router imports
- */
-const productRouter = require("./routes/products");
-const paymentRouter = require("./routes/payment");
-const checkoutRouter = require("./routes/checkout");
-
-// Initialize the app
-const app = express();
 
 /**
  * Using libarary imports on the app
@@ -61,6 +55,13 @@ if (process.env.NODE_ENV === "production") {
 }
 
 /**
+ * Router imports
+ */
+const productRouter = require("./routes/products");
+const paymentRouter = require("./routes/payment");
+const checkoutRouter = require("./routes/checkout");
+
+/**
  * Router for handling backend endpoint requests
  */
 app.use("/products", productRouter);
@@ -68,6 +69,9 @@ app.use("/payment", paymentRouter);
 app.use("/checkout", checkoutRouter);
 
 /**
- * Export modules to be used in the bin file
+ * Finally listening to the port
  */
-module.exports = app;
+app.listen(port, (error) => {
+  if (error) throw error;
+  console.log("Server running on port " + port);
+});
