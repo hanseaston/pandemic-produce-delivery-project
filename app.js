@@ -7,6 +7,7 @@ const path = require("path");
 const logger = require("morgan");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const { createProxyMiddleware } = require("http-proxy-middleware");
 
 /**
  * Configs files for private information
@@ -25,6 +26,13 @@ mongoose.connect(process.env.mongooseConnection, {
 
 // Initialize the app and port
 const app = express();
+app.use(
+  "/api",
+  createProxyMiddleware({
+    target: "https://seattle-produce-delivery.herokuapp.com",
+    changeOrigin: true,
+  })
+);
 const port = process.env.PORT || 5000;
 
 mongoose.connect(process.env.mongooseConnection, function (err, res) {

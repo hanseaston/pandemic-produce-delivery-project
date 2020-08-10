@@ -17,6 +17,7 @@
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "devDependencies": {
+    "http-proxy-middleware": "^1.0.5",
     "jsdoc": "^3.6.4",
     "kill-port": "^1.6.1"
   },
