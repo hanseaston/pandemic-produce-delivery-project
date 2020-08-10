@@ -1,58 +1,41 @@
 {
   "name": "seattle-produce-delivery-shop",
-  "version": "0.1.0",
-  "proxy": "http://localhost:5000/",
-  "author": "Hans Zhang <hanszhang2000@gmail.com>",
+  "version": "1.0.0",
+  "description": "server-side logic of the delivery shop",
   "engines": {
-    "node": "10.15.3",
+    "node": "10.16.0",
     "npm": "6.4.1"
   },
-  "license": "MIT",
+  "author": "Hans",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "nodemon ./bin/www",
+    "build": "cd client && npm run build",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "doc": "jsdoc -c jsdoc.json"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.4",
+    "kill-port": "^1.6.1"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
-    "@material-ui/core": "^5.0.0-alpha.4",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "firebase": "^7.15.5",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-chartjs-2": "^2.9.0",
-    "react-countup": "^4.3.3",
-    "react-dom": "^16.13.1",
-    "react-redux": "^7.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "react-stripe-checkout": "^2.6.3",
-    "redux": "^4.0.5",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
-    "reselect": "^4.0.0",
-    "styled-components": "^5.1.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "server": "cd server && node app.js",
-    "dev": "concurrently --kill-others-on-fail \"npm start\" \"npm run server\""
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "concurrently": "^4.0.1"
+    "concurrently": "^5.2.0",
+    "connect-mongodb-session": "^2.3.3",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.6.3",
+    "lodash": ">=4.17.19",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.21",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.4",
+    "stripe": "^8.78.0"
   }
 }

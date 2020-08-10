@@ -1,6 +1,5 @@
 node_modules*
 .DS_Store*
 .env*
-server/docs
-/src/firebase/connection.js
-/src/components/stripe-button/stripe-public-key.js
+docs
+
