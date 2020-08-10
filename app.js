@@ -14,6 +14,13 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
  */
 if (process.env.NODE_ENV !== "production") {
   const config = require("dotenv").config();
+  app.use(
+    "/api",
+    createProxyMiddleware({
+      target: "https://seattle-produce-delivery.herokuapp.com",
+      changeOrigin: true,
+    })
+  );
 }
 
 /**
@@ -26,13 +33,7 @@ mongoose.connect(process.env.mongooseConnection, {
 
 // Initialize the app and port
 const app = express();
-app.use(
-  "/api",
-  createProxyMiddleware({
-    target: "https://seattle-produce-delivery.herokuapp.com",
-    changeOrigin: true,
-  })
-);
+
 const port = process.env.PORT || 5000;
 
 mongoose.connect(process.env.mongooseConnection, function (err, res) {
@@ -77,6 +78,18 @@ const checkoutRouter = require("./routes/checkout");
 app.use("/products", productRouter);
 app.use("/payment", paymentRouter);
 app.use("/checkout", checkoutRouter);
+app.use(
+  "https://seattle-produce-delivery.herokuapp.com/api/products",
+  productRouter
+);
+app.use(
+  "https://seattle-produce-delivery.herokuapp.com/api/payment",
+  paymentRouter
+);
+app.use(
+  "https://seattle-produce-delivery.herokuapp.com/api/checkout",
+  checkoutRouter
+);
 
 /**
  * Finally listening to the port
