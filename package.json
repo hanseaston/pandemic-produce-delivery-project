@@ -11,7 +11,6 @@
     "client": "cd client && npm start",
     "server": "nodemon ./bin/www",
     "build": "cd client && npm run build",
-0 info it worked if it ends with ok
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "start": "node bin/www",
     "doc": "jsdoc -c jsdoc.json"
