@@ -51,6 +51,7 @@ if (process.env.NODE_ENV === "production") {
 /**
  * Router for handling backend endpoint requests
  */
+console.log("i'm here..");
 app.use("/api/products", productRouter);
 app.use("/api/payment", paymentRouter);
 app.use("/api/checkout", checkoutRouter);
