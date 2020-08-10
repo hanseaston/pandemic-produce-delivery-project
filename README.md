@@ -5,7 +5,7 @@
 <!-- project bg image, might want to replace it something more descriptive in the future -->
 <p align="center">
   <img
-    src="/public/readme/illustration-images/project-bg.png"
+    src="/assets/readme/illustration-images/project-bg.png"
     alt="project readme background"
   />
 </p>
@@ -85,7 +85,7 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 #### [Hans Zhang](https://github.com/hanszhang00) - Organizer/Developer
 
-<img align="left" width="120" height="120" style="border-radius:50%" src="public/readme/contributors/hans.JPG">
+<img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/hans.JPG">
   <br /><p>I am Hans. I am currently pusuing a computer science major at Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
 
 <br />
@@ -143,20 +143,18 @@ Now that you've made your decision to make your first contribution. Here's how t
 
 ```javascript
 .
-├── build                       # compiled files
-├── src                         # handles all of the frontend logics
+├── assets                      # public resources & assets
+├── client                      # handles all of the frontend logics
   ├── assets                    # storing svg files
   └── components                # where React components live
   └── pages                     # where main shop pages lives
   └── firebase                  # handles firebase connections and logic
   └── redux                     # handles all redux logic, sets up redux store
-└── app.js                      # main entry point of the front end app
-├── server                      # handles all of the backend logics
-  ├── bin                       # starting point of the backend server
+  └── app.js                      # main entry point of the front end app
+├── server                      # (root) directory handles all of the backend logics
   └── models                    # product and checkout item model for database
   └── routes                    # route handler for API endpoints
   └── app.js                    # main entry point for all requests
-├── public                      # public resources & assets
 ├── LICENSE                     # MIT license
 └── README.md                   # documentation of the shop project
 ```
@@ -245,7 +243,7 @@ There are **two** files you need to configure before being able to run the appli
 
 Firstly, make sure you have signed in [**firebase**](https://firebase.google.com/) and created a new project for the application. Log into your firebase console and **configure the following setting** for user signin and authorization.
 
-<img src="public/readme/instruction-screenshots/firebase-auth-setup.png">
+<img src="assets/readme/instruction-screenshots/firebase-auth-setup.png">
 
 Then, from the project's root directory:
 
@@ -348,11 +346,11 @@ First of all, make sure:
 
 When you spin up the application, you should see the shop page **look like the following**:
 
-<img src="public/readme/instruction-screenshots/shop-mainpage.png">
+<img src="assets/readme/instruction-screenshots/shop-mainpage.png">
 <br />
 In the navbar, click on the admin tab. It should bring you to the following page.
 
-<img src="public/readme/instruction-screenshots/edit-page%20information.png">
+<img src="assets/readme/instruction-screenshots/edit-page%20information.png">
 <br />
 
 Now, simply type in the relevent information. Here are a few things to note:
