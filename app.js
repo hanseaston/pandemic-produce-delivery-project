@@ -13,7 +13,6 @@ const mongoose = require("mongoose");
  */
 if (process.env.NODE_ENV !== "production") {
   const config = require("dotenv").config();
-  if (config.error) throw config.error;
 }
 
 /**
