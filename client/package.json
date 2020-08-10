@@ -3,10 +3,6 @@
   "version": "0.1.0",
   "proxy": "http://localhost:5000/",
   "author": "Hans Zhang <hanszhang2000@gmail.com>",
-  "engines": {
-    "node": "10.16.0",
-    "npm": "6.4.1"
-  },
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
