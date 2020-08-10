@@ -17,8 +17,8 @@
 
 <p align="center">
   <strong>
-    Short demo <a href="https://streamable.com/8ww17h">**here**</a>
-    Deployed <a href="https://seattle-produce-delivery.herokuapp.com/" **here, not complete**>
+    Short demo <a href="https://streamable.com/8ww17h"> here</a>
+    <br />Deployment coming soon ☺️
   </strong>
 </p>
 
