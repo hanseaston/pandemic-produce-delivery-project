@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const inDevelopment = true;
+const inDevelopment = false;
 
 export const MyApiClient = axios.create({
   baseURL: inDevelopment
