@@ -35,7 +35,7 @@ class SignUp extends React.Component {
     produceType = produceType.toLowerCase();
 
     axios
-      .post("/products", {
+      .post("products", {
         produceName,
         produceType,
         producePrice,

@@ -22,7 +22,7 @@ class CheckoutPage extends React.Component {
       return { name, quantity, _id: id };
     });
     axios
-      .post("/checkout", {
+      .post("checkout", {
         transformedCartItems,
         displayName,
         email,
