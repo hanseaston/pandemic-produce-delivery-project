@@ -8,7 +8,7 @@ const StripeCheckoutButton = ({ price, paymentSuccessCallback }) => {
 
   const onToken = (token) => {
     axios
-      .post("payment", {
+      .post("/api/payment", {
         amount: priceForStripe,
         token,
       })
