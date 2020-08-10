@@ -50,6 +50,6 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^4.0.1"
+    "concurrently": "^5.3.0"
   }
 }
