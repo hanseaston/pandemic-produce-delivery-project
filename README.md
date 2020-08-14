@@ -123,9 +123,9 @@ I want to make sure your experience here is a **positive, friendly, and exciting
 
 ### Join us!
 
-I started this project in hope that the delivery service **will not simply be limited to our Seattle neighborhood, but rather anywhere else in the world.** ♥️♥️♥️
+I started this project in hope that the delivery service **will not simply be limited to our Seattle neighborhood, but rather anywhere else in the world.** ♥️
 
-Long before the idea of creating an open-source project even came to my mind, there were already kind-hearted people who were oferring such services to others in need in the neighborhood. So even without our online shop in place and out there ready to serve, you can do something for your community right now, regardless of where you are! 🎉♥
+Long before the idea of creating an open-source project even came to my mind, there were already kind-hearted people who were oferring such services to others in need in the neighborhood. So even without our online shop in place and out there ready to serve, you can do something for your community right now, regardless of where you are! 🎉
 
 With that said, I would **really really encourge you to fork and use this project in whatever way you want. Feel free to redesign it in your own language, for your own neighborhood . Let's keep spreading love during this challenging time.**
 
@@ -177,7 +177,7 @@ Now that you've made your decision to make your first contribution. Here's how t
    npm install    // install dependencies of backend
    ```
 
-5. **Configure the appropriate [environment variables](#configuring-environment-variables)**
+5. **Configure the appropriate [environment variables](#env-file-on-the-backend)**
 
 6. **Running only the frontend**
 
