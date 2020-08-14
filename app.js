@@ -29,7 +29,7 @@ if (process.env.NODE_ENV !== "production") {
 /**
  * Connecting to Moogse database
  */
-mongoose.connect(process.env.mongooseConnection, function (err, res) {
+mongoose.connect(process.env.mongooseConnection, {useNewUrlParser: true, useUnifiedTopology: true }, function (err, res) {
   if (err) {
     console.log(
       "ERROR connecting to: " + process.env.mongooseConnection + ". " + err
