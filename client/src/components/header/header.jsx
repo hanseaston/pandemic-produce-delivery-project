@@ -19,6 +19,9 @@ const Header = ({ currentUser, hidden }) => (
     </Link>
     <ShopHeader className='shoptitle' />
     <div className='options'>
+      <NavLink className='option' to='/'>
+        HOME
+      </NavLink>
       <NavLink activeStyle={{ opacity: 0.6 }} className='option' to='/about'>
         ABOUT
       </NavLink>
