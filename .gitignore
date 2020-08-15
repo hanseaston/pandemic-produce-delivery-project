@@ -4,3 +4,4 @@ node_modules*
 docs
 client/src/firebase/connection.js
 client/src/components/stripe-button/stripe-public-key.js
+.gitignore
