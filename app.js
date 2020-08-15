@@ -27,17 +27,29 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 /**
- * Connecting to Moogse database
+ * Connecting to Mongoose database
  */
-mongoose.connect(process.env.mongooseConnection, {useNewUrlParser: true, useUnifiedTopology: true }, function (err, res) {
-  if (err) {
-    console.log(
-      "ERROR connecting to: " + process.env.mongooseConnection + ". " + err
-    );
-  } else {
-    console.log("Succeeded connected to: " + process.env.mongooseConnection);
+mongoose.connect(
+  process.env.mongooseConnection,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  function (err, res) {
+    if (err) {
+      console.log(
+        "ERROR connecting to: " + process.env.mongooseConnection + ". " + err
+      );
+    } else {
+      console.log("Succeeded connected to: " + process.env.mongooseConnection);
+    }
   }
-});
+);
+
+/**
+ * Router for handling backend endpoint requests
+ */
+
+app.use("/api/products", productRouter);
+app.use("/api/payment", paymentRouter);
+app.use("/api/checkout", checkoutRouter);
 
 /**
  * Production dependency for frontend connection
@@ -49,13 +61,6 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "client/build", "index.html"));
   });
 }
-/**
- * Router for handling backend endpoint requests
- */
-
-app.use("/api/products", productRouter);
-app.use("/api/payment", paymentRouter);
-app.use("/api/checkout", checkoutRouter);
 
 /**
  * Finally listening to the port
