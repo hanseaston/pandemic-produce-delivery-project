@@ -41,7 +41,7 @@ export const createUserProfileDocument = async (user, additionalData) => {
         displayName,
         email,
         createdAt,
-        privelege: additionalData[0],
+        privilege: additionalData[0],
       });
     } catch (error) {
       //TODO: want to show a pop-window rather than simply doing alert
@@ -66,7 +66,7 @@ export const checkUserIsAuthenticated = async (user) => {
   if (!snapShot.exists) {
     throw new Error("user should already be created and stored in the store");
   } else {
-    return snapShot.get("privelege");
+    return snapShot.get("privilege");
   }
 };
 
