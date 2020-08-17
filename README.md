@@ -88,7 +88,7 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 <img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/hans.JPG">
   <br /><p>I am Hans. I am currently pursuing a computer science major at University of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
-<br /><br />
+<br /><br /><br />
 
 <img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/neverdue.jpg">
   <p>I'm an international student at the University of South Florida pursuing a Bachelor's degree in Computer Science. I have completed an independent web development course from Udemy which has allowed me to work on some of the most exciting projects. As a developer, I'm wildly enthusiastic about coding, problem-solving, and software development. I am always ready to learn to grow professionally in this field.</p>
