@@ -85,7 +85,7 @@ class App extends React.Component {
             exact
             path='/admin/add'
             render={() =>
-              !user || !user.privelege ? (
+              !user || !user.privilege ? (
                 <Redirect to='/' />
               ) : (
                 <AdminAddProductPage />
@@ -96,7 +96,7 @@ class App extends React.Component {
             exact
             path='/admin/checkout'
             render={() =>
-              !user || !user.privelege ? (
+              !user || !user.privilege ? (
                 <Redirect to='/' />
               ) : (
                 <UserOrdersPage />

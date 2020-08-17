@@ -28,7 +28,7 @@ const Header = ({ currentUser, hidden }) => (
       <NavLink activeStyle={{ opacity: 0.6 }} className='option' to='/shop'>
         SHOP
       </NavLink>
-      {currentUser && currentUser.privelege ? (
+      {currentUser && currentUser.privilege ? (
         <NavLink
           activeStyle={{ opacity: 0.6 }}
           className='option'
@@ -37,7 +37,7 @@ const Header = ({ currentUser, hidden }) => (
           ADMIN
         </NavLink>
       ) : null}
-      {currentUser && currentUser.privelege ? (
+      {currentUser && currentUser.privilege ? (
         <NavLink
           activeStyle={{ opacity: 0.6 }}
           className='option'
