@@ -18,7 +18,7 @@
 <p align="center">
   <strong>
     Short demo <a href="https://streamable.com/8ww17h"> here</a>
-    <br />Deployment coming soon ☺️
+    <br />[It's live! ☺️](http://www.seattleproduce.delivery/)
   </strong>
 </p>
 
