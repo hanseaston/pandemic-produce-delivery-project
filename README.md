@@ -18,7 +18,7 @@
 <p align="center">
   <strong>
     Short demo <a href="https://streamable.com/8ww17h"> here</a>
-    <br />[It's live! ☺️](http://www.seattleproduce.delivery/)
+    <br />[It's fianlly live! ☺️](http://www.seattleproduce.delivery/)
   </strong>
 </p>
 
@@ -30,6 +30,7 @@
 - [Tech-stack](#tech-stack)
 - [Open-source Team](#open-source-team)
     - [Hans Zhang - Organizer/Developer](#hans-zhang---organizerdeveloper)
+    - [Mayank Pandey - Collaborator](#mayank-pandey---collaborator)
 - [Join our open-source project! 💪](#join-our-open-source-project-)
   - [Motivation for open-source](#motivation-for-open-source)
   - [Coding for social good](#coding-for-social-good)
