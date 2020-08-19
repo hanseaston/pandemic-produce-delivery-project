@@ -1,8 +1,8 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
-import STRIPE_PUBLIC_KEY from "./stripe-public-key";
-import axios from "axios";
 
+import axios from "axios";
+import STRIPE_PUBLIC_KEY from "../../config/stripekey";
 const StripeCheckoutButton = ({ price, paymentSuccessCallback }) => {
   const priceForStripe = price * 100;
 
@@ -30,13 +30,13 @@ const StripeCheckoutButton = ({ price, paymentSuccessCallback }) => {
 
   return (
     <StripeCheckout
-      label='Pay'
-      name='Seattle Produce Delivery'
+      label="Pay"
+      name="Seattle Produce Delivery"
       billingAddress
       shippingAddress
       description={`Your total is $${price}`}
       amount={priceForStripe}
-      panelLabel='Pay'
+      panelLabel="Pay"
       token={onToken}
       stripeKey={STRIPE_PUBLIC_KEY}
     />
