@@ -4,7 +4,7 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
-import config from "../config/firebase";
+import config from "../config/firebase_key";
 
 /**
  * Initialize firebase

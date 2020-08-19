@@ -29,7 +29,7 @@
 - [Features](#features)
 - [Tech-stack](#tech-stack)
 - [Open-source Team](#open-source-team)
-    - [Hans Zhang - Organizer/Developer](#hans-zhang---organizerdeveloper)
+  - [Hans Zhang - Organizer/Developer](#hans-zhang---organizerdeveloper)
 - [Join our open-source project! 💪](#join-our-open-source-project-)
   - [Motivation for open-source](#motivation-for-open-source)
   - [Coding for social good](#coding-for-social-good)
@@ -249,29 +249,15 @@ Firstly, make sure you have signed in [**firebase**](https://firebase.google.com
 
 <img src="assets/readme/instruction-screenshots/firebase-auth-setup.png">
 
-Then, from the project's root directory:
+You are provided with a folder called config that has all your keys
 
-```
-cd client/src/firebase/connection
-```
+`client/src/config/`
 
-You will see a file named `connection-example.js`. This file sets up the connection for your
-firebase client and is used by `firebase.js` in the same folder.
+1. rename firebase_key.example.js and stripekey.example.js to firebase_key.js and stripekey.js
 
-```
-cp connection-example.js connection.js
-```
+2. go to https://console.firebase.google.com/project/<YOUR_PROJECT>/overview to get your sdk key copy paste into config within the firebase_key.js file
 
-Copy in your own firebase config in the `connection.js`
-
-If you want to test out the stripe API, you need to configure the **Stripe public key** as well. From the project's root directory:
-
-```
-cd client/src/components/stripe-button
-cp stripe-public-key-example.js stripe-public-key.js
-```
-
-From your Stripe account, copy the publishable key into `stripe-public-key.js`
+3. go to https://dashboard.stripe.com/ click on developers and click on api key copy and paste Publishable key in STRIPE_PUBLIC_KEY
 
 **Congratulations! 🎉🎉🎉** You are done with all of the project setup! Now you can test out
 whether your configuration is correct by running the project. You should now be able
