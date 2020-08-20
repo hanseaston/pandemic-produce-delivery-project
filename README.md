@@ -107,6 +107,7 @@ Our shop platform is an open-source project, and we are always looking for more 
 #### [Bryan](https://github.com/easyrun32) - Developer
 
   <img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/dynamic.jpg">
+  <br />
   <p>I am Bryan a developer from New York who is very passionate about tech! Currently, i am contributing to open-source to collaborate with other developers and to gain more skills. My goal is to become a professional FullStack developer!</p>
 
 <br />
