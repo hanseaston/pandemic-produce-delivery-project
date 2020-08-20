@@ -32,6 +32,7 @@
     - [Hans Zhang - Organizer/Developer](#hans-zhang---organizerdeveloper)
     - [Mayank Pandey - Developer](#mayank-pandey---developer)
     - [Andres - Developer](#andres---developer)
+    - [Bryan - Developer](#bryan---developer)
 - [Join our open-source project! 💪](#join-our-open-source-project-)
   - [Motivation for open-source](#motivation-for-open-source)
   - [Coding for social good](#coding-for-social-good)
@@ -102,7 +103,10 @@ Our shop platform is an open-source project, and we are always looking for more 
 <img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/andre.jpg">
 <br />
   <p>I am an Estonian psychologist turned analyst, trying to turn into a full-stack developer. For a while I tried to avoid going into the tech world because it seemed removed from actual human interaction, but realised it is a lot of problem solving which often involves a lot of teamwork. I am studying on my own and trying to make worthwhile open-source contributions to hone my skills!</p>
-<br /><br />
+<br />
+
+#### [Bryan](https://github.com/easyrun32) - Developer
+
   <img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/dynamic.jpg">
   <p>I am Bryan a developer from New York who is very passionate about tech! Currently, i am contributing to open-source to collaborate with other developers and to gain more skills. My goal is to become a professional FullStack developer!</p>
 
