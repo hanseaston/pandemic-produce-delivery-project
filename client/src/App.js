@@ -36,14 +36,16 @@ import CovidGlimpse from "./pages/covid-glimpse/covid-glimpse";
 import "./App.css";
 
 /**
+ * @Utils
+ */
+import { writeProductsToJson } from "./util";
+
+/**
  * @class
  * Main entry point of app front-end logic
  */
 class App extends React.Component {
-  /**
-   * When app component mounts, needs to fetch user information if necessary
-   */
-
+  // When app component mounts, needs to fetch user information if necessary
   componentDidMount() {
     const { setCurrentUser } = this.props;
 
@@ -57,6 +59,7 @@ class App extends React.Component {
             ...snapShot.data(),
           });
         });
+        writeProductsToJson();
       } else {
         // No user is set, set current user to null
         setCurrentUser(null);

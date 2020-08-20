@@ -30,7 +30,8 @@
 - [Tech-stack](#tech-stack)
 - [Open-source Team](#open-source-team)
     - [Hans Zhang - Organizer/Developer](#hans-zhang---organizerdeveloper)
-    - [Mayank Pandey - Collaborator](#mayank-pandey---collaborator)
+    - [Mayank Pandey - Developer](#mayank-pandey---developer)
+    - [Andres - Developer](#andres---developer)
 - [Join our open-source project! 💪](#join-our-open-source-project-)
   - [Motivation for open-source](#motivation-for-open-source)
   - [Coding for social good](#coding-for-social-good)
@@ -91,10 +92,16 @@ Our shop platform is an open-source project, and we are always looking for more 
   <br /><p>I am Hans. I am currently pursuing a computer science major at University of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
 <br />
 
-#### [Mayank Pandey](https://github.com/neverdue) - Collaborator
+#### [Mayank Pandey](https://github.com/neverdue) - Developer
 
 <img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/neverdue.jpg">
   <p>I'm an international student at the University of South Florida pursuing a Bachelor's degree in Computer Science. I have completed an independent web development course from Udemy which has allowed me to work on some of the most exciting projects. As a developer, I'm wildly enthusiastic about coding, problem-solving, and software development. I am always ready to learn to grow professionally in this field.</p>
+
+#### [Andres](#) - Developer
+
+<img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/andres.jpg">
+  <p>I am an Estonian psychologist turned analyst, trying to turn into a full-stack developer. For a while I tried to avoid going into the tech world because it seemed removed from actual human interaction, but realised it is a lot of problem solving which often involves a lot of teamwork. I am studying on my own and trying to make worthwhile open-source contributions to hone my skills!</p>
+
 
 ## Join our open-source project! 💪
 

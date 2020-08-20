@@ -14,6 +14,7 @@ const bodyParser = require("body-parser");
 const productRouter = require("./routes/products");
 const paymentRouter = require("./routes/payment");
 const checkoutRouter = require("./routes/checkout");
+const utilRouter = require("./routes/util");
 
 // Initialize the app and port
 const app = express();
@@ -34,11 +35,9 @@ mongoose.connect(
   { useNewUrlParser: true, useUnifiedTopology: true },
   function (err, res) {
     if (err) {
-      console.log(
-        "ERROR connecting to: " + process.env.mongooseConnection + ". " + err
-      );
+      console.log("ERROR connecting to mongoDB", err);
     } else {
-      console.log("Succeeded connected to: " + process.env.mongooseConnection);
+      console.log("Succeeded connecting to mongoDB!");
     }
   }
 );
@@ -50,6 +49,7 @@ mongoose.connect(
 app.use("/api/products", productRouter);
 app.use("/api/payment", paymentRouter);
 app.use("/api/checkout", checkoutRouter);
+app.use("/util", utilRouter);
 
 /**
  * Production dependency for frontend connection
