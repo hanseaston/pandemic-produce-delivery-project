@@ -99,7 +99,7 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 #### [Andres](#) - Developer
 
-<img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/andres.jpg">
+<img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/andre.jpg">
   <p>I am an Estonian psychologist turned analyst, trying to turn into a full-stack developer. For a while I tried to avoid going into the tech world because it seemed removed from actual human interaction, but realised it is a lot of problem solving which often involves a lot of teamwork. I am studying on my own and trying to make worthwhile open-source contributions to hone my skills!</p>
 <br />
 
