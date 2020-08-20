@@ -4,12 +4,13 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
-import config from "../config/firebase_key";
+import firebaseConfig from "../config/firebase_key";
 
 /**
  * Initialize firebase
  */
-firebase.initializeApp(config);
+console.log(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 /**
  *

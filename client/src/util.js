@@ -4,7 +4,7 @@ export const writeProductsToJson = () => {
   axios
     .get("/util/convertProductsToJson")
     .then(() => alert("products written to JSON file"))
-    .catch((err) => alert("err !", err.message));
+    .catch((error) => alert("error in client/src util.js ", error));
 };
 
 export const writeJonToDB = () => {
