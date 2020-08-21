@@ -14,7 +14,7 @@ Finally you will see add firebase sdk and all you gotta do is copy and paste it 
 unless the website changes ;/ look for firebase sdk
 
 */
-const config = {
+const firebaseConfig = {
   apiKey: "AIzaSyCfqM9jfdIqR7z0ACEowKqv2RlhCHVYotg",
   authDomain: "shop-2b337.firebaseapp.com",
   databaseURL: "https://shop-2b337.firebaseio.com",
@@ -24,4 +24,4 @@ const config = {
   appId: "1:962003982333:web:a74318fde0750c0a692b94",
   measurementId: "G-C5GMFKY66Y",
 };
-export default config;
+export default firebaseConfig;
