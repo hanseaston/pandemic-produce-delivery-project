@@ -240,10 +240,10 @@ Our application uses [**environmental variables**](https://en.wikipedia.org/wiki
 
 We have provided you with an example of `.env` file in the root directory.
 
-To set up a `.env`, copy the `.env.example` file, which lists needed configuration values. For example, in the Mac OS terminal:
+To set up a `.env`, copy the `.example.env` file, which lists needed configuration values. For example, in the Mac OS terminal:
 
 ```
-cp .env.example .env
+cp .example.env .env
 ```
 
 A set variable in the `.env` file will look like this:
@@ -256,7 +256,7 @@ Change the `'your own connection string'` to **your own mongooseConnection strin
 
 Repeat the same process for the Stripe API. You should replace the placeholder with **your own Stripe API secret key.** If you will be working on code that is not related to the payment functionality, you **can safely ignore this part.**
 
-**If you need to introduce a new environmental variable**, please coordinate with Hans. Make sure to add it to the `.env.example` file, and note it in your pull request.
+**If you need to introduce a new environmental variable**, please coordinate with Hans. Make sure to add it to the `.example.env` file, and note it in your pull request.
 
 <br />
 ### configuring frontend
@@ -300,7 +300,7 @@ We currently have two types of users: **admin user** and **normal user**.
 
 ## User Authorization in Code
 
-Our shop's signin logic is mostly handled by Firebase. In our `app.js`, the function onAuthStateChanged is an observer function defined by Firebase that is triggered whenever a user signs in or signs out.
+Our shop's signin logic is mostly handled by Firebase. In our `client/src/components/App.js`, the function onAuthStateChanged is an observer function defined by Firebase that is triggered whenever a user signs in or signs out.
 
 ```javascript
 // Once the user's authentication status is changed
@@ -320,8 +320,8 @@ In the case when you want to grant a user privilege (e.x. for your personal acco
 - run the server using `npm run build`
 - change the parameter `[false]` to `[true]` in `createUserProfileDocument` indicate you want the admin privilege for any incoming account registration
 - register a **new** email account (either through google signin or normal signup, but make sure the account doesn't store in the database) using the application:
-- go to your [**firebase console**](https://console.firebase.google.com/) and make sure your user entry in the firestore collection `users` has the privelege field set to `true`
-- reset the parameter from `[true]` to `[false]` in your `app.js`
+- go to your [**firebase console**](https://console.firebase.google.com/) and make sure your user entry in the cloud firestore collection `users` has the privilege field set to `true`
+- reset the parameter from `[true]` to `[false]` in your `client/src/components/App.js`
 
 Now, you are able to render components conditionally by checking the user's privilege. For example, like this:
 
