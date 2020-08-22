@@ -3,3 +3,5 @@ node_modules*
 .env
 !*example.ev
 docs
+/Users/mayankpandey/desktop/Pandemic-Produce-Delivery-Project/client/src/config
+/Users/mayankpandey/desktop/Pandemic-Produce-Delivery-Project/client/build
