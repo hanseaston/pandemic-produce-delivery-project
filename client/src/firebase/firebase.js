@@ -9,7 +9,6 @@ import firebaseConfig from "../config/firebase_key";
 /**
  * Initialize firebase
  */
-console.log(firebaseConfig);
 firebase.initializeApp(firebaseConfig);
 
 /**
