@@ -4,21 +4,15 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
-import { firebaseConfig as Firebase_Production_key } from "../config/firebase_key";
+// Use this if u want to test or use for production
+//import { firebaseConfig as Firebase_Production_key } from "../config/firebase_key";
+
 import { firebaseConfig as Firebase_Development_key } from "../config/firebase_key.example";
 /**
  * Initialize firebase
  */
 
-if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
-  firebase.initializeApp(Firebase_Development_key); // Example/Developmentkey
-} else {
-  if (REACT_APP_MY_ENV_VAR) {
-    firebase.initializeApp(Firebase_Development_key);
-  } else {
-    firebase.initializeApp(Firebase_Production_key); // Your private key
-  }
-}
+firebase.initializeApp(Firebase_Development_key);
 
 /**
  *
