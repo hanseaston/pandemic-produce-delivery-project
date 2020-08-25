@@ -3,8 +3,8 @@ import StripeCheckout from "react-stripe-checkout";
 
 import axios from "axios";
 // Use STRIPE_PUBLIC_KEY_PRODUCTION if You want to test or use for production
-//import { STRIPE_PUBLIC_KEY as STRIPE_PUBLIC_KEY_PRODUCTION } from "../config/firebase_key";
-import { STRIPE_PUBLIC_KEY as STRIPE_PUBLIC_KEY_DEVELOPMENT } from "../../config/firebase_key.example";
+//import { STRIPE_PUBLIC_KEY as STRIPE_PUBLIC_KEY_PRODUCTION } from "../config/stripekey";
+import { STRIPE_PUBLIC_KEY as STRIPE_PUBLIC_KEY_DEVELOPMENT } from "../../config/stripekey.example";
 const StripeCheckoutButton = ({ price, paymentSuccessCallback }) => {
   const priceForStripe = price * 100;
 
