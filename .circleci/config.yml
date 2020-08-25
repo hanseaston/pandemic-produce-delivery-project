@@ -13,6 +13,9 @@ jobs:
       - run: echo "Node npm installing"
       - run: npm install
       - run: npm run client-install
+      - run: 
+        echo 'export MY_ENV_VAR="development"' >> $BASH_ENV
+        command: echo ${MY_ENV_VAR}
       - run: CI=true npm run build
   test:
     docker:
