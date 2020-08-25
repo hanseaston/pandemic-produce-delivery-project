@@ -29,9 +29,26 @@ if (process.env.NODE_ENV !== "production") {
 
 /**
  * Connecting to Mongoose database
+ The reason why mongodb was not working was because of 
+ NODE_ENV
+ which exist in all projects 
+ so when you deploy .env file is ignored
+
+ use in command line  at root directory 
+ ```
+ $export NODE_ENV=production
+
+ ```
  */
+
+const db = require("./config/key").mongoURI;
+
+/*
+For deployment of mongodb in heroku they have a config in 
+*/
+
 mongoose.connect(
-  process.env.mongooseConnection,
+  db,
   { useNewUrlParser: true, useUnifiedTopology: true },
   function (err, res) {
     if (err) {

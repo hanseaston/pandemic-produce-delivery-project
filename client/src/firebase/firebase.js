@@ -4,12 +4,17 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
-import firebaseConfig from "../config/firebase_key";
-
+import { firebaseConfig as Firebase_Production_key } from "../config/firebase_key";
+import { firebaseConfig as Firebase_Development_key } from "../config/firebase_key.example";
 /**
  * Initialize firebase
  */
-firebase.initializeApp(firebaseConfig);
+
+if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
+  firebase.initializeApp(Firebase_Development_key); // Example/Developmentkey
+} else {
+  firebase.initializeApp(Firebase_Production_key); // Your private key
+}
 
 /**
  *
