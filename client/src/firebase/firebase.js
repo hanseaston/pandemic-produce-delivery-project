@@ -13,7 +13,11 @@ import { firebaseConfig as Firebase_Development_key } from "../config/firebase_k
 if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
   firebase.initializeApp(Firebase_Development_key); // Example/Developmentkey
 } else {
-  firebase.initializeApp(Firebase_Production_key); // Your private key
+  if (REACT_APP_MY_ENV_VAR) {
+    firebase.initializeApp(Firebase_Development_key);
+  } else {
+    firebase.initializeApp(Firebase_Production_key); // Your private key
+  }
 }
 
 /**
