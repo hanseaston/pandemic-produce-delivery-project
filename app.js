@@ -29,16 +29,24 @@ if (process.env.NODE_ENV !== "production") {
 
 /**
  * Connecting to Mongoose database
- The reason why mongodb was not working was because of 
- NODE_ENV
- which exist in all projects 
- so when you deploy .env file is ignored
+The reason why mongodb was not working was because of 
+proccess.env
 
- use in command line  at root directory 
+Specifically the default  variable NODE_ENV
+
+which exist in all projects 
+so when you deploy .env file is ignored
+
+To test in the command line at root directory 
+Type
  ```
  $export NODE_ENV=production
 
  ```
+ you will see a mongoUri error when in production mode
+
+ You could still use process.env.mongoUri however u would need to put it in heroku.com config
+
  */
 
 const db = require("./config/key").mongoURI;
