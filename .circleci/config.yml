@@ -13,7 +13,7 @@ jobs:
       - run: echo "Node npm installing"
       - run: npm install
       - run: npm run client-install
-      - run: echo 'export REACT_APP_MY_ENV_VAR="development"' >> $BASH_ENV
+      - run: echo 'export REACT_APP_MY_ENV_VAR="Hello from enviornment variable"' >> $BASH_ENV
       - run:
           name: "What branch am I on now?"
           command: echo ${REACT_APP_MY_ENV_VAR}

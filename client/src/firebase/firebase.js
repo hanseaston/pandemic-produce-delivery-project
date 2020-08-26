@@ -6,7 +6,6 @@ import "firebase/firestore";
 import "firebase/auth";
 // Use Firebase_Production_key if You want to test or use for production
 //import { firebaseConfig as Firebase_Production_key } from "../config/firebase_key";
-
 import { firebaseConfig as Firebase_Development_key } from "../config/firebase_key.example";
 /**
  * Initialize firebase
