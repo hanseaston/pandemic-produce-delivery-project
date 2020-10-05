@@ -59,7 +59,16 @@ class CheckoutPage extends React.Component {
         ))}
         <div className='total'>TOTAL: ${total.toFixed(2)}</div>
         {user ? (
-          <div>
+          <div className="payout-button">
+            <div className='test-warning'>
+              **Our Shop Page is still under Development**
+              <br/>
+              **Please Do not Enter your Real Credit/Debit Card Information**
+              <br/>
+              **Please use the following test Credit Card for payment**
+              <br/>
+              4242 4242 4242 4242 - Exp : 01/22 - CVV:123  
+            </div>
             <StripeCheckout
               price={total}
               paymentSuccessCallback={this.paymentSucceeded}

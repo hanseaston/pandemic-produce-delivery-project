@@ -28,7 +28,18 @@
     margin-left: auto;
     font-size: 36px;
   }
-
+  .payout-button{
+    text-align: center;
+    .test-warning{
+      color:red;
+      text-align: center;
+      font-size: 24px;
+      margin:40px 0px 20px;
+      width: 100%;
+    }
+    
+  }
+  
   .stripe {
     display: none !important;
   }
