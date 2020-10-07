@@ -10,6 +10,12 @@ import { selectCartItems } from "../../redux/cart/cartSelector";
 import "./cart-dropdown.scss";
 
 const CartDropdown = ({ cart, history, dispatch }) => (
+  window.addEventListener('mouseup', (event) =>{
+    let box = document.getElementsByClassName('cart-dropdown');
+    if(event.target != box && event.target.parentNode != box){
+      dispatch(toggleCartHidden());
+    }
+  }),
   <div className='cart-dropdown'>
     <div className='cart-items'>
       {cart.length ? (
