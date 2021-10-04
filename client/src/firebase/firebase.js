@@ -26,6 +26,8 @@ export const createUserProfileDocument = async (user, additionalData) => {
   // TODO: might want to add the Google account's profile pic!
   // const profilePic = user.photoURL;
 
+  // Will implement the above feature soon - Jona Brown (SorviusN)
+
   // Reference to the document
   const userRef = firestore.doc(`users/${user.uid}`);
 
