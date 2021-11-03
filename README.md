@@ -5,7 +5,7 @@
 <!-- project bg image, might want to replace it something more descriptive in the future -->
 <p align="center">
   <img
-    src="/public/readme/illustration-images/project-bg.png"
+    src="/assets/readme/illustration-images/project-bg.png"
     alt="project readme background"
   />
 </p>
@@ -17,7 +17,7 @@
 
 <p align="center">
   <strong>
-    Demo at <a href="#">here</a>
+    Short demo <a href="https://streamable.com/8ww17h"> here</a>
   </strong>
 </p>
 
@@ -29,6 +29,9 @@
 - [Tech-stack](#tech-stack)
 - [Open-source Team](#open-source-team)
     - [Hans Zhang - Organizer/Developer](#hans-zhang---organizerdeveloper)
+    - [Mayank Pandey - Developer](#mayank-pandey---developer)
+    - [Andres - Developer](#andres---developer)
+    - [Bryan - Developer](#bryan---developer)
 - [Join our open-source project! 💪](#join-our-open-source-project-)
   - [Motivation for open-source](#motivation-for-open-source)
   - [Coding for social good](#coding-for-social-good)
@@ -61,7 +64,7 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 ## Features
 
 - Located in the greater Seattle area 🌴💦
-- Fully functional produce delivery shop with more than 50 items avaiable
+- Fully functional produce delivery shop with more than 50 items available
   - 5 main categories:
     vegetables🥬, fruit🍋, protein🍗, seafood🍤, dairy🧀
 - Signin, signup, and signout functionalities, including Google signin
@@ -74,7 +77,7 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 - Frontend: React & Redux
 - Backend: Node & Express
 - Database: MongoDB & FireStore
-- Authentification: Firebase
+- Authentication: Firebase
 - Payment: Stripe API
 - SEO: currently in development process
 - Testing: currently in development process
@@ -85,8 +88,27 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 #### [Hans Zhang](https://github.com/hanszhang00) - Organizer/Developer
 
-<img align="left" width="120" height="120" style="border-radius:50%" src="public/readme/contributors/hans.JPG">
-  <br /><p>I am Hans. I am currently pusuing a computer science major at Univerisity of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
+<img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/hans.JPG">
+  <br />
+  <p>I am Hans. I am currently pursuing a computer science major at University of Washington. I am really excited to build up this website using my programming skills, and I am even more excited to collaborate with other amazing developers to contribute to something meaningful.</p>
+  <br />
+
+#### [Mayank Pandey](https://github.com/neverdue) - Developer
+
+<img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/neverdue.jpg">
+  <p>I'm an international student at the University of South Florida pursuing a Bachelor's degree in Computer Science. I have completed an independent web development course from Udemy which has allowed me to work on some of the most exciting projects. As a developer, I'm wildly enthusiastic about coding, problem-solving, and software development. I am always ready to learn to grow professionally in this field.</p>
+
+#### [Andres](#) - Developer
+
+<img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/andre.jpg">
+<br />
+  <p>I am an Estonian psychologist turned analyst, trying to turn into a full-stack developer. For a while I tried to avoid going into the tech world because it seemed removed from actual human interaction, but realised it is a lot of problem solving which often involves a lot of teamwork. I am studying on my own and trying to make worthwhile open-source contributions to hone my skills!</p>
+
+#### [Bryan](https://github.com/easyrun32) - Developer
+
+  <img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/dynamic.jpg">
+  <br />
+  <p>I am Bryan a developer from New York who is very passionate about tech! Currently, i am contributing to open-source to collaborate with other developers and to gain more skills. My goal is to become a professional FullStack developer!</p>
 
 <br />
 
@@ -96,7 +118,7 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 This is a **beginner-friendly** open-source project aimed for **social good**. We are always looking for more passionate programmers, like you, to contribute!
 
-Open-source project is powerful because it lowers the barriers to adoption and collaboration, allowing people to spread and improve projects quickly. It also is a perfect place for anyne to hone their programming skills and share their visions and ideas with like-minded others. Here are three major reasons as to why you should contribute to our open-source project!
+Open-source project is powerful because it lowers the barriers to adoption and collaboration, allowing people to spread and improve projects quickly. It also is a perfect place for anyone to hone their programming skills and share their visions and ideas with like-minded others. Here are three major reasons as to why you should contribute to our open-source project!
 
 - **Collaboration**: Open-source project can accept changes from anyone in the world.
 - **Adoption**: Open source project can be used by anyone for nearly any purpose.
@@ -106,7 +128,7 @@ If you are still confused about the concept of open source and would like to lea
 
 ### Coding for social good
 
-I am a firm believer that a personal project is **so much more meaningful** if it brings positive impact to the soceity.
+I am a firm believer that a personal project is **so much more meaningful** if it brings positive impact to the society.
 
 I have always been in awe of people who strive to make a change in the world. The philanthropists and activists on the television, in interviews, and in books inspire me with their radiating passion for what they stand for, and I used to hope that one day I could be passionate enough about something to also create change in the world.
 
@@ -116,19 +138,19 @@ And now, here I am, launching **the first open-source project here on Github**. 
 
 I remember the first time I tried to make contribution to an open-source. The experience was quite overwhelming. There were so many things I did not understand about the project, and I couldn't even understand the command lines that were used for setting up the project.
 
-Even now, I am by no means an experienced programmer. There's still so much I am learning everyday. I started programming about two years ago, and it has been a challenging yet exciting journey. One of my regrets I had along the way was failing to discover the beauty of contributing to an open-source. Somehow in my mind, I always thought that I need to be an experinced developer to be able to contribute. But **THAT IS TOTALLY NOT THE CASE**. All you need is a heart to contribute, a willpower that drives you forward, even after failure, and a faith that you will succeed if you keep at it.
+Even now, I am by no means an experienced programmer. There's still so much I am learning everyday. I started programming about two years ago, and it has been a challenging yet exciting journey. One of my regrets I had along the way was failing to discover the beauty of contributing to an open-source. Somehow in my mind, I always thought that I need to be an experienced developer to be able to contribute. But **THAT IS TOTALLY NOT THE CASE**. All you need is a heart to contribute, a willpower that drives you forward, even after failure, and a faith that you will succeed if you keep at it.
 
 I want to make sure your experience here is a **positive, friendly, and exciting one**. Together we can foster a loving community for developers.
 
 ### Join us!
 
-I started this project in hope that the delivery service **will not simply be limited to our Seattle neighborhood, but rather anywhere else in the world.** ♥️♥️♥️
+I started this project in hope that the delivery service **will not simply be limited to our Seattle neighborhood, but rather anywhere else in the world.** ♥️
 
-Long before the idea of creating an open-source project even came to my mind, there were already kind-hearted people who were oferring such services to others in need in the neighborhood. So even without our online shop in place and out there ready to serve, you can do something for your community right now, regardless of where you are! 🎉♥
+Long before the idea of creating an open-source project even came to my mind, there were already kind-hearted people who were offering such services to others in need in the neighborhood. So even without our online shop in place and out there ready to serve, you can do something for your community right now, regardless of where you are! 🎉
 
-With that said, I would **really really encourge you to fork and use this project in whatever way you want. Feel free to redesign it in your own language, for your own neighborhood . Let's keep spreading love during this challenging time.**
+With that said, I would **really really encourage you to fork and use this project in whatever way you want. Feel free to redesign it in your own language, for your own neighborhood . Let's keep spreading love during this challenging time.**
 
-Once you join our project and make your first contribution, we will list you as one of our [**contributors**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) and add your profile in our [**README.md section**](#Open-source-Team). I truly believe that working on an open-source project will make you a better programmer and communicator, and it will also give you something meaningful to talk about when you talk to a recruitor (if you are going to industry in the future)!
+Once you join our project and make your first contribution, we will list you as one of our [**contributors**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) and add your profile in our [**README.md section**](#Open-source-Team). I truly believe that working on an open-source project will make you a better programmer and communicator, and it will also give you something meaningful to talk about when you talk to a recruiter (if you are going to industry in the future)!
 
 Whether it is because of your **passion for social good**, or your desire to **hone your web programming skills**, or simply to find an opportunity to **gain some experiences programming with others**, we would love to have you.
 
@@ -143,20 +165,18 @@ Now that you've made your decision to make your first contribution. Here's how t
 
 ```javascript
 .
-├── build                       # compiled files
-├── src                         # handles all of the frontend logics
+├── assets                      # public resources & assets
+├── client                      # handles all of the frontend logics
   ├── assets                    # storing svg files
   └── components                # where React components live
   └── pages                     # where main shop pages lives
   └── firebase                  # handles firebase connections and logic
   └── redux                     # handles all redux logic, sets up redux store
-└── app.js                      # main entry point of the front end app
-├── server                      # handles all of the backend logics
-  ├── bin                       # starting point of the backend server
+  └── app.js                      # main entry point of the front end app
+├── server                      # (root) directory handles all of the backend logics
   └── models                    # product and checkout item model for database
   └── routes                    # route handler for API endpoints
   └── app.js                    # main entry point for all requests
-├── public                      # public resources & assets
 ├── LICENSE                     # MIT license
 └── README.md                   # documentation of the shop project
 ```
@@ -173,12 +193,12 @@ Now that you've made your decision to make your first contribution. Here's how t
 
 3. **From the root directory of the project, install dependencies with npm**
 4. ```javascript
-   npm install    // install dependencies of frontend
-   cd server    // nagivate to the server directory
+   npm install    // install dependencies of backend
+   cd client   // navigate to the client directory
    npm install    // install dependencies of backend
    ```
 
-5. **Configure the appropriate [environment variables](#configuring-environment-variables)**
+5. **Configure the appropriate [environment variables](#env-file-on-the-backend)**
 
 6. **Running only the frontend**
 
@@ -187,7 +207,7 @@ Now that you've made your decision to make your first contribution. Here's how t
    From your root directory:
 
    ```
-     npm start
+     npm run client
    ```
 
    Visit the frontend application in your browser at **http://localhost:3000**
@@ -201,8 +221,7 @@ Now that you've made your decision to make your first contribution. Here's how t
    From your root directory:
 
    ```javascript
-     cd server
-     npm run build   // you can change the command in package.json, but don't push it to Github
+     npm run dev   // you can change the command in package.json, but don't push it to Github
    ```
 
    This will spin up **both** your frontend React and backend Express server.
@@ -218,12 +237,12 @@ On our backend, our application uses **[MongoDB](https://www.mongodb.com/)** to 
 
 Our application uses [**environmental variables**](https://en.wikipedia.org/wiki/Environment_variable) to manage configuration for both MongoDB and Stripe on the backend. These values are set in a `.env` file in the project root directory that **SHOULD NOT BE PUSHED TO GITHUB for safety reasons**. Each developer **\*should set up their own account's connection string on their own local machine instead.**
 
-We have provivded you with an example of `.env` file in the root directory.
+We have provided you with an example of `.env` file in the root directory.
 
-To set up a `.env`, copy the `.env.example` file, which lists needed configuration values. For example, in the Mac OS terminal:
+To set up a `.env`, copy the `.example.env` file, which lists needed configuration values. For example, in the Mac OS terminal:
 
 ```
-cp .env.example .env
+cp .example.env .env
 ```
 
 A set variable in the `.env` file will look like this:
@@ -236,7 +255,7 @@ Change the `'your own connection string'` to **your own mongooseConnection strin
 
 Repeat the same process for the Stripe API. You should replace the placeholder with **your own Stripe API secret key.** If you will be working on code that is not related to the payment functionality, you **can safely ignore this part.**
 
-**If you need to introduce a new environmental variable**, please coordinate with Hans. Make sure to add it to the `.env.example` file, and note it in your pull request.
+**If you need to introduce a new environmental variable**, please coordinate with Hans. Make sure to add it to the `.example.env` file, and note it in your pull request.
 
 <br />
 ### configuring frontend
@@ -245,31 +264,17 @@ There are **two** files you need to configure before being able to run the appli
 
 Firstly, make sure you have signed in [**firebase**](https://firebase.google.com/) and created a new project for the application. Log into your firebase console and **configure the following setting** for user signin and authorization.
 
-<img src="public/readme/instruction-screenshots/firebase-auth-setup.png">
+<img src="assets/readme/instruction-screenshots/firebase-auth-setup.png">
 
-Then, from the project's root directory:
+You are provided with a folder called config that has all your keys
 
-```
-cd src/firebase/connection
-```
+`client/src/config/`
 
-You will see a file named `connection-example.js`. This file sets up the connection for your
-firebase client and is used by `firebase.js` in the same folder.
+1. rename firebase_key.example.js and stripekey.example.js to firebase_key.js and stripekey.js
 
-```
-cp connection-example.js connection.js
-```
+2. go to https://console.firebase.google.com/project/<YOUR_PROJECT>/overview to get your sdk key copy paste into config within the firebase_key.js file
 
-Copy in your own firebase config in the `connection.js`
-
-If you want to test out the stripe API, you need to configure the **Stripe public key** as well. From the project's root directory:
-
-```
-cd src/components/stripe-button
-cp stripe-public-key-example.js stripe-public-key.js
-```
-
-From your Stripe account, copy the publishable key into `stripe-public-key.js`
+3. go to https://dashboard.stripe.com/ click on developers and click on api key copy and paste Publishable key in STRIPE_PUBLIC_KEY
 
 **Congratulations! 🎉🎉🎉** You are done with all of the project setup! Now you can test out
 whether your configuration is correct by running the project. You should now be able
@@ -288,16 +293,16 @@ We currently have two types of users: **admin user** and **normal user**.
 
 * **Admin edit-product page** enables you to add new products (with relevant product information) to Mongo Database. Other users will be able to see the new product once they refresh the page.
 
-- **Admin checkout page** keeps track all of the successful orders made by the all of the users. We use this page to know what products users have ordered in preperation for our delivery process.
+- **Admin checkout page** keeps track all of the successful orders made by the all of the users. We use this page to know what products users have ordered in preparation for our delivery process.
 
 **Note**: The admin pages are still in development process (basic functionality already implemented). Help us make them better!
 
 ## User Authorization in Code
 
-Our shop's signin logic is mostly handled by Firebase. In our `app.js`, the function onAuthStateChanged is an observer function defined by Firebase that is triggered whenever a user signs in or signs out.
+Our shop's signin logic is mostly handled by Firebase. In our `client/src/components/App.js`, the function onAuthStateChanged is an observer function defined by Firebase that is triggered whenever a user signs in or signs out.
 
 ```javascript
-// Once the user's authentification status is changed
+// Once the user's authentication status is changed
 auth.onAuthStateChanged(async (user) => {
   if (user !== null) {
     const userRef = await createUserProfileDocument(user, [false]);
@@ -305,26 +310,26 @@ auth.onAuthStateChanged(async (user) => {
 
 Note that in the function, we are calling a function called `createUserProfileDocument`. This function captures the user's information and stores it back to our firebase database, so that next time a user signs in, we are able to verify their identity.
 
-In particular, notice that the second parameter of the function is an array containing a boolean value. The value **determines whether the user passed in will have the admin privelege or not**.
-Normally, the default is false, since we don't want to grant a user the admin privelege.
+In particular, notice that the second parameter of the function is an array containing a boolean value. The value **determines whether the user passed in will have the admin privilege or not**.
+Normally, the default is false, since we don't want to grant a user the admin privilege.
 
-In the case when you want to grant a user privelege (e.x. for your personal account), follow the following steps:
+In the case when you want to grant a user privilege (e.x. for your personal account), follow the following steps:
 
 - make sure you have set up the connection for firebase
 - run the server using `npm run build`
-- change the paramter `[false]` to `[true]` in `createUserProfileDocument` indicate you want the admin privelege for any incoming account registration
-- register a **new** email account (either through google signin or normal signup, but make sure the account doesn't store in the database) using the applicatio:
-- go to your [**firebase console**](https://console.firebase.google.com/) and make sure your user entry in the firestore collection `users` has the privelege field set to `true`
-- reset the paramter from `[true]` to `[false]` in your `app.js`
+- change the parameter `[false]` to `[true]` in `createUserProfileDocument` indicate you want the admin privilege for any incoming account registration
+- register a **new** email account (either through google signin or normal signup, but make sure the account doesn't store in the database) using the application:
+- go to your [**firebase console**](https://console.firebase.google.com/) and make sure your user entry in the cloud firestore collection `users` has the privilege field set to `true`
+- reset the parameter from `[true]` to `[false]` in your `client/src/components/App.js`
 
-Now, you are able to render components conditionally by checking the user's privelege. For example, like this:
+Now, you are able to render components conditionally by checking the user's privilege. For example, like this:
 
 ```javascript
   <Route
     exact
     path='/admin/add'
     render={() =>
-      !user || !user.privelege ? (
+      !user || !user.privilege ? (
         <Redirect to='/' />
       ) : (
         <AdminAddProductPage />
@@ -333,7 +338,7 @@ Now, you are able to render components conditionally by checking the user's priv
 ```
 
 We are checking whether the user is signed in (`!user`) and whether the user has admin
-privelege (`!user.privelege`) to determine rendering or redirecting.
+privilege (`!user.privilege`) to determine rendering or redirecting.
 
 Finally, **make sure you set your email address to be an admin account using the steps above**. Only then will you be able to add products to the database via `admin-edit-product` page ♥️.
 
@@ -348,14 +353,14 @@ First of all, make sure:
 
 When you spin up the application, you should see the shop page **look like the following**:
 
-<img src="public/readme/instruction-screenshots/shop-mainpage.png">
+<img src="assets/readme/instruction-screenshots/shop-mainpage.png">
 <br />
 In the navbar, click on the admin tab. It should bring you to the following page.
 
-<img src="public/readme/instruction-screenshots/edit-page%20information.png">
+<img src="assets/readme/instruction-screenshots/edit-page%20information.png">
 <br />
 
-Now, simply type in the relevent information. Here are a few things to note:
+Now, simply type in the relevant information. Here are a few things to note:
 
 - None of the fields should be left empty
 
@@ -383,7 +388,7 @@ Instead, if you want to test out the stripe functionality, you can use the dummy
 
 Since this is pretty important, someone might want to add **a line of warning** at the bottom of the checkout page. Here's the [**issue**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/24) if anyone likes to add work on it!
 
-After you have sucessfully made the test payment, you should see a pop-up window that displays **Your payment is successful. We will be in touch through email soon.** Now, all of the products a customer has checked out and paid for has been added to the MongoDB database (feel free to check yourself)!
+After you have successfully made the test payment, you should see a pop-up window that displays **Your payment is successful. We will be in touch through email soon.** Now, all of the products a customer has checked out and paid for has been added to the MongoDB database (feel free to check yourself)!
 
 **Cool! Keep hacking!!** 🎉
 

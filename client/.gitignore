@@ -1,0 +1,3 @@
+src/config/firebase_key.js
+src/config/stripekey.js
+src/config/!*.example.js
