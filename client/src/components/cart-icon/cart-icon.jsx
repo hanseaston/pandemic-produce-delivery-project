@@ -10,6 +10,8 @@ import { createStructuredSelector } from "reselect";
 import { selectCartItemsCount } from "../../redux/cart/cartSelector";
 
 const CartIcon = ({ toggleCartHidden, getCartCount }) => (
+  // Importing toggleCartHidden from redux (the state of the parent component).
+  // We then change that state when clicking.
   <div className='cart-icon' onClick={toggleCartHidden}>
     <ShoppingIcon className='shopping-icon' />
     <span className='item-count'>{getCartCount}</span>
