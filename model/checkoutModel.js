@@ -25,5 +25,5 @@ const checkoutSchema = new Schema(
   { versionKey: false }
 );
 
-/** Exporting the checking-out model with its schema */
+/* Exporting the checking-out model with its schema */
 module.exports = mongoose.model("Checkout", checkoutSchema);
