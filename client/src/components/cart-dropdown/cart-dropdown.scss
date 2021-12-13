@@ -20,7 +20,9 @@
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+
+    // temporary change - will be switched to overflow: scroll later.
+    overflow: none;
   }
 
   button {

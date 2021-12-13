@@ -34,5 +34,5 @@ const productSchema = new Schema(
   { versionKey: false }
 );
 
-/** Exporting the product model with its schema */
+/* Exporting the product model with its schema */
 module.exports = mongoose.model("Product", productSchema);

@@ -2,7 +2,6 @@
  * This model class stores information about all of the checkout items from a user
  * @module models/checkout.js
  */
-
 /** Imports */
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
@@ -25,5 +24,5 @@ const checkoutSchema = new Schema(
   { versionKey: false }
 );
 
-/** Exporting the checking-out model with its schema */
+/* Exporting the checking-out model with its schema */
 module.exports = mongoose.model("Checkout", checkoutSchema);
