@@ -9,12 +9,12 @@ import "./cart-icon.scss";
 import { createStructuredSelector } from "reselect";
 import { selectCartItemsCount } from "../../redux/cart/cartSelector";
 
-const CartIcon = ({ toggleCartHidden, getCartCount }) => (
+const CartIcon = ({ toggleCartHidden, getCartAmount}) => (
   // Importing toggleCartHidden from redux (the state of the parent component).
   // We then change that state when clicking.
   <div className='cart-icon' onClick={toggleCartHidden}>
     <ShoppingIcon className='shopping-icon' />
-    <span className='item-count'>{getCartCount}</span>
+    <span className='item-count'>{getCartAmount}</span>
   </div>
 );
 
@@ -23,7 +23,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 const mapStateToProps = createStructuredSelector({
-  getCartCount: selectCartItemsCount,
+  getCartAmount: selectCartItemsCount,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartIcon);

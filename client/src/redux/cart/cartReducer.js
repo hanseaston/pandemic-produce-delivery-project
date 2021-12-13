@@ -1,6 +1,8 @@
 import { CartActionType } from "./cartActionType";
 import { addItemToCart, removeItemFromCart } from "./cartUtil";
 
+// Finds the initial state of the product (the hidden part indicates the small dropdown.)
+// This is normall present within the React program without Redux.
 const INITIAL_STATE = {
   hidden: true,
   cart: [],

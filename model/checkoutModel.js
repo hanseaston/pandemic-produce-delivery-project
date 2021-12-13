@@ -2,7 +2,6 @@
  * This model class stores information about all of the checkout items from a user
  * @module models/checkout.js
  */
-
 /** Imports */
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
