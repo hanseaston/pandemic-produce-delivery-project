@@ -36,7 +36,7 @@
     "express": "^4.16.4",
     "express-session": "^1.17.1",
     "http-errors": "~1.6.3",
-    "lodash": ">=4.17.19",
+    "lodash": ">=4.17.21",
     "mongodb": "^3.5.9",
     "mongoose": "^5.13.13",
     "morgan": "~1.9.1",
