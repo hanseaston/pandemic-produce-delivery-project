@@ -35,13 +35,14 @@ class SignUp extends React.Component {
    * Creating user with given email and password
    */
   handleSubmit = async (event) => {
+    // The default functionality resets the form field. This prevents that.
     event.preventDefault();
 
     const { displayName, email, password, confirmPassword } = this.state;
 
     if (password !== confirmPassword) {
       //TODO: might want to show a message instead of alert
-      alert("passwords don't match");
+      alert("passwords do not match");
       return;
     }
 
@@ -50,7 +51,6 @@ class SignUp extends React.Component {
         email,
         password
       );
-
       // Storing the
       await createUserProfileDocument(user, { displayName });
 
@@ -90,7 +90,7 @@ class SignUp extends React.Component {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
       <div className='sign-up'>
-        <h2 className='title'>I do not have a account</h2>
+        <h2 className='title'>I do not have an account</h2>
         <span>Sign up with your email and password</span>
         <form className='sign-up-form' onSubmit={this.handleSubmit}>
           <FormInput

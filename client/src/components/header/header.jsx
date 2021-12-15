@@ -56,7 +56,7 @@ const Header = ({ currentUser, hidden }) => (
         </NavLink>
       )}
       <NavLink
-        activeStyle={{ opacity: 0.6 }}
+        activeStyle={{ opacity: 0.5 }}
         className='option'
         to='/covid-glimpse'
       >
