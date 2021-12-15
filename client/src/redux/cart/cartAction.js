@@ -1,5 +1,6 @@
 import { CartActionType } from "./cartActionType";
 
+// Changing the state of CartActionType with emphasis on menu item.
 export const toggleCartHidden = (user) => ({
   type: CartActionType.TOGGLE_MENU_ITEM,
 });
