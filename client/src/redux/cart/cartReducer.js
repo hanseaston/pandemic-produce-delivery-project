@@ -1,8 +1,11 @@
 import { CartActionType } from "./cartActionType";
 import { addItemToCart, removeItemFromCart } from "./cartUtil";
 
-// Finds the initial state of the product (the hidden part indicates the small dropdown.)
-// This is normall present within the React program without Redux.
+/* Finds the initial state of the product (the hidden part indicates the small dropdown.)
+ This is normally present within the React program without Redux as:
+    let [isHidden, setIsHidden] = useState(true);
+*/
+
 const INITIAL_STATE = {
   hidden: true,
   cart: [],
@@ -13,6 +16,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
     case CartActionType.TOGGLE_MENU_ITEM:
       return {
         ...state,
+        // Reversing the polarity of the "hidden" state when clicked. this occurs with cartAction.
         hidden: !state.hidden,
       };
     case CartActionType.ADD_ITEM_TO_CART:
