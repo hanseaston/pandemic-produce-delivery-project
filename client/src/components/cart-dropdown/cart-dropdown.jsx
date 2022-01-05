@@ -11,10 +11,12 @@ import { selectCartItems } from "../../redux/cart/cartSelector";
 
 import "./cart-dropdown.scss";
 
+// When CartDropdown changes, make the UseEffect option change
 useEffect(() => {
   console.log("working");
   document.addEventListener("mousedown", () => dispatch(toggleCartHidden()));
-})
+});
+
 const CartDropdown = ({ cart, history, dispatch }) => (
   <div className='cart-dropdown'>
     <div className='cart-items'>
