@@ -5,6 +5,7 @@ export const toggleCartHidden = (user) => ({
   type: CartActionType.TOGGLE_MENU_ITEM,
 });
 
+// With the specific item that was made, add it to the cart by having the action of adding.
 export const addItemToCart = (item) => ({
   type: CartActionType.ADD_ITEM_TO_CART,
   payload: item,
