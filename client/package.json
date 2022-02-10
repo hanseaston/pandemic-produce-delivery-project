@@ -14,7 +14,7 @@
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
     "firebase": "^7.15.5",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
     "react-countup": "^4.3.3",
