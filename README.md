@@ -86,7 +86,7 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 
 Our shop platform is an open-source project, and we are always looking for more like-minded developers who would like to contribute! These are our current [**contributors**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) helping push the project forward each day.
 
-#### [Hans Zhang](https://github.com/hanszhang00) - Organizer/Developer
+#### [Hans Easton](https://github.com/hanseaston) - Organizer/Developer
 
 <img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/hans.JPG">
   <br />
