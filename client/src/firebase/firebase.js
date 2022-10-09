@@ -1,16 +1,20 @@
 /**
  * @Libraries
  */
-import firebase from "firebase/app";
-import "firebase/firestore";
-import "firebase/auth";
-import firebaseConfig from "../config/firebase_key.example";
+
+import { initializeApp } from "firebase/app"
+import { getFirestore } from "firebase/firestore"
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
+
+import firebaseConfig from "../config/firebase_key";
 
 /**
  * Initialize firebase
  */
-console.log(firebaseConfig);
-firebase.initializeApp(firebaseConfig);
+
+initializeApp(firebaseConfig);
+
+export const firestore = getFirestore();
 
 /**
  *
@@ -102,12 +106,9 @@ export const convertProductsToMap = (snapshot) => {
 };
 
 // Exporting auth and firestore documents
-export const auth = firebase.auth();
-export const firestore = firebase.firestore();
+export const auth = getAuth();
 
 // Exporting google auth
-const provider = new firebase.auth.GoogleAuthProvider();
+const provider = new GoogleAuthProvider();
 provider.setCustomParameters({ prompt: "select_account" });
 export const signInWithGoogle = () => auth.signInWithPopup(provider);
-
-export default firebase;
