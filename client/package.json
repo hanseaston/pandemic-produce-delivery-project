@@ -1,7 +1,7 @@
 {
   "name": "seattle-produce-delivery-shop",
   "version": "0.1.0",
-  "author": "Hans Zhang <hanszhang2000@gmail.com>",
+  "author": "Hans Easton <hansreaston@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -58,5 +58,5 @@
   "devDependencies": {
     "concurrently": "^7.4.0"
   },
-  "proxy": "http://localhost:5000/"
+  "proxy": "http://localhost:6000/"
 }
