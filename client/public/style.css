@@ -1,0 +1,20 @@
+body { 
+    box-sizing: border-box; 
+    text-align: center; 
+    color: #303030;
+    font-family: sans-serif;
+  }
+  
+.handDrawn {
+    background-color: rgba(240,230,165, 0.6);
+    border-radius: 255px 15px 225px 15px / 12px 225px 15px 225px;
+    font-family: 'Indie Flower', cursive; line-height: 1.5; 
+    box-shadow: 4px 4px 12px 0 rgba(80,80,80, 0.5);
+  }
+  
+  .handDrawn h2 { font-size: 1.1em; margin: 0.5rem; }
+  .handDrawn .quoteAuthor { 
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0.5rem; 
+  }
