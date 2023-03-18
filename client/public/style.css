@@ -1,0 +1,135 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #003366;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    background-color: #f5f5f5;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hero h2 {
+    margin-top: 0;
+    font-size: 3rem;
+    }
+    
+    .hero p {
+    font-size: 1.5rem;
+    }
+    
+    .hero form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .hero input[type="text"] {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 60%;
+    }
+    
+    .hero button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    }
+    
+    .services {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    
+    .services h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    }
+    
+    .services li {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    }
+    
+    .services li h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    }
+    
+    .services li p {
+    margin: 0;
+    }
+    
+    footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    footer p {
+    margin: 0;
+    }
