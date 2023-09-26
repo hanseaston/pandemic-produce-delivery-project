@@ -22,7 +22,7 @@ const About = () => {
       <p> {paragraphTwo} &#128522;</p>
       <p>
         <a
-          href='mailto:hanszhang2000@gmail.com?subject=Inquiry About Seattle Shop Delivery'
+          href='mailto:hanszeaston@gmail.com?subject=Inquiry About Seattle Shop Delivery'
           style={{ color: "red" }}
         >
           Email us

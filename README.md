@@ -28,7 +28,7 @@
 - [Features](#features)
 - [Tech-stack](#tech-stack)
 - [Open-source Team](#open-source-team)
-    - [Hans Zhang - Organizer/Developer](#hans-zhang---organizerdeveloper)
+    - [Hans Easton - Organizer/Developer](#hans-easton---organizerdeveloper)
     - [Mayank Pandey - Developer](#mayank-pandey---developer)
     - [Andres - Developer](#andres---developer)
     - [Bryan - Developer](#bryan---developer)
@@ -84,7 +84,7 @@ It all started out a few weeks ago, when several people in our Seattle neighborh
 
 ## Open-source Team
 
-Our shop platform is an open-source project, and we are always looking for more like-minded developers who would like to contribute! These are our current [**contributors**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) helping push the project forward each day.
+Our shop platform is an open-source project, and we are always looking for more like-minded developers who would like to contribute! These are our current [**contributors**](https://github.com/hanszeaston/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) helping push the project forward each day.
 
 #### [Hans Easton](https://github.com/hanseaston) - Organizer/Developer
 
@@ -102,7 +102,7 @@ Our shop platform is an open-source project, and we are always looking for more 
 
 <img align="left" width="120" height="120" style="border-radius:50%" src="assets/readme/contributors/andre.jpg">
 <br />
-  <p>I am an Estonian psychologist turned analyst, trying to turn into a full-stack developer. For a while I tried to avoid going into the tech world because it seemed removed from actual human interaction, but realised it is a lot of problem solving which often involves a lot of teamwork. I am studying on my own and trying to make worthwhile open-source contributions to hone my skills!</p>
+  <p>I am an Estonian psychologist turned analyst, trying to turn into a full-stack developer. For a while I tried to avoid going into the tech world because it seemed removed from actual human interaction, but realised it is a lot of problem solving which often involves a lot of teamwork. I am studying on my own and trying to make worthwhile open-source contributions!</p>
 
 #### [Bryan](https://github.com/easyrun32) - Developer
 
@@ -150,12 +150,12 @@ Long before the idea of creating an open-source project even came to my mind, th
 
 With that said, I would **really really encourage you to fork and use this project in whatever way you want. Feel free to redesign it in your own language, for your own neighborhood . Let's keep spreading love during this challenging time.**
 
-Once you join our project and make your first contribution, we will list you as one of our [**contributors**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) and add your profile in our [**README.md section**](#Open-source-Team). I truly believe that working on an open-source project will make you a better programmer and communicator, and it will also give you something meaningful to talk about when you talk to a recruiter (if you are going to industry in the future)!
+Once you join our project and make your first contribution, we will list you as one of our [**contributors**](https://github.com/hanseaston/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) and add your profile in our [**README.md section**](#Open-source-Team). I truly believe that working on an open-source project will make you a better programmer and communicator, and it will also give you something meaningful to talk about when you talk to a recruiter (if you are going to industry in the future)!
 
 Whether it is because of your **passion for social good**, or your desire to **hone your web programming skills**, or simply to find an opportunity to **gain some experiences programming with others**, we would love to have you.
 
 - Our slack server is coming up soon! <br />
-- If you have any hesitations, questions, or concerns. Feel free to [**send me at email**](mailto:hanszhang2000@gmail.com). Happy to connect!
+- If you have any hesitations, questions, or concerns. Feel free to [**send me at email**](mailto:hanszeaston@gmail.com). Happy to connect!
 
 ## Project Setup 🚀
 
@@ -280,7 +280,7 @@ You are provided with a folder called config that has all your keys
 whether your configuration is correct by running the project. You should now be able
 to access all of the project's functionality.
 
-(**Note**: the configuration process feels a little cumbersome right now. We hope to put all of the configuration setup into .env file in the future to make the process a little easier. If you would like to make this happen, please check out this [**issue**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/23#issue-675722071)!)
+(**Note**: the configuration process feels a little cumbersome right now. We hope to put all of the configuration setup into .env file in the future to make the process a little easier. If you would like to make this happen, please check out this [**issue**](https://github.com/hanseaston/Seattle-Produce-Delivery-in-Pandemic/issues/23#issue-675722071)!)
 
 ## Understanding User Authorization ✔️
 
@@ -386,7 +386,7 @@ Instead, if you want to test out the stripe functionality, you can use the dummy
 - The CVC number is any 3-digit number.
 - **Do not** use the 'Remember me' option.
 
-Since this is pretty important, someone might want to add **a line of warning** at the bottom of the checkout page. Here's the [**issue**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/24) if anyone likes to add work on it!
+Since this is pretty important, someone might want to add **a line of warning** at the bottom of the checkout page. Here's the [**issue**](https://github.com/hanseaston/Seattle-Produce-Delivery-in-Pandemic/issues/24) if anyone likes to add work on it!
 
 After you have successfully made the test payment, you should see a pop-up window that displays **Your payment is successful. We will be in touch through email soon.** Now, all of the products a customer has checked out and paid for has been added to the MongoDB database (feel free to check yourself)!
 
@@ -396,9 +396,9 @@ After you have successfully made the test payment, you should see a pop-up windo
 
 The previous parts help you set up the project. Please refer to the [**CONTRIBUTING.md**](/CONTRIBUTING.md) if you would like to take a further step to contribute!
 
-Also check out the issue guideline [**here!**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/35)
+Also check out the issue guideline [**here!**](https://github.com/hanseaston/Seattle-Produce-Delivery-in-Pandemic/issues/35)
 
-Help us refine the README documentation here in this [**issue**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/37)!
+Help us refine the README documentation here in this [**issue**](https://github.com/hanseaston/Seattle-Produce-Delivery-in-Pandemic/issues/37)!
 
 ## Special Thanks ❤️
 
